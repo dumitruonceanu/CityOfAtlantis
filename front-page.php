@@ -53,7 +53,7 @@ get_header(); ?>
     </div>
   </section>
 
-  <section class="mainSection webSkillsSection_test">
+  <section class="mainSection webSkillsSection_test" id="web_skills_test_top">
     <div class="sectionContainer clearfix">
       <h1>The Toolkit I'll Use To Built Your Website</h1>
 
@@ -163,33 +163,30 @@ get_header(); ?>
 
   <section class="mainSection portfolioSection" id="portfolio_top">
     <div class="sectionContainer">
-      <h1>Portfolio Section</h1>
+      <div class="portfolioTestContainer clearfix">
+        <h1>Portfolio Section</h1>
 
-        <?php
-        // First, let's find out what type of project we're dealing with by finding out which terms of our custom 'project_type' taxonomy apply to this post
+          <?php
+          // First, let's find out what type of project we're dealing with by finding out which terms of our custom 'project_type' taxonomy apply to this post
 
-        $projectTerms = wp_get_post_terms( $post->ID, 'project_type' ); 
+          $projectTerms = wp_get_post_terms( $post->ID, 'project_type' ); 
 
-        // Next, let's build our custom query!
+          // Next, let's build our custom query!
 
-        $projectQuery = new WP_Query( 
-          array( 
-            'posts_per_page' => 4, 
-            'post_type' => 'portfolio', 
-            'project_type' => $projectTerms, 
-            'post__not_in' => array( $post->ID )  
-            ) 
-        ); ?>
+          $projectQuery = new WP_Query( 
+            array( 
+              'posts_per_page' => 4, 
+              'post_type' => 'portfolio', 
+              'project_type' => $projectTerms, 
+              'post__not_in' => array( $post->ID )  
+              ) 
+          ); ?>
 
-        <?php if ( $projectQuery->have_posts() ) : ?>
+          <?php if ( $projectQuery->have_posts() ) : ?>
 
-          <?php while ($projectQuery->have_posts()) : $projectQuery->the_post(); ?>
-            <div class="col-1-2">
-
-              <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>">
+            <?php while ($projectQuery->have_posts()) : $projectQuery->the_post(); ?>
+              <div class="col-1-2">
                 <div class="imageWrapper">
-                  <div class="imageHover">
-                  </div>
                   <?php //the_post_thumbnail('medium'); ?>
 
                   <?php while( has_sub_field('images') ): ?>
@@ -198,21 +195,27 @@ get_header(); ?>
                     <img src="<?php echo $image['sizes']['large'] ?>">
                   <?php endwhile; ?>
                 </div>
-              </a>
 
-              <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_field('item_name'); ?></a></h2>
+                <div class="captionDetails">
+                  <h2 class="entry-title"><?php the_field('item_name'); ?></h2>
+                  <p><?php the_field('short_description'); ?></p>
+                  <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>"></a>
+                </div>
+              </div>
 
-              <p><?php the_field('short_description'); ?></p>
+            <?php endwhile; ?>
+            
+            <?php wp_reset_postdata(); ?>
+            
+          <?php else:  ?>
+            <!-- [stuff that happens if there aren't any posts] -->
+          <?php endif; ?>
 
-            </div>
+          <div class="moreButton">
+            <a href="<?php echo get_page_link(31); ?>"><div class="goToPortfolioPage">View All</div></a>
+          </div>
 
-          <?php endwhile; ?>
-          
-          <?php wp_reset_postdata(); ?>
-          
-        <?php else:  ?>
-          <!-- [stuff that happens if there aren't any posts] -->
-        <?php endif; ?>
+      </div>
        
     </div>
   </section>
@@ -222,12 +225,7 @@ get_header(); ?>
       <h1>Blog Section</h1>
 
       <?php
-      // First, let's find out what type of project we're dealing with by finding out which terms of our custom 'project_type' taxonomy apply to this post
-
       $projectTerms = wp_get_post_terms( $post->ID, 'project_type' ); 
-
-      // Next, let's build our custom query!
-
       $projectQuery = new WP_Query( 
         array( 
           'posts_per_page' => 4, 
@@ -242,9 +240,9 @@ get_header(); ?>
         <?php while ($projectQuery->have_posts()) : $projectQuery->the_post(); ?>
 
           <div class="col-1-4">
-              <!-- <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"> -->
+              <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"> 
                 <div class="entryContentBackground">
-                  <section class="entry-content">
+                  <div class="entry-content">
                     <?php $image = the_post_thumbnail('medium'); ?>
                     <img src="<?php echo $image ?>">
 
@@ -252,20 +250,20 @@ get_header(); ?>
                     <p>
                       <?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?>
                     </p>
-
-                    
-                  </section><!-- .entry-content -->
+                  </div>
                 </div>
-              <!-- </a> -->
+              </a>
           </div>
            
         <?php endwhile; ?>
         
         <?php wp_reset_postdata(); ?>
-        
-      <?php else:  ?>
-        <!-- [stuff that happens if there aren't any posts] -->
+
       <?php endif; ?>
+
+      <div class="moreButton">
+            <a href="<?php echo get_page_link(57); ?>"><div class="goToBlogPage">View All</div></a>
+      </div>
 
     </div>
   </section>

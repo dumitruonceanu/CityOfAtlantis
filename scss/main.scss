@@ -103,7 +103,7 @@ img {
 $navBackgroundColor: rgba(248, 248, 248, 0.9);
 // $navBackgroundColor: transparent;
 $navBorderBottomColor: #bbb; /* #3B3C40 */
-$navLogoAreaBackColor: #d6d6d6; /* #d6d6d6; */
+$navLogoAreaBackColor: #F6F6F6; /* #d6d6d6; */
 $navCrumbPathColor: #e7e7e7;
 $navFontColor: #3B3C40;
 $navLinesButtonColor: #000;
@@ -425,7 +425,9 @@ ul li,ol li {
         .mainNavList{
           position: absolute;
           right: -800px;
+          // display: inline-block;
           ul{
+            display: inline-block;
             margin-top: $navTextMarginTop;
             li{
               display:inline;
@@ -484,6 +486,7 @@ ul li,ol li {
             color: $navFontColor;
             // background-color: $navBackgroundColor;
             background-color: transparent;
+            
             svg{
               height: $navBarHeight - 35px;
               width: $navBarHeight - 35px;
@@ -602,7 +605,8 @@ ul li,ol li {
             padding-top: 17px;
             height: $navBarHeight;
             color: $navFontColor;
-            // background-color: $navLogoAreaBackColor;
+            background-color: $navLogoAreaBackColor;
+            // background-color: #F6F6F6;
             svg{
               height: $navBarHeight - 35px;
               width: $navBarHeight - 35px;
@@ -652,6 +656,7 @@ ul li,ol li {
           position: absolute;
           right: -800px;
           ul{
+            display: inline-block;
             margin-top: $navTextMarginTop;
             li{
               display:inline;
@@ -881,9 +886,9 @@ $buttonLineMargin: $buttonLineWidth/4;
   .aboutSection{
     clear: both;
     // background-color: #C9DCEC;
-    background-color: #A0B2C1;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+    background-color: #E5E5E5; /* #E5E5E5 #A0B2C1 */
+    // border-top: 1px solid #999;
+    // border-bottom: 1px solid #999;
     margin: 0;
     .sectionContainer{
       .sectionInnerContainer{
@@ -914,8 +919,10 @@ $buttonLineMargin: $buttonLineWidth/4;
           min-height: 500px;
           // top: -20px;
           // float: left;
-          background-color: #A0B2C1;
-          border: 1px solid #999;
+          background-color: #E5E5E5; //#A0B2C1 E5E5E5;
+          // border: 1px solid #999;
+          border-left: 1px solid #999;
+          border-right: 1px solid #999;
           // box-shadow: 0 0 5px 1px #666;
           padding: 20px;
           z-index: 50;
@@ -1045,9 +1052,9 @@ $buttonLineMargin: $buttonLineWidth/4;
     // background-color: $matisseBlue;
     padding-top: $navBarHeight;
     // background-color: #D7EBED;
-    background-color: #A0B2C1;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+    background-color: #E5E5E5;
+    // border-top: 1px solid #999;
+    // border-bottom: 1px solid #999;
     width: 100%;
     h1{
       // color: $matisseBlue;
@@ -1059,133 +1066,130 @@ $buttonLineMargin: $buttonLineWidth/4;
       margin: 0 auto;
       padding-bottom: 40px;
       .col-1-2{
+        // float: left;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
         display: inline-block;
-        width: 45%;
+        width: 40%;
+        // margin-right: 20%;
+        margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 30px;
         padding-bottom: 20px;
         // border: 1px solid #D7EBED;
-        border: 1px solid #A0B2C1;
+        cursor: pointer;
+
         .imageWrapper{
           position: relative;
-          padding-left: 80px;
-          padding-right: 80px;
+          padding-left: 60px;
+          padding-right: 60px;
           padding-top: 30px;
-          // border: 1px solid #888;
-          // background-color: #8EDBE9;
-          // @include transition(background-color, 0.1s, ease-in-out);
-          .imageHover{
-             position: absolute;
-             width: 100%;
-             height: 100%;
-             top: 0;
-             left: 0;
-             background: transparent;
-             // background: $backgroundColor;
-             opacity: 0;
-             // @include transition(opacity, 0.2s, ease-in-out);
-             // &:hover{
-             //  // background: #fff;
-             //  opacity: 0.8;
-             //  // @include transition(background, 0.2s, ease-in-out);
-             // }
-          }
-          &:hover{
-            // background-color: #333;
-            // @include transition(background-color, 0.1s, ease-in-out);
-            // filter: sepia(0) saturate(2);
-          }
-          img{
-
-          }
-
         }
         h2{
-          text-align: center;
-          padding-left: 50px;
-          padding-right: 50px;
-        }
-        h2 a{
-          // color: $matisseBlue;
-          // color: #23B4D2;
-          color: #464E4F;
-          // color: #333;
-          @include transition(color, 0.1s, ease-in-out);
-          &:hover{
-            color: red;
-            @include transition(color, 0.1s, ease-in-out);
-          }
+         text-align: center;
+         padding-left: 50px;
+         padding-right: 50px;
         }
         p{
-          font-family: sourceLight, sans-serif;
-          margin: 0;
-          padding-left: 50px;
-          padding-right: 50px;
-          // color: #666;
-          color: #899394;
+         font-family: sourceLight, sans-serif;
+         margin: 0;
+         padding-left: 10px;
+         padding-right: 10px;
+         color: #333;
         }
-        @include transition(all, 0.1s, ease-in-out);
-        // &:hover{
-        //   @include transition(all, 0.1s, ease-in-out);
-        //   // background-color: #f8f8f8; /* #b9dcdf #9EB3A7 #9EB3A7 #C7D9E7 #FFAF91 #82CDB9 #80D0BA */
-        //    // border-color: #bbb;
-        //    // box-shadow: 0 0 5px 1px #666;
-        //    // width: 46%;
-        //    // height: 46%;
-        //    // color: #fff;
 
-        //    // border-right: 1px solid #fff;
-        //    // border-left: 1px solid #fff;
-        //    // -webkit-transform: scale(1,0);
-        //    // transform: scale(1,0);
-        // }
-
-        // &:before,
-        // &:after {
-        //   position: absolute;
-        //   top: 30px;
-        //   right: 30px;
-        //   bottom: 30px;
-        //   left: 30px;
-        //   content: '';
-        //   opacity: 0;
-        //   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        //   transition: opacity 0.35s, transform 0.35s;
-        // }
-
-        // &:before {
-        //   border-top: 1px solid #fff;
-        //   border-bottom: 1px solid #fff;
-        //   -webkit-transform: scale(0,1);
-        //   transform: scale(0,1);
-        // }
-
-        // &:after {
-        //   border-right: 1px solid #fff;
-        //   border-left: 1px solid #fff;
-        //   -webkit-transform: scale(1,0);
-        //   transform: scale(1,0);
-        // }
-
-        // &:before,
-        // &:after {
-        //   opacity: 1;
-        //   -webkit-transform: scale(1);
-        //   transform: scale(1);
-        // }
-
-        // &:hover h2,
-        // &:hover p {
-        //   opacity: 1;
-        //   -webkit-transform: translate3d(0,0,0);
-        //   transform: translate3d(0,0,0);
-        // }
-
-
+        .captionDetails{
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;      
+        }
 
       }
       .col-1-2:nth-child(odd){
+        // margin-right: 0;
+      }
+
+      .col-1-2:hover .captionDetails::before,
+      .col-1-2:hover .captionDetails::after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      
+
+      .col-1-2 .captionDetails::before,
+      .col-1-2 .captionDetails::after {
+        pointer-events: none;
+      }
+      // .col-1-2 .captionDetails,
+      // .col-1-2 a {
+      //   position: absolute;
+      //   bottom: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      // }
+
+      // EFFECTS
+      .captionDetails::before,
+      .captionDetails::after {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        left: 5px;
+        content: '';
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+      }
+
+      .captionDetails::before {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+      }
+
+      .captionDetails::after {
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        -webkit-transform: scale(1,0);
+        transform: scale(1,0);
+      }
+
+
+      .col-1-2:nth-child(odd){
         margin-right: 0;
+      }
+    }
+
+    .moreButton{
+      display: block;
+      margin: 0 auto;
+      clear: both;
+      width: 200px;
+      height: 50px;
+    }
+
+    a .goToPortfolioPage{
+      // display: block;
+      width: 200px;
+      height: 50px;
+      // margin: 0 auto;
+      text-align: center;
+      // background-color: #353535;
+      color: #353535;
+      background-color: #EDEDED;
+      border: 1px solid #353535;
+      border-radius: 5px;
+      // font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      padding-top: 8px;
+        @include transition(background-color, 0.2s, ease-in-out);
+      &:hover{
+        background-color: #353535;
+        color: #EDEDED;
       }
     }
 
@@ -1193,28 +1197,49 @@ $buttonLineMargin: $buttonLineWidth/4;
 
   .blogSection{
     clear: both;
-    // background: url(images/Toronto1.jpg); 
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // height: 100%;
-    // height: 700px;
-    // background-attachment: fixed;
-    // background-position: bottom;
-    // background: #BBBBBB;
     padding-top: 40px;
     .sectionContainer{
       padding-top: 40px;
-      border-top: 1px solid #bbb; 
+      // border-top: 1px solid #bbb; 
       padding-bottom: 80px;
       h1{
         margin-bottom: 40px;
       }
+      .moreButton{
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        width: 200px;
+        height: 50px;
+      }
+      a .goToBlogPage{
+        // display: block;
+        width: 200px;
+        height: 50px;
+        // margin: 0 auto;
+        text-align: center;
+        // background-color: #353535;
+        color: #353535;
+        background-color: #EDEDED;
+        border: 1px solid #353535;
+        border-radius: 5px;
+        // font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        padding-top: 8px;
+          @include transition(background-color, 0.2s, ease-in-out);
+        &:hover{
+          background-color: #353535;
+          color: #EDEDED;
+        }
+      }
+
       .col-1-4{
         padding: 10px;
         height: 450px;
         background-color: transparent;
         a{
           // color: #333;
+          // background-color: #E5E5E5;
         }
         .entryContentBackground{
           width: 100%;
@@ -1229,13 +1254,16 @@ $buttonLineMargin: $buttonLineWidth/4;
               // height: 200px;
             }
             h2{
+              // text-align: center;
               padding-left: 10px;
               padding-right: 10px;
+              color: #333;
             }
             p{
               text-align: left;
               padding-left: 10px;
               padding-right: 10px;
+              color: #333;
             }
             
           }
@@ -1437,7 +1465,8 @@ $buttonLineMargin: $buttonLineWidth/4;
       margin-right: 10%;
       margin-bottom: 30px;
       padding-bottom: 20px;
-      border: 1px solid #D7EBED;
+      // border: 1px solid #D7EBED;
+      background-color: #E5E5E5;
       cursor: pointer;
 
       .imageWrapper{
@@ -1456,7 +1485,12 @@ $buttonLineMargin: $buttonLineWidth/4;
        margin: 0;
        padding-left: 10px;
        padding-right: 10px;
-       color: #899394;
+       color: #333;
+      }
+      &:hover{
+        @include transition(background-color, 0.7s, ease-in-out);
+        background-color: #f3f3f3;
+
       }
 
       .captionDetails{
@@ -1478,23 +1512,23 @@ $buttonLineMargin: $buttonLineWidth/4;
     .col-1-2 .captionDetails::after {
       pointer-events: none;
     }
-    // .col-1-2 .captionDetails,
-    // .col-1-2 a {
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    // }
+
+    .col-1-2 a {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
     // EFFECTS
     .captionDetails::before,
     .captionDetails::after {
       position: absolute;
-      top: 5px;
-      right: 5px;
-      bottom: 5px;
-      left: 5px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       content: '';
       opacity: 0;
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1502,15 +1536,15 @@ $buttonLineMargin: $buttonLineWidth/4;
     }
 
     .captionDetails::before {
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
       -webkit-transform: scale(0,1);
       transform: scale(0,1);
     }
 
     .captionDetails::after {
-      border-right: 1px solid #000;
-      border-left: 1px solid #000;
+      border-right: 1px solid #bbb;
+      border-left: 1px solid #bbb;
       -webkit-transform: scale(1,0);
       transform: scale(1,0);
     }
@@ -1532,7 +1566,7 @@ $buttonLineMargin: $buttonLineWidth/4;
   // padding-top: $navBarHeight;
   padding-top: $navBarHeight;
   width: 100%;
-  background-color: #D7EBED;
+  background-color: #E5E5E5; /* #A0B2C1 #D7EBED */
  .sectionContainer{
     // float: left;
     display: block;
@@ -1549,7 +1583,7 @@ $buttonLineMargin: $buttonLineWidth/4;
       margin-right: 5%;
       margin-bottom: 30px;
       padding-bottom: 20px;
-      border: 1px solid #D7EBED;
+      border: 1px solid #A0B2C1;
       .imageWrapper{
        position: relative;
        padding-left: 80px;
@@ -1695,8 +1729,50 @@ $buttonLineMargin: $buttonLineWidth/4;
 //******************************************
 //BLOG MAIN PAGE styling - loop.php
 //******************************************
+
+
+
 .blog .section{
   padding-top: $navBarHeight;
+  // display: block;
+  .mainBlogContainer{
+    display: block;
+    h1{
+      text-align: center;
+      
+    }
+    .singlePost{
+      // height: 150px;
+      display: block;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #E5E5E5;
+      margin-bottom: 20px;
+      
+      img{
+        display: inline-block;
+        // width: 30%;
+        float: left;
+        margin: 0;
+        padding: 0;
+      }
+
+      .entry-content{
+        display: inline-block;
+        max-width: 66%;
+        margin: 0;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        h2{
+          padding-bottom: 10px;
+        }
+
+      }
+    }
+
+  }
+
 }
 
 
