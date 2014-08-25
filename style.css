@@ -1118,8 +1118,8 @@ ul.menu li a {
     z-index: 1;
     overflow: hidden;
     display: inline-block;
-    width: 45%;
-    margin-right: 5%;
+    width: 40%;
+    margin-right: 10%;
     margin-bottom: 30px;
     padding-bottom: 20px;
     border: 1px solid #D7EBED;
@@ -1127,8 +1127,8 @@ ul.menu li a {
     /* line 1443, scss/main.scss */
     .portfolioTestContainer .col-1-2 .imageWrapper {
       position: relative;
-      padding-left: 80px;
-      padding-right: 80px;
+      padding-left: 60px;
+      padding-right: 60px;
       padding-top: 30px; }
     /* line 1449, scss/main.scss */
     .portfolioTestContainer .col-1-2 h2 {
@@ -1139,8 +1139,8 @@ ul.menu li a {
     .portfolioTestContainer .col-1-2 p {
       font-family: sourceLight, sans-serif;
       margin: 0;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
       color: #899394; }
     /* line 1462, scss/main.scss */
     .portfolioTestContainer .col-1-2 .captionDetails {
