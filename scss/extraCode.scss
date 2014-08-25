@@ -1,0 +1,98 @@
+//***************************************************
+//PORTFOLIO MAIN PAGE styling - archive-portfolio.php
+//***************************************************
+.archive .section{
+  display: block;
+  // padding-top: $navBarHeight;
+  padding-top: $navBarHeight;
+  width: 100%;
+  background-color: #D7EBED;
+ .sectionContainer{
+    // float: left;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    h1{
+      text-align: center;
+    }
+    .col-1-2{
+      // float: left;
+      display: inline-block;
+      width: 45%;
+      margin-right: 5%;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border: 1px solid #D7EBED;
+      .imageWrapper{
+       position: relative;
+       padding-left: 80px;
+       padding-right: 80px;
+       padding-top: 30px;
+       // border: 1px solid #888;
+       // background-color: #8EDBE9;
+       // @include transition(background-color, 0.1s, ease-in-out)
+       .imageHover{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: transparent;
+          // background: $backgroundColor;
+          opacity: 0;
+          // @include transition(opacity, 0.2s, ease-in-out);
+          // &:hover{
+          //  // background: #fff;
+          //  opacity: 0.8;
+          //  // @include transition(background, 0.2s, ease-in-out);
+          // }
+       }
+       &:hover{
+         // background-color: #333;
+         // @include transition(background-color, 0.1s, ease-in-out);
+         // filter: sepia(0) saturate(2);
+       }
+       img{
+
+       }
+
+      }
+      h2{
+       text-align: center;
+       padding-left: 50px;
+       padding-right: 50px;
+      }
+      h2 a{
+       // color: $matisseBlue;
+       // color: #23B4D2;
+       color: #464E4F;
+       // color: #333;
+       @include transition(color, 0.1s, ease-in-out);
+       &:hover{
+         color: red;
+         @include transition(color, 0.1s, ease-in-out);
+       }
+      }
+      p{
+       font-family: sourceLight, sans-serif;
+       margin: 0;
+       padding-left: 50px;
+       padding-right: 50px;
+       // color: #666;
+       color: #899394;
+      }
+      @include transition(all, 0.1s, ease-in-out);
+      &:hover{
+       @include transition(all, 0.1s, ease-in-out);
+       background-color: #f8f8f8; /* #b9dcdf #9EB3A7 #9EB3A7 #C7D9E7 #FFAF91 #82CDB9 #80D0BA */
+       border-color: #bbb;
+       box-shadow: 0 0 5px 1px #666;
+       color: #fff;
+      }
+    }
+    .col-1-2:nth-child(odd){
+      margin-right: 0;
+    }
+ }
+}
