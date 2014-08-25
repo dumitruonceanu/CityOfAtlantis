@@ -1102,43 +1102,107 @@ ul.menu li a {
     -webkit-transform: scale(1, 0);
     -ms-transform: scale(1, 0);
         transform: scale(1, 0); }
-  /* line 1416, scss/main.scss */
-  .archive .section .portfolioTestContainer {
-    display: block;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 40px; }
-    /* line 1422, scss/main.scss */
-    .archive .section .portfolioTestContainer h1 {
-      text-align: center; }
-    /* line 1425, scss/main.scss */
-    .archive .section .portfolioTestContainer .col-1-2 {
-      display: inline-block;
-      width: 45%;
-      margin-right: 5%;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border: 1px solid #D7EBED; }
-    /* line 1439, scss/main.scss */
-    .archive .section .portfolioTestContainer .col-1-2:nth-child(odd) {
-      margin-right: 0; }
 
-/* line 1455, scss/main.scss */
+/* line 1421, scss/main.scss */
+.portfolioTestContainer {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 40px; }
+  /* line 1427, scss/main.scss */
+  .portfolioTestContainer h1 {
+    text-align: center; }
+  /* line 1430, scss/main.scss */
+  .portfolioTestContainer .col-1-2 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border: 1px solid #D7EBED;
+    cursor: pointer; }
+    /* line 1443, scss/main.scss */
+    .portfolioTestContainer .col-1-2 .imageWrapper {
+      position: relative;
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 30px; }
+    /* line 1449, scss/main.scss */
+    .portfolioTestContainer .col-1-2 h2 {
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px; }
+    /* line 1454, scss/main.scss */
+    .portfolioTestContainer .col-1-2 p {
+      font-family: sourceLight, sans-serif;
+      margin: 0;
+      padding-left: 50px;
+      padding-right: 50px;
+      color: #899394; }
+    /* line 1462, scss/main.scss */
+    .portfolioTestContainer .col-1-2 .captionDetails {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+  /* line 1469, scss/main.scss */
+  .portfolioTestContainer .col-1-2:hover .captionDetails::before,
+  .portfolioTestContainer .col-1-2:hover .captionDetails::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+        transform: scale(1); }
+  /* line 1477, scss/main.scss */
+  .portfolioTestContainer .col-1-2 .captionDetails::before,
+  .portfolioTestContainer .col-1-2 .captionDetails::after {
+    pointer-events: none; }
+  /* line 1491, scss/main.scss */
+  .portfolioTestContainer .captionDetails::before,
+  .portfolioTestContainer .captionDetails::after {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s; }
+  /* line 1504, scss/main.scss */
+  .portfolioTestContainer .captionDetails::before {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+        transform: scale(0, 1); }
+  /* line 1511, scss/main.scss */
+  .portfolioTestContainer .captionDetails::after {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+        transform: scale(1, 0); }
+  /* line 1518, scss/main.scss */
+  .portfolioTestContainer .col-1-2:nth-child(odd) {
+    margin-right: 0; }
+
+/* line 1530, scss/main.scss */
 .archive .section {
   display: block;
   padding-top: 80px;
   width: 100%;
   background-color: #D7EBED; }
-  /* line 1461, scss/main.scss */
+  /* line 1536, scss/main.scss */
   .archive .section .sectionContainer {
     display: block;
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 40px; }
-    /* line 1467, scss/main.scss */
+    /* line 1542, scss/main.scss */
     .archive .section .sectionContainer h1 {
       text-align: center; }
-    /* line 1470, scss/main.scss */
+    /* line 1545, scss/main.scss */
     .archive .section .sectionContainer .col-1-2 {
       display: inline-block;
       width: 45%;
@@ -1148,13 +1212,13 @@ ul.menu li a {
       border: 1px solid #D7EBED;
       -webkit-transition: all 0.1s ease-in-out;
       transition: all 0.1s ease-in-out; }
-      /* line 1478, scss/main.scss */
+      /* line 1553, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 .imageWrapper {
         position: relative;
         padding-left: 80px;
         padding-right: 80px;
         padding-top: 30px; }
-        /* line 1486, scss/main.scss */
+        /* line 1561, scss/main.scss */
         .archive .section .sectionContainer .col-1-2 .imageWrapper .imageHover {
           position: absolute;
           width: 100%;
@@ -1163,29 +1227,29 @@ ul.menu li a {
           left: 0;
           background: transparent;
           opacity: 0; }
-      /* line 1512, scss/main.scss */
+      /* line 1587, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 h2 {
         text-align: center;
         padding-left: 50px;
         padding-right: 50px; }
-      /* line 1517, scss/main.scss */
+      /* line 1592, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 h2 a {
         color: #464E4F;
         -webkit-transition: color 0.1s ease-in-out;
         transition: color 0.1s ease-in-out; }
-        /* line 1523, scss/main.scss */
+        /* line 1598, scss/main.scss */
         .archive .section .sectionContainer .col-1-2 h2 a:hover {
           color: red;
           -webkit-transition: color 0.1s ease-in-out;
           transition: color 0.1s ease-in-out; }
-      /* line 1528, scss/main.scss */
+      /* line 1603, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 p {
         font-family: sourceLight, sans-serif;
         margin: 0;
         padding-left: 50px;
         padding-right: 50px;
         color: #899394; }
-      /* line 1537, scss/main.scss */
+      /* line 1612, scss/main.scss */
       .archive .section .sectionContainer .col-1-2:hover {
         -webkit-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out;
@@ -1195,27 +1259,27 @@ ul.menu li a {
         -webkit-box-shadow: 0 0 5px 1px #666;
                 box-shadow: 0 0 5px 1px #666;
         color: #fff; }
-    /* line 1545, scss/main.scss */
+    /* line 1620, scss/main.scss */
     .archive .section .sectionContainer .col-1-2:nth-child(odd) {
       margin-right: 0; }
 
-/* line 1556, scss/main.scss */
+/* line 1631, scss/main.scss */
 .single-portfolio .section {
   display: block;
   text-align: center;
   padding-top: 80px; }
-  /* line 1561, scss/main.scss */
+  /* line 1636, scss/main.scss */
   .single-portfolio .section .innerWrapper {
     max-width: 1100px;
     margin: 0 auto; }
-    /* line 1564, scss/main.scss */
+    /* line 1639, scss/main.scss */
     .single-portfolio .section .innerWrapper h2 {
       font-family: 'Sanchez', serif;
       font-size: 60px;
       color: #333;
       padding-top: 40px;
       padding-bottom: 20px; }
-    /* line 1571, scss/main.scss */
+    /* line 1646, scss/main.scss */
     .single-portfolio .section .innerWrapper p {
       width: 50%;
       margin: 0 auto;
@@ -1223,7 +1287,7 @@ ul.menu li a {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 40px; }
-    /* line 1580, scss/main.scss */
+    /* line 1655, scss/main.scss */
     .single-portfolio .section .innerWrapper a .goToLiveProject {
       width: 200px;
       height: 50px;
@@ -1236,42 +1300,42 @@ ul.menu li a {
       padding-top: 8px;
       -webkit-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out; }
-      /* line 1593, scss/main.scss */
+      /* line 1668, scss/main.scss */
       .single-portfolio .section .innerWrapper a .goToLiveProject:hover {
         background-color: #353535;
         color: #EDEDED; }
-    /* line 1598, scss/main.scss */
+    /* line 1673, scss/main.scss */
     .single-portfolio .section .innerWrapper .images {
       margin-top: 40px;
       margin-bottom: 40px; }
-      /* line 1601, scss/main.scss */
+      /* line 1676, scss/main.scss */
       .single-portfolio .section .innerWrapper .images img {
         width: 50%; }
-    /* line 1605, scss/main.scss */
+    /* line 1680, scss/main.scss */
     .single-portfolio .section .innerWrapper .tech {
       margin-bottom: 40px;
       font-size: 20px; }
-      /* line 1609, scss/main.scss */
+      /* line 1684, scss/main.scss */
       .single-portfolio .section .innerWrapper .tech p {
         text-align: center;
         margin-bottom: 10px; }
 
-/* line 1623, scss/main.scss */
+/* line 1698, scss/main.scss */
 .blog .section {
   padding-top: 80px; }
 
-/* line 1633, scss/main.scss */
+/* line 1708, scss/main.scss */
 .single-post .section {
   display: block;
   background-color: #F9F9F9;
   /* #EDEDED */
   text-align: left;
   padding-top: 80px; }
-  /* line 1638, scss/main.scss */
+  /* line 1713, scss/main.scss */
   .single-post .section .innerWrapper {
     max-width: 1100px;
     margin: 0 auto; }
-    /* line 1641, scss/main.scss */
+    /* line 1716, scss/main.scss */
     .single-post .section .innerWrapper h1 {
       margin-top: 0;
       font-family: 'Quicksand', sans-serif;
@@ -1281,7 +1345,7 @@ ul.menu li a {
       text-align: center;
       padding-top: 40px;
       padding-bottom: 20px; }
-    /* line 1652, scss/main.scss */
+    /* line 1727, scss/main.scss */
     .single-post .section .innerWrapper h2 {
       font-family: 'Sanchez', serif;
       font-size: 40px;
@@ -1289,7 +1353,7 @@ ul.menu li a {
       text-align: left;
       margin-left: 12.25%;
       width: 75%; }
-    /* line 1660, scss/main.scss */
+    /* line 1735, scss/main.scss */
     .single-post .section .innerWrapper p {
       width: 75%;
       margin: 0 auto;
@@ -1297,65 +1361,65 @@ ul.menu li a {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 40px; }
-    /* line 1669, scss/main.scss */
+    /* line 1744, scss/main.scss */
     .single-post .section .innerWrapper .entry-meta,
     .single-post .section .innerWrapper .entry-utility,
     .single-post .section .innerWrapper .navigation,
     .single-post .section .innerWrapper #comments {
       margin-left: 12.25%;
       width: 75%; }
-    /* line 1677, scss/main.scss */
+    /* line 1752, scss/main.scss */
     .single-post .section .innerWrapper .entry-content img {
       width: 100%;
       height: 100%; }
 
-/* line 1690, scss/main.scss */
+/* line 1765, scss/main.scss */
 .page.page-template-default .section {
   display: block;
   background-color: #f9f9f9;
   padding-top: 80px; }
-  /* line 1695, scss/main.scss */
+  /* line 1770, scss/main.scss */
   .page.page-template-default .section .innerWrapper {
     max-width: 900px;
     margin: 0 auto; }
-    /* line 1698, scss/main.scss */
+    /* line 1773, scss/main.scss */
     .page.page-template-default .section .innerWrapper h1, .page.page-template-default .section .innerWrapper h2, .page.page-template-default .section .innerWrapper h3, .page.page-template-default .section .innerWrapper h4, .page.page-template-default .section .innerWrapper h5, .page.page-template-default .section .innerWrapper h6 {
       font-family: 'Sanchez', serif; }
-    /* line 1701, scss/main.scss */
+    /* line 1776, scss/main.scss */
     .page.page-template-default .section .innerWrapper h1 {
       font-size: 60px; }
-    /* line 1704, scss/main.scss */
+    /* line 1779, scss/main.scss */
     .page.page-template-default .section .innerWrapper h2 {
       margin-bottom: 30px;
       font-size: 40px; }
-    /* line 1709, scss/main.scss */
+    /* line 1784, scss/main.scss */
     .page.page-template-default .section .innerWrapper h3 {
       font-size: 30px; }
-    /* line 1712, scss/main.scss */
+    /* line 1787, scss/main.scss */
     .page.page-template-default .section .innerWrapper p {
       line-height: 1.5; }
-    /* line 1715, scss/main.scss */
+    /* line 1790, scss/main.scss */
     .page.page-template-default .section .innerWrapper .firstSampleParagraph {
       font-family: sourceLight, sans-serif;
       font-size: 16px; }
-    /* line 1720, scss/main.scss */
+    /* line 1795, scss/main.scss */
     .page.page-template-default .section .innerWrapper .secondSampleParagraph {
       font-family: sourceLight, sans-serif;
       font-size: 18px;
       color: #3a5e77; }
-    /* line 1726, scss/main.scss */
+    /* line 1801, scss/main.scss */
     .page.page-template-default .section .innerWrapper .thirdSampleParagraph {
       font-family: 'Open Sans', sans-serif;
       font-size: 16px; }
-    /* line 1730, scss/main.scss */
+    /* line 1805, scss/main.scss */
     .page.page-template-default .section .innerWrapper .fourthSampleParagraph {
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       color: #3a5e77; }
-    /* line 1735, scss/main.scss */
+    /* line 1810, scss/main.scss */
     .page.page-template-default .section .innerWrapper .goToLiveProject {
       padding-top: 60px; }
-      /* line 1737, scss/main.scss */
+      /* line 1812, scss/main.scss */
       .page.page-template-default .section .innerWrapper .goToLiveProject .sampleLargeButton {
         width: 200px;
         height: 50px;
@@ -1369,14 +1433,14 @@ ul.menu li a {
         padding: 20px;
         -webkit-transition: background-color 0.2s ease-in-out;
         transition: background-color 0.2s ease-in-out; }
-        /* line 1753, scss/main.scss */
+        /* line 1828, scss/main.scss */
         .page.page-template-default .section .innerWrapper .goToLiveProject .sampleLargeButton:hover {
           background-color: #353535;
           color: #EDEDED; }
-    /* line 1760, scss/main.scss */
+    /* line 1835, scss/main.scss */
     .page.page-template-default .section .innerWrapper .goToLiveProject {
       padding-bottom: 60px; }
-      /* line 1762, scss/main.scss */
+      /* line 1837, scss/main.scss */
       .page.page-template-default .section .innerWrapper .goToLiveProject .sampleMediumButton {
         width: 100px;
         height: 25px;
@@ -1390,23 +1454,23 @@ ul.menu li a {
         padding: 10px;
         -webkit-transition: background-color 0.2s ease-in-out;
         transition: background-color 0.2s ease-in-out; }
-        /* line 1778, scss/main.scss */
+        /* line 1853, scss/main.scss */
         .page.page-template-default .section .innerWrapper .goToLiveProject .sampleMediumButton:hover {
           background-color: #353535;
           color: #EDEDED; }
-    /* line 1785, scss/main.scss */
+    /* line 1860, scss/main.scss */
     .page.page-template-default .section .innerWrapper .profileImageSquare {
       margin-bottom: 20px;
       margin-bottom: 20px; }
-      /* line 1788, scss/main.scss */
+      /* line 1863, scss/main.scss */
       .page.page-template-default .section .innerWrapper .profileImageSquare a img {
         border: 1px solid #000;
         margin-top: 20px; }
-    /* line 1794, scss/main.scss */
+    /* line 1869, scss/main.scss */
     .page.page-template-default .section .innerWrapper .profileImageRound {
       width: 300px;
       height: 300px; }
-      /* line 1797, scss/main.scss */
+      /* line 1872, scss/main.scss */
       .page.page-template-default .section .innerWrapper .profileImageRound a img {
         border-radius: 150px;
         border: 1px solid #000;

@@ -17,7 +17,11 @@
 						<?php endwhile; ?>
 					</div>
 
-
+					<div class="captionDetails">
+						<h2 class="entry-title"><?php the_field('item_name'); ?></h2>
+						<p><?php the_field('short_description'); ?></p>
+						<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>"></a>
+					</div>
 			  </div>
 			<?php endwhile; // end of the loop. ?>	
 
