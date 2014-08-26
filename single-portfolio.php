@@ -26,7 +26,24 @@
 
     <div class="tech">
 			<p>	This project was built using the following technologies:</p>
-			<?php the_terms($post->ID, 'technologies' ); ?>
+
+			<?php  $terms = get_terms("technologies");
+			if ( !empty( $terms ) && !is_wp_error( $terms ) ){
+			    echo "<ul>";
+			    foreach ( $terms as $term ) {
+			      echo "<li>" . $term->name . ""; 
+			      if(end($terms) !== $term){
+    				echo "  <span>|</span>  </li>"; // not the last element
+					}
+			       
+			    }
+			    echo "</ul>";
+			}
+			?>
+			
+
+			<!-- Displays taxonomies with links. Commented out for now -->
+			<?php //the_terms($post->ID, 'technologies' ); ?>
     </div>
   </div> <!-- /.innerWrapper -->
 </div> <!-- /.section -->

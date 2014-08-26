@@ -278,8 +278,8 @@ ul li,ol li {
     // font-family: monserratRegular, 'Varela Round', sans-serif;
     .container{
       display: inline-block;
-      // background-color: $navBackgroundColor;
-      background-color: transparent;
+      background-color: $navBackgroundColor;
+      // background-color: transparent;
       border-bottom: 1px solid $navBorderBottomColor;
       // box-shadow: 0 0 5px 1px #666;
       position: relative;
@@ -868,7 +868,7 @@ $buttonLineMargin: $buttonLineWidth/4;
       h1{
         text-align: center;
         font-size: 80px;
-        color: #222;
+        color: #fff;
         font-family: josefinSansSemiBold;
         // box-shadow: 0 0 5px 1px #666;
         text-shadow: 2px 2px 10px #666;
@@ -1787,6 +1787,15 @@ $buttonLineMargin: $buttonLineWidth/4;
       p{
         text-align: center;
         margin-bottom: 10px;
+      }
+      ul{
+        list-style-type: none;
+        li{
+          display: inline-block;
+          span{
+            color: #cd0000;
+          }
+        }
       }
     }
   }

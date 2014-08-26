@@ -30,7 +30,7 @@ get_header(); ?>
         </div>
 
         <div class="aboutRight">
-          <p>Other interests will go here</p>
+          <p></p>
         </div>
       </div>
 
