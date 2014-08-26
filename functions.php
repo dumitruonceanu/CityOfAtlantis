@@ -401,3 +401,9 @@ function get_post_thumbnail_url($size = 'thumbnail', $image_id = NULL ) {
 	$image_url = $image_url[0];
 	return $image_url;
 } 
+
+function my_add_frontend_scripts() {
+        wp_enqueue_script('jquery');
+        wp_enqueue_script('jquery-ui-core');
+}
+add_action('wp_enqueue_scripts', 'my_add_frontend_scripts');

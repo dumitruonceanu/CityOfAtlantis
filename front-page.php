@@ -6,7 +6,15 @@
 
 get_header(); ?>
 <div class="section">
-  <div class="landing" id="home_top"></div>
+  <div class="landing" id="home_top">
+    <div class="banner">
+      <h1>Dumitru Onceanu</h1>
+      <div class="button">
+        <a href="#about_top">Learn more about me and my work</a>
+      </div>
+    </div>
+
+  </div>
         
   <section class="mainSection aboutSection" id="about_top">
     <div class="sectionContainer clearfix">
@@ -77,7 +85,7 @@ get_header(); ?>
           </div>
         </div>
         <h2>Languages</h2>
-        <p>HTML5, CSS3, Sass, JavaScript, Jade.</p>
+        <p>HTML5, CSS3, JavaScript.</p>
       </div>
 
       <div class="col-1-3 box_2">
@@ -100,10 +108,22 @@ get_header(); ?>
           </div>
         </div>
         <h2>Frameworks</h2>
-        <p>jQuery, AngularJS, Bootstrap, API integration.</p>
+        <p>jQuery, Sass, API integration, Grunt.</p>
       </div>
 
       <div class="col-1-3 box_3">
+        <div class="webSkillIconContainer">
+          <div class="webSkillIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
+            <path d="M71.371,50.934L60.475,37.228c-0.525-0.66-1.527-0.663-2.056-0.007l-11.04,13.706c-0.694,0.861-0.081,2.142,1.025,2.142  h3.906c0.729,0,1.335,0.593,1.332,1.322v5.719c-0.002,0.566-0.501,1.024-1.067,1.024H28.27c-9.15,0-16.358-8.474-14.189-17.986  c0.942-4.132,3.731-7.693,7.526-9.579c3.588-1.783,7.507-2.047,11.112-0.893l3.556,1.138l3.556,1.139l1.661-3.344l1.412-2.842  c3.057-6.153,8.559-10.862,15.228-12.51c14.269-3.527,27.597,7.404,28.157,21.16C86.78,49.5,77.793,59.607,66.171,60.955  c-0.602,0.07-1.082-0.422-1.079-1.028V54.38c0.003-0.725,0.573-1.311,1.297-1.311h3.951C71.442,53.069,72.056,51.796,71.371,50.934z   M94.906,35.9C93.753,20.729,81.571,8.374,66.416,7.024c-13.563-1.209-25.503,6.213-31.047,17.373  c-3.268-1.046-6.842-1.407-10.568-0.855C14.355,25.09,6.139,33.707,5.114,44.218C3.759,58.119,14.647,69.825,28.27,69.825h19.215  c0.509,0,0.921-0.412,0.921-0.921V66.4c0-0.509-0.412-0.921-0.921-0.921l-18.809,0c-9.453,0-17.78-6.771-19.128-16.128  c-1.681-11.671,7.369-21.72,18.722-21.72c1.956,0,3.899,0.304,5.774,0.905l3.556,1.139l1.661-3.344  c5.1-10.267,15.891-16.244,27.502-14.903c12.054,1.392,22.475,11.956,23.738,24.024c1.701,16.252-11.054,30.027-26.967,30.027  h-9.893v9.977c0,0.723-0.559,1.309-1.282,1.309h-3.964c-1.102,0-1.716,1.273-1.03,2.136l10.896,13.706  c0.525,0.66,1.526,0.663,2.056,0.007l11.04-13.706c0.694-0.861,0.081-2.142-1.025-2.142h-3.906c-0.729,0-1.338-0.593-1.335-1.322  v-5.7C82.525,68.866,96.27,53.845,94.906,35.9z"/>
+            </svg>
+          </div>    
+        </div>
+        <h2>Content Management</h2>
+        <p>Custom WordPress themes and seemless back-end content management.</p>
+      </div>
+
+      <div class="col-1-3 box_4">
         <div class="webSkillIconContainer">
           <div class="webSkillIcon">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -116,37 +136,10 @@ get_header(); ?>
           </div>    
         </div>
         <h2>Design</h2>
-        <p>Responsive and mobile design, accessibility, UX/UI, Illustrator and Photoshop.</p>
-      </div>
-
-      <div class="col-1-3 box_4">
-        <div class="webSkillIconContainer">
-          <div class="webSkillIcon">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
-            <path d="M71.371,50.934L60.475,37.228c-0.525-0.66-1.527-0.663-2.056-0.007l-11.04,13.706c-0.694,0.861-0.081,2.142,1.025,2.142  h3.906c0.729,0,1.335,0.593,1.332,1.322v5.719c-0.002,0.566-0.501,1.024-1.067,1.024H28.27c-9.15,0-16.358-8.474-14.189-17.986  c0.942-4.132,3.731-7.693,7.526-9.579c3.588-1.783,7.507-2.047,11.112-0.893l3.556,1.138l3.556,1.139l1.661-3.344l1.412-2.842  c3.057-6.153,8.559-10.862,15.228-12.51c14.269-3.527,27.597,7.404,28.157,21.16C86.78,49.5,77.793,59.607,66.171,60.955  c-0.602,0.07-1.082-0.422-1.079-1.028V54.38c0.003-0.725,0.573-1.311,1.297-1.311h3.951C71.442,53.069,72.056,51.796,71.371,50.934z   M94.906,35.9C93.753,20.729,81.571,8.374,66.416,7.024c-13.563-1.209-25.503,6.213-31.047,17.373  c-3.268-1.046-6.842-1.407-10.568-0.855C14.355,25.09,6.139,33.707,5.114,44.218C3.759,58.119,14.647,69.825,28.27,69.825h19.215  c0.509,0,0.921-0.412,0.921-0.921V66.4c0-0.509-0.412-0.921-0.921-0.921l-18.809,0c-9.453,0-17.78-6.771-19.128-16.128  c-1.681-11.671,7.369-21.72,18.722-21.72c1.956,0,3.899,0.304,5.774,0.905l3.556,1.139l1.661-3.344  c5.1-10.267,15.891-16.244,27.502-14.903c12.054,1.392,22.475,11.956,23.738,24.024c1.701,16.252-11.054,30.027-26.967,30.027  h-9.893v9.977c0,0.723-0.559,1.309-1.282,1.309h-3.964c-1.102,0-1.716,1.273-1.03,2.136l10.896,13.706  c0.525,0.66,1.526,0.663,2.056,0.007l11.04-13.706c0.694-0.861,0.081-2.142-1.025-2.142h-3.906c-0.729,0-1.338-0.593-1.335-1.322  v-5.7C82.525,68.866,96.27,53.845,94.906,35.9z"/>
-            </svg>
-          </div>    
-        </div>
-        <h2>Content Management</h2>
-        <p>Custom WordPress themes and seemless back-end content management.</p>
+        <p>Responsive and mobile design, accessibility, grid system layout, Illustrator and Photoshop.</p>
       </div>
 
       <div class="col-1-3 box_5">
-        <div class="webSkillIconContainer">
-          <div class="webSkillIcon">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="99.999px" viewBox="0 0 100 99.999" enable-background="new 0 0 100 99.999" xml:space="preserve">
-            <g>
-              <rect x="52.084" y="14.583" fill="#000000" width="29.166" height="20.833"/>
-              <path fill="#000000" d="M90.238,9.763c-13.016-13.017-34.127-13.017-47.14,0c-0.21,0.21-0.387,0.439-0.59,0.654   c-6.098,6.425-9.174,14.662-9.174,22.917c-6.562,0-13.11,1.945-18.75,5.792c-1.696,1.158-3.316,2.468-4.821,3.971   c-13.018,13.019-13.018,34.122,0,47.141c13.016,13.014,34.126,13.019,47.142,0c0.874-0.875,1.681-1.794,2.438-2.737   c4.875-6.072,7.322-13.452,7.324-20.834c2.094,0,4.187-0.2,6.25-0.594c6.346-1.204,12.409-4.256,17.32-9.168   C103.254,43.884,103.254,22.778,90.238,9.763z M24.064,47.917c3.504,0,6.356,2.849,6.356,6.361c0,3.511-2.854,6.356-6.356,6.356   c-3.522,0-6.354-2.846-6.354-6.356C17.709,50.765,20.542,47.917,24.064,47.917z M62.196,65.32l-9.384,9.383   c0.195,0.406,0.313,0.857,0.313,1.338c0,1.443-0.981,2.645-2.311,3.004l-1.855,0.121h-6.25c0,0-0.676,0-1.042,0   c-1.726,0-3.841-2.547-3.841-2.547l-3.451-3.45V87.5H11.459V70.834c0-4.168,4.203-8.334,8.333-8.334c0,0,9.184,0,11.458,0   c1.392,0,2.897,0.317,3.968,1.424c1.766,1.827,7.491,8.992,7.491,8.992H50c0.483,0,0.932,0.119,1.339,0.314l9.383-9.384   c0.407-0.407,1.066-0.407,1.474,0C62.602,64.254,62.602,64.913,62.196,65.32z M85.417,39.583c0,1.151-0.931,2.083-2.083,2.083   h-12.5v4.167c0,2.303,3.946,4.167,6.25,4.167h4.166c1.153,0,2.084,0.932,2.084,2.084c0,1.15-0.931,2.082-2.084,2.082H66.667H52.084   c-1.152,0-2.084-0.932-2.084-2.082C50,50.932,50.932,50,52.084,50h4.166c2.304,0,6.25-1.864,6.25-4.167v-4.167H50   c-1.151,0-2.083-0.932-2.083-2.083V12.5c0-1.151,0.932-2.083,2.083-2.083h33.334c1.152,0,2.083,0.932,2.083,2.083V39.583z"/>
-            </g>
-            </svg>
-          </div>    
-        </div>
-        <h2>Learning</h2>
-        <p>AngularJS, nodeJS, Ruby on Rails, </p>
-      </div>
-
-      <div class="col-1-3 box_6">
         <div class="webSkillIconContainer">
           <div class="webSkillIcon">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="38px" height="31px" viewBox="0 0 38 31" enable-background="new 0 0 38 31" xml:space="preserve">
@@ -158,13 +151,28 @@ get_header(); ?>
         <p>Git and Github, project management tools including Trello and Basecamp.</p>
       </div>
 
+      <div class="col-1-3 box_6">
+        <div class="webSkillIconContainer">
+          <div class="webSkillIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="99.999px" viewBox="0 0 100 99.999" enable-background="new 0 0 100 99.999" xml:space="preserve">
+            <g>
+              <rect x="52.084" y="14.583" fill="#000000" width="29.166" height="20.833"/>
+              <path fill="#000000" d="M90.238,9.763c-13.016-13.017-34.127-13.017-47.14,0c-0.21,0.21-0.387,0.439-0.59,0.654   c-6.098,6.425-9.174,14.662-9.174,22.917c-6.562,0-13.11,1.945-18.75,5.792c-1.696,1.158-3.316,2.468-4.821,3.971   c-13.018,13.019-13.018,34.122,0,47.141c13.016,13.014,34.126,13.019,47.142,0c0.874-0.875,1.681-1.794,2.438-2.737   c4.875-6.072,7.322-13.452,7.324-20.834c2.094,0,4.187-0.2,6.25-0.594c6.346-1.204,12.409-4.256,17.32-9.168   C103.254,43.884,103.254,22.778,90.238,9.763z M24.064,47.917c3.504,0,6.356,2.849,6.356,6.361c0,3.511-2.854,6.356-6.356,6.356   c-3.522,0-6.354-2.846-6.354-6.356C17.709,50.765,20.542,47.917,24.064,47.917z M62.196,65.32l-9.384,9.383   c0.195,0.406,0.313,0.857,0.313,1.338c0,1.443-0.981,2.645-2.311,3.004l-1.855,0.121h-6.25c0,0-0.676,0-1.042,0   c-1.726,0-3.841-2.547-3.841-2.547l-3.451-3.45V87.5H11.459V70.834c0-4.168,4.203-8.334,8.333-8.334c0,0,9.184,0,11.458,0   c1.392,0,2.897,0.317,3.968,1.424c1.766,1.827,7.491,8.992,7.491,8.992H50c0.483,0,0.932,0.119,1.339,0.314l9.383-9.384   c0.407-0.407,1.066-0.407,1.474,0C62.602,64.254,62.602,64.913,62.196,65.32z M85.417,39.583c0,1.151-0.931,2.083-2.083,2.083   h-12.5v4.167c0,2.303,3.946,4.167,6.25,4.167h4.166c1.153,0,2.084,0.932,2.084,2.084c0,1.15-0.931,2.082-2.084,2.082H66.667H52.084   c-1.152,0-2.084-0.932-2.084-2.082C50,50.932,50.932,50,52.084,50h4.166c2.304,0,6.25-1.864,6.25-4.167v-4.167H50   c-1.151,0-2.083-0.932-2.083-2.083V12.5c0-1.151,0.932-2.083,2.083-2.083h33.334c1.152,0,2.083,0.932,2.083,2.083V39.583z"/>
+            </g>
+            </svg>
+          </div>    
+        </div>
+        <h2>Learning</h2>
+        <p>AngularJS, nodeJS, Bootstrap, Ruby on Rails, Jade, UI/UX.</p>
+      </div>
+
     </div>
   </section>
 
   <section class="mainSection portfolioSection" id="portfolio_top">
     <div class="sectionContainer">
       <div class="portfolioTestContainer clearfix">
-        <h1>Portfolio Section</h1>
+        <h1>Recent Projects</h1>
 
           <?php
           // First, let's find out what type of project we're dealing with by finding out which terms of our custom 'project_type' taxonomy apply to this post
@@ -222,7 +230,7 @@ get_header(); ?>
 
   <section class="mainSection blogSection" id="blog_top">
     <div class="sectionContainer clearfix">
-      <h1>Blog Section</h1>
+      <h1>Recent Blog Posts</h1>
 
       <?php
       $projectTerms = wp_get_post_terms( $post->ID, 'project_type' ); 
@@ -240,7 +248,8 @@ get_header(); ?>
         <?php while ($projectQuery->have_posts()) : $projectQuery->the_post(); ?>
 
           <div class="col-1-4">
-              <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"> 
+<!--               <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"></a> -->
+
                 <div class="entryContentBackground">
                   <div class="entry-content">
                     <?php $image = the_post_thumbnail('medium'); ?>
@@ -252,7 +261,7 @@ get_header(); ?>
                     </p>
                   </div>
                 </div>
-              </a>
+              
           </div>
            
         <?php endwhile; ?>

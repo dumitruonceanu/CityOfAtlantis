@@ -15,8 +15,8 @@
   <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+<!--   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'> -->
 
 
   
@@ -28,6 +28,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
   
 	<?php	if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
 
@@ -48,7 +51,7 @@
 	 <!-- Nav menu code goes here -->
 
   <div class="mobileNavTest"> 
-    <div class="container">
+    <div class="container" id="container">
         <!-- <div class="navLeftContainer"></div> -->
 
         <?php  
@@ -269,11 +272,11 @@
               <li><a href="#about_top">About</a></li>
               <li><a href="#web_skills_test_top">Skills</a></li>
               <li><a href="#contact_top">Contact</a></li>
-              <!-- <li><a href="#portfolio_top">Portfolio</a></li> -->
-              <!-- <li><a href="#blog_top">Blog</a></li> -->
+              <li><a href="#portfolio_top">Portfolio</a></li>
+              <li><a href="#blog_top">Blog</a></li>
             </ul>
 
-            <?php wp_nav_menu( array( 'container' => false, 'menu' => 'menu2' ) ); ?>
+            <?php wp_nav_menu( array( 'container' => false, 'menu' => 'menu3' ) ); ?>
           <?php else : ?>
             <ul class="menu">
               <li><a href=<?php echo get_home_url() ."#about_top"; ?>  >About</a></li>
@@ -310,68 +313,128 @@
 
 <!-- SCRIPT FOR NAVBAR - move later into wp_enqueue_script -->
 <script>
-  var pagescript = {}
-  pagescript.init = function(){
-    // functions to add and remove the visible class to the bioWrapper div, which by default is display:none
-    $('.mobileNavButton').click(function(){
-      if ($('.currentPage').hasClass('visible')){
-        setTimeout(function(){
-            $('.currentPage').toggleClass('visible notVisible', function(){
-            });
-        }, 500);
-      }
-      else{
-        $('.currentPage').toggleClass('notVisible visible');
-      }
+  $(document).ready(function(){ 
 
-      if($('.mainNavList').hasClass('visible')){
-        setTimeout(function(){
-            $('.mainNavList').toggleClass('visible notVisible', function(){
-            });
-        }, 500);
-      }
-      else{
-        $('.mainNavList').toggleClass('notVisible visible');
-      }
-
-
-      // $('.currentPage').toggleClass('visible notVisible');
-    });
-
-    //****testing jQuery with mobieNavButton
-      $('.mobileNavButton').on('click', function(){
-        $('.buttonLines').toggleClass('close');
-        if ($('.buttonLines').hasClass('close')){
-          $('.mobileNavButton p').html("CLOSE");
-          console.log("change MENU to CLOSE");
-          $('.currentPage').animate({
-            // console.log("animate");
-            left: "-100%"
+    var pagescript = {}
+    pagescript.init = function(){
+      // functions to add and remove the visible class to the bioWrapper div, which by default is display:none
+      $('.mobileNavButton').click(function(){
+        if ($('.currentPage').hasClass('visible')){
+          setTimeout(function(){
+              $('.currentPage').toggleClass('visible notVisible', function(){
+              });
           }, 500);
-          $('.mainNavList').animate({
-            // console.log("animate");
-            right: "70px"
-          }, 500);
-
         }
         else{
-          $('.mobileNavButton p').html("MENU");
-          console.log("change CLOSE to MENU");
-          $('.currentPage').animate({
-            // console.log("animate");
-            left: "100px"
-          }, 500);
-          $('.mainNavList').animate({
-            // console.log("animate");
-            // right: "-100%"
-            right: "-800px"
+          $('.currentPage').toggleClass('notVisible visible');
+        }
+
+        if($('.mainNavList').hasClass('visible')){
+          setTimeout(function(){
+              $('.mainNavList').toggleClass('visible notVisible', function(){
+              });
           }, 500);
         }
+        else{
+          $('.mainNavList').toggleClass('notVisible visible');
+        }
+
+
+        // $('.currentPage').toggleClass('visible notVisible');
       });
 
-  }
-    $(function(){
-      pagescript.init();
-      console.log("called pagescript.init");
+      //****testing jQuery with mobieNavButton
+        $('.mobileNavButton').on('click', function(){
+          $('.buttonLines').toggleClass('close');
+          if ($('.buttonLines').hasClass('close')){
+            $('.mobileNavButton p').html("CLOSE");
+            console.log("change MENU to CLOSE");
+            $('.currentPage').animate({
+              // console.log("animate");
+              left: "-100%"
+            }, 500);
+            $('.mainNavList').animate({
+              // console.log("animate");
+              right: "70px"
+            }, 500);
+
+          }
+          else{
+            $('.mobileNavButton p').html("MENU");
+            console.log("change CLOSE to MENU");
+            $('.currentPage').animate({
+              // console.log("animate");
+              left: "100px"
+            }, 500);
+            $('.mainNavList').animate({
+              // console.log("animate");
+              // right: "-100%"
+              right: "-800px"
+            }, 500);
+          }
+        });
+
+    }
+      $(function(){
+        pagescript.init();
+        console.log("called pagescript.init");
+      });
+
+
+
+
+      // smooth-scroll script
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top - 80
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+      // $(document).ready(function(){
+      //     $(window).scroll(function(){
+      //         if($(window).scrollTop() > $(window).height()){
+      //             $(".mobileNavTest .container").css({"background-color":"rgba(248, 248, 248, 0.9)"});   
+      //         }
+      //     })
+      // })
+
+          
+       var scroll_start = 0;
+       var startchange = $('#about_top');
+       var offset = startchange.offset();
+       $(document).scroll(function() { 
+          scroll_start = $(this).scrollTop();
+          // if(scroll_start > offset.top) {
+          //     $('.mobileNavTest .container').css('background-color', "rgba(248, 248, 248, 0.9)");
+          //  } else {
+          //     $('.mobileNavTest .container').css('background-color', 'transparent');
+          //  }
+
+         if(scroll_start > offset.top) {
+              // console.log(scroll_start);
+              // console.log(offset.top);
+             $('.mobileNavTest .container').animate({
+                // backgroundColor: "rgba(248, 248, 248, 0.9)"
+                // background-color: "rgba(248, 248, 248, 0.9)"
+                
+             }, 1000 );
+          } else {
+             $('.mobileNavTest .container').animate({
+                backgroundColor: "transparent"
+             }, 1000 );
+          }
+
+       });
     });
+
 </script>

@@ -278,8 +278,8 @@ ul li,ol li {
     // font-family: monserratRegular, 'Varela Round', sans-serif;
     .container{
       display: inline-block;
-      background-color: $navBackgroundColor;
-      // background-color: transparent;
+      // background-color: $navBackgroundColor;
+      background-color: transparent;
       border-bottom: 1px solid $navBorderBottomColor;
       // box-shadow: 0 0 5px 1px #666;
       position: relative;
@@ -822,8 +822,11 @@ $buttonLineMargin: $buttonLineWidth/4;
 .footer {
   clear:both;
   height: 80px;
-  color: #fff;
+  color: #ddd;
   background-color: #242424;
+  padding-top: 20px;
+  // padding-left: 20px;
+  text-align: center;
 }
 
 
@@ -847,6 +850,58 @@ $buttonLineMargin: $buttonLineWidth/4;
     background-attachment: fixed;
     background-position: bottom;
     padding-top: 0;
+    .banner{
+      position: relative;
+      // background-color: #E5E5E5;
+      // background: url(images/dark-wood-70.png); /*http://thepatternlibrary.com/*/
+      // opacity: 0.5;
+      top: 250px;
+      width: 800px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      // border-radius: 20px;
+      // border: 2px solid #FFF;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 10px;
+      h1{
+        text-align: center;
+        font-size: 80px;
+        color: #222;
+        font-family: josefinSansSemiBold;
+        // box-shadow: 0 0 5px 1px #666;
+        text-shadow: 2px 2px 10px #666;
+      }
+      .button{
+        text-align: center;
+        border: 1px solid #333;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+
+        /*margin-top: 250px;*/
+        padding: 10px;
+        border-radius: 5px;
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        a{
+          text-decoration: none;
+          color: #333;
+          font-size: 20px;
+
+        }
+        &:hover{
+          background-color: #242424;
+          border-color: #fff;
+        }
+        &:hover > a{
+          color: #fff;
+        }
+      }
+    }
   }
   
   .mainSection{
@@ -1134,10 +1189,10 @@ $buttonLineMargin: $buttonLineWidth/4;
       .captionDetails::before,
       .captionDetails::after {
         position: absolute;
-        top: 5px;
-        right: 5px;
-        bottom: 5px;
-        left: 5px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
         content: '';
         opacity: 0;
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1211,6 +1266,7 @@ $buttonLineMargin: $buttonLineWidth/4;
         clear: both;
         width: 200px;
         height: 50px;
+        padding-top: 30px;
       }
       a .goToBlogPage{
         // display: block;
@@ -1265,6 +1321,7 @@ $buttonLineMargin: $buttonLineWidth/4;
               padding-right: 10px;
               color: #333;
             }
+
             
           }
         }
@@ -1272,6 +1329,12 @@ $buttonLineMargin: $buttonLineWidth/4;
         &:hover > .entryContentBackground{
           @include transition(background-color, 0.1s, ease-in-out);
           background-color: $matisseBlue; /* 2D2D2D */
+          color: #fff;
+        }
+        &:hover > .entryContentBackground .entry-content > h2{
+          color: #fff;
+        }
+        &:hover > .entryContentBackground .entry-content > p{
           color: #fff;
         }
       }
@@ -1282,7 +1345,13 @@ $buttonLineMargin: $buttonLineWidth/4;
   .contactSection{
     clear: both;
     background-color: #A0B2C1;
-    
+    h1{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    p{
+      padding-bottom: 20px;
+    }
 
   }
 
@@ -1734,40 +1803,65 @@ $buttonLineMargin: $buttonLineWidth/4;
 
 .blog .section{
   padding-top: $navBarHeight;
+  padding-bottom: 80px;
   // display: block;
   .mainBlogContainer{
+    max-width: 1100px;
+    margin: 0 auto;
     display: block;
     h1{
       text-align: center;
       
     }
-    .singlePost{
-      // height: 150px;
-      display: block;
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: #E5E5E5;
-      margin-bottom: 20px;
-      
-      img{
-        display: inline-block;
-        // width: 30%;
-        float: left;
-        margin: 0;
-        padding: 0;
+    .col-1-4{
+      float: left;
+      display: inline-block;
+      width: 25%;
+      padding: 10px;
+      height: 450px;
+      background-color: transparent;
+      a{
+        // color: #333;
+        // background-color: #E5E5E5;
       }
-
-      .entry-content{
-        display: inline-block;
-        max-width: 66%;
-        margin: 0;
-        padding-top: 10px;
-        padding-left: 40px;
-        padding-right: 40px;
-        h2{
-          padding-bottom: 10px;
+      .entryContentBackground{
+        width: 100%;
+        height: 100%;
+        background-color: #E5E5E5;
+        .entry-content{
+          background-color: transparent;
+          // height: 430px;
+          img{
+            width: 100%;
+            height: 100%;
+            // height: 200px;
+          }
+          h2{
+            // text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #333;
+          }
+          p{
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #333;
+          }
+          
         }
-
+      }
+      @include transition(background-color, 0.1s, ease-in-out);
+      &:hover > .entryContentBackground{
+        @include transition(background-color, 0.1s, ease-in-out);
+        background-color: $matisseBlue; /* 2D2D2D */
+        color: #fff;
+      }
+      &:hover > .entryContentBackground .entry-content > h2{
+        color: #fff;
+      }
+      &:hover > .entryContentBackground .entry-content > p{
+        color: #fff;
       }
     }
 
