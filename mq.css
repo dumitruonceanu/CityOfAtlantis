@@ -117,11 +117,17 @@
 /*  ***************************************************************
   ABOUT SECTION - MAIN PAGE
   ****************************************************************/
-  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft img{
-    display: block;
-    /*float: left;*/
-    /*clear: both;*/
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft{
+    position: relative;
     width: 100%;
+    margin: 0 auto;
+  }
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft img{
+    /*position: relative;*/
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    /*margin: 0 auto;*/
   }
   .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutCenter{
     /*clear: left;*/
@@ -179,6 +185,17 @@
   }
 
   .page .mobileNavTest .container .mainNavList ul li{
+  }
+
+/*  ***************************************************************
+  ABOUT SECTION - MAIN PAGE
+  ****************************************************************/
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft img{
+    /*position: relative;*/
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 15%;
+    /*margin: 0 auto;*/
   }
 
 /* ***************************************************************

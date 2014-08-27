@@ -276,7 +276,7 @@
               <li><a href="#blog_top">Blog</a></li>
             </ul>
 
-            <?php wp_nav_menu( array( 'container' => false, 'menu' => 'menu3' ) ); ?>
+            <?php //wp_nav_menu( array( 'container' => false, 'menu' => 'menu3' ) ); ?>
           <?php else : ?>
             <ul class="menu">
               <li><a href=<?php echo get_home_url() ."#about_top"; ?>  >About</a></li>
@@ -426,7 +426,7 @@
              $('.mobileNavTest .container').animate({
                 // backgroundColor: "rgba(248, 248, 248, 0.9)"
                 // background-color: "rgba(248, 248, 248, 0.9)"
-                
+
              }, 1000 );
           } else {
              $('.mobileNavTest .container').animate({
