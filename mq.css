@@ -68,6 +68,21 @@
   }
 
 /*  ***************************************************************
+  LANDING - MAIN PAGE
+  ****************************************************************/
+  .home.page-template-front-page-php .section .landing{
+    /*background-attachment: none;*/
+    /*background-position: center;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*height: 768px;*/
+    /*background-position: 50% 0;*/
+  }
+
+/*  ***************************************************************
   ABOUT SECTIONi - MAIN PAGE
   ****************************************************************/
   .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft{

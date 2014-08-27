@@ -9,6 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <!-- <link rel="icon" type="image/png" href="icons/favicon.ico"> -->
+  <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/icons/favicon.ico" />
 
   <!-- GOOGLE FONTS -->
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
