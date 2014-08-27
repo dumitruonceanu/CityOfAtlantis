@@ -1,21 +1,217 @@
 @media (max-width: 1000px) {
-  #wpadminbar { border-left:10px solid red !important; }
+  /*#wpadminbar { border-left:10px solid red !important; }*/
   
-  .section {
-    padding:10px;
+/*  ***************************************************************
+  NAVBAR - MAIN PAGE
+  ****************************************************************/
+  .page .mobileNavTest .container .currentPage{
+    left: 20px;
+
+  }
+  .page .mobileNavTest .container .mainNavList{
+    right: 20px;
+  }
+
+  /*  ***************************************************************
+  BANNER - MAIN PAGE
+  ****************************************************************/
+  .home.page-template-front-page-php .section .landing .banner{
+    width: 600px;
+  }
+  .home.page-template-front-page-php .section .landing .banner h1{
+    font-size: 60px;
+  }
+  .home.page-template-front-page-php .section .landing .banner .button{
+    width: 300px;
+
+  }
+  .home.page-template-front-page-php .section .landing .banner .button a{
+    font-size: 15px;
+
+  }
+
+/*  ***************************************************************
+  BLOG SECTION - MAIN PAGE
+  ****************************************************************/
+  .page .mobileNavTest .container{
+    height: 100px;
+  }
+  .home.page-template-front-page-php .section .mainSection .sectionContainer .col-1-4{
+    width: 50%;
+  }
+  .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 {
+    min-height: 550px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  /*#wpadminbar { border-left:10px solid green !important; }*/
+
+/*  ***************************************************************
+  NAVBAR - MAIN PAGE
+  ****************************************************************/
+  .page .mobileNavTest .container .mainNavList .menu{
+    display: block;
+  }
+  .page .mobileNavTest .container .mainNavList .menu{
+    /*display: block;*/
+  }
+
+/*  ***************************************************************
+  ABOUT SECTIONi - MAIN PAGE
+  ****************************************************************/
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft{
+    /*display: block;*/
+    float: left;
+    /*clear: both;*/
+    width: 50%;
+  }
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutCenter{
+    margin-top: 0;
+    margin-bottom: 0;
+    border-right: none; 
+    /*display: block;*/
+    float: right;
+    clear: both;
+    width: 50%;
+  }
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutRight{
+    /*display: block;*/
+    /*float: left;*/
+    /*clear: both;*/
+    /*margin: 0 auto;*/
+    /*width: 100%;*/
   }
 }
 
-@media (max-width: 768px) {
-  #wpadminbar { border-left:10px solid green !important; }
 
-  .left, .sidebar {
-    width:100%;
-    clear:both;
+@media (max-width: 650px) {
+  
+/*  ***************************************************************
+  NAVBAR - MAIN PAGE
+  ****************************************************************/
+  .page .mobileNavTest .container .currentPage p{
+    display: none;
+  }
+
+ /* ***************************************************************
+    BANNER - MAIN PAGE
+    ****************************************************************/
+    .home.page-template-front-page-php .section .landing .banner{
+      width: 450px;
+      height: 150px;
+    }
+    .home.page-template-front-page-php .section .landing .banner h1{
+      font-size: 50px;
+    }
+    .home.page-template-front-page-php .section .landing .banner .button{
+      width: 300px;
+
+    }
+    .home.page-template-front-page-php .section .landing .banner .button a{
+      font-size: 15px;
+
+    }
+
+/*  ***************************************************************
+  ABOUT SECTION - MAIN PAGE
+  ****************************************************************/
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft img{
+    display: block;
+    /*float: left;*/
+    /*clear: both;*/
+    width: 100%;
+  }
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutCenter{
+    /*clear: left;*/
+    margin-top: 0;
+    margin-bottom: 0;
+    border-right: none;
+    border-right: none; 
+    /*display: block;*/
+    /*float: left;*/
+    /*clear: both;*/
+    width: 100%;
+  }
+  .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutRight{
+    /*display: block;*/
+    /*float: left;*/
+    /*clear: both;*/
+    /*margin: 0 auto;*/
+    /*width: 100%;*/
+  }
+
+
+/*  ***************************************************************
+  SKILLS SECTION - MAIN PAGE
+  ****************************************************************/
+  .home.page-template-front-page-php .section .mainSection .sectionContainer .col-1-3{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-right: none;
+  }
+
+
+/*  ***************************************************************
+  PORTFOLIO SECTION - MAIN PAGE
+  ****************************************************************/
+  .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2{
+    width: 90%;
+    margin-left: 5%;
+    padding-right: 5%;
   }
 
 }
 
 @media (max-width: 480px) {
-  #wpadminbar { border-left:10px solid yellow !important; }
+
+/*  ***************************************************************
+  NAVBAR - MAIN PAGE
+  ****************************************************************/
+  .page .mobileNavTest .container .mainNavList .menu{
+    /*display: block;*/
+  }
+  .page .mobileNavTest .container .mainNavList .menu{
+    /*display: block;*/
+  }
+
+  .page .mobileNavTest .container .mainNavList ul li{
+  }
+
+/* ***************************************************************
+   BANNER - MAIN PAGE
+   ****************************************************************/
+   .home.page-template-front-page-php .section .landing .banner{
+     width: 90%;
+     height: 120px;
+   }
+   .home.page-template-front-page-php .section .landing .banner h1{
+     font-size: 40px;
+   }
+   .home.page-template-front-page-php .section .landing .banner .button{
+     width: 250px;
+
+   }
+   .home.page-template-front-page-php .section .landing .banner .button a{
+     font-size: 12px;
+
+   }
+  
+/*  ***************************************************************
+  BLOG SECTION - MAIN PAGE
+  ****************************************************************/
+  .page .mobileNavTest .container{
+    height: 100px;
+  }
+  .home.page-template-front-page-php .section .mainSection .sectionContainer .col-1-4{
+    width: 100%;
+  }
+  .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 {
+    min-height: 500px;
+  }
+
+
 }
