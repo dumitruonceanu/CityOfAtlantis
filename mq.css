@@ -43,6 +43,15 @@
     min-height: 550px;
   }
 
+/*  ***************************************************************
+  BLOG SECTION - ARCHIVE PAGE
+  ****************************************************************/
+  .blog .section .mainBlogContainer .col-1-4{
+    width: 50%;
+    min-height: 550px;
+  }
+
+
 }
 
 @media (max-width: 800px) {
@@ -169,6 +178,15 @@
     margin-left: 5%;
     padding-right: 5%;
   }
+  
+/*  ***************************************************************
+  PORTFOLIO SECTION - ARCHIVE PAGE
+  ****************************************************************/
+  .portfolioTestContainer .col-1-2{
+    width: 90%;
+    margin-left: 5%;
+    padding-right: 5%;
+  }
 
 }
 
@@ -227,6 +245,14 @@
     width: 100%;
   }
   .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 {
+    min-height: 500px;
+  }
+
+/*  ***************************************************************
+  BLOG SECTION - ARCHIVE PAGE
+  ****************************************************************/
+  .blog .section .mainBlogContainer .col-1-4{
+    width: 100%;
     min-height: 500px;
   }
 
