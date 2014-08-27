@@ -23,29 +23,6 @@ img {
   max-width:100%;
 }
 
-/* Global Classes / Wordpress Specific */
-// .aligncenter    { text-align: center; margin: 0 auto; }
-// .alignleft      { float: left; }
-// .alignright     { float: right; }
-// img.alignleft     { padding-right: 5px;}
-// img.alignright    { padding-left: 5px; }
-// .clear        { width:100%; float:left; clear:both;}
-
-
-
-//******************************************
-//MIXINS
-//******************************************
-@mixin transition($transition-property, $transition-time, $method) {
-    -webkit-transition: $transition-property $transition-time $method;
-    -moz-transition: $transition-property $transition-time $method;
-    -ms-transition: $transition-property $transition-time $method;
-    -o-transition: $transition-property $transition-time $method;
-    transition: $transition-property $transition-time $method;
-}
-
-
-
 
 //******************************************
 //FONTS
@@ -118,12 +95,6 @@ $matisseBlue: #3A5E77;
 
 //BACKGROUND colours
 $backgroundColor: #F9F9F9; /* #EDEDED */
-
-
-
-
-
-
 
 
 //******************************************
@@ -209,6 +180,19 @@ ul li,ol li {
 // }
 
 
+//******************************************
+//MIXINS
+//******************************************
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+
+
 
 
 //******************************************
@@ -216,12 +200,6 @@ ul li,ol li {
 //******************************************
 
 .header {
-  // color: #fff;
-  // background-color: #242424;
-  // height: 50px;
-  // padding-bottom: 50px;
-
-
   h1{
     margin: 0;
 
@@ -260,259 +238,430 @@ ul li,ol li {
   // padding-top: 50px;
 }
 
-//NAV BAR styling for home page
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+
+//***************************************************************
+//NAV BAR styling - front-page.php and all other portfolio/blog
+//***************************************************************
+.archive,
+.single,
+.blog,
 .page{
   .mobileNavTest{
     width: 100%;
-    // background: url(images/dark-wood.jpg);
     position: fixed;
     z-index: 100;
     text-align: center;
     font-size: $navFontSize;
     height: $navBarHeight;
-    // font-family: sourceLight;
     font-family: 'Open Sans';
-    // font-family: josefinSansSemiBold;
-    background-color: transparent;
-
-    // font-family: monserratRegular, 'Varela Round', sans-serif;
     .container{
       display: inline-block;
       background-color: $navBackgroundColor;
-      // background-color: transparent;
       border-bottom: 1px solid $navBorderBottomColor;
-      // box-shadow: 0 0 5px 1px #666;
+      height: $navBarHeight;
       position: relative;
       width: 100%;
       margin: 0 auto;
-        // .navLeftContainer{
-        //   position: absolute;
-        //   left: -800px;
-        //   height: $navBarHeight;
-        //   // background: url(../images/dark-wood.jpg);
-        //   // background-color: $navBackgroundColor;
-        //   background-color: transparent;
-        //   z-index: 100;
-        //   width: 800px; 
-        //   overflow: hidden;
-        // } 
-        // .navRightContainer{
-        //   position: absolute;
-        //   right: -800px;
-        //   height: $navBarHeight;
-        //   // background: url(../images/dark-wood.jpg);
-        //   // background-color: $navBackgroundColor;
-        //   background-color: transparent;
-        //   z-index: 200;
-        //   width: 800px; 
-        //   overflow: hidden;
-        // }
-        // .mobileNavButton{
-        //   position: relative;
-        //   display: inline-block;
-        //   float: left;
-        //   width: 100px;
-        //   height: $navBarHeight;
-        //   // background-color: $navBackgroundColor;
-        //   background-color: transparent;
-        //   z-index: 100;
-        //   // @include transition(opacity, 0.2s, ease-in-out);
-        //   -webkit-transition: 0.2s ease-in-out;
-        //   -o-transition: 0.2s ease-in-out;
-        //   transition: 0.2s ease-in-out;
-        //   button{
-        //     float: left;
-        //   }
-        //   // p{
-        //   //   float: right;
-        //   //   margin: 0;
-        //   //   padding: 0;
-        //   //   // width: 300px;
-        //   //   margin-top: $navTextMarginTop;
-        //   //   margin-right: 10px;
-        //   //   font-size: $navFontSize;
-        //   //   color: $navFontColor;
-        //   //   @include transition(color, 0.2s, ease-in-out);
-        //   //   &:hover{
-        //   //     color: $navHoverColor
-        //   //   }
-        //   // }
-        //   // &:hover{
-        //   //   cursor: pointer;
-        //   // }
-        //   // &:hover{
-        //   //  opacity: 0.5;
-        //   //  -webkit-transition: 0.2s ease-in-out;
-        //   //  -o-transition: 0.2s ease-in-out;
-        //   //  transition: 0.2s ease-in-out;
-        //   // }
-        // }
-
-        .currentPage{
-          position: absolute;
-          left: 100px;
-          width: 220px;
-          p{
-            // font-family: sourceLight;
-            font-family: josefinSansSemiBold;
-            // font-family: 'Open Sans';
-            font-size: 20px;
-            margin-top: $navTextMarginTop;
-          }
-          .logo{
-            display: inline-block;
-            float: left;
-            font-size: $navFontSize;
-            font-weight: 400;
-            text-decoration: none;
-            margin: 0;
-
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 17px;
-
-            height: $navBarHeight;
-            color: $navFontColor;
-            // background-color: $navLogoAreaBackColor;
-            background-color: transparent;
-            svg{
-              height: $navBarHeight - 35px;
-              width: $navBarHeight - 35px;
-            }
-
-          }
-          // .triangleRight{
-          //   display: inline-block;
-          //   float: left;
-          //   width: 0;
-          //   height: 0;
-          // }
-          // .first{
-          //   border-top: ($navBarHeight/2) solid $navCrumbPathColor;
-          //   border-left: 10px solid $navLogoAreaBackColor;
-          //   border-bottom: ($navBarHeight/2) solid $navCrumbPathColor;
-          // }
-          // .second{
-          //   border-top: ($navBarHeight/2) solid transparent;
-          //   border-left: 10px solid $navCrumbPathColor;
-          //   border-bottom: ($navBarHeight/2) solid transparent;
-          // }
-          // .crumbPath{
-          //   display: inline-block;
-          //   float: left;
-          //   text-decoration: none;
-          //   padding-left: 10px;
-          //   padding-right: 10px;
-          //   padding-top: $navTextMarginTop;
-          //   height: $navBarHeight;
-          //   color: $navFontColor;
-          //   // background-color: $navCrumbPathColor;
-          //   background-color: transparent;
-          //   @include transition(color, 0.2s, ease-in-out);
-          //   &:hover{
-          //     color: $navHoverColor;
-          //   }
-          // }
-          // .pageTitle{
-          //   display: inline-block;
-          //   float: left;
-          //   margin-top: $navTextMarginTop;
-          //   padding-left: 10px;
-          //   color: $navFontColor;
-          // }
+      .mobileNavButton{
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 100px;
+        height: $navBarHeight;
+        background-color: $navBackgroundColor ;
+        z-index: 100;
+        @include transition(color, 0.2s, ease-in-out);
+        button{
+          float: left;
         }
+        p{
+          float: right;
+          margin: 0;
+          padding: 0;
+          margin-top: $navTextMarginTop;
+          margin-right: 10px;
+          font-size: $navFontSize;
+          color: $navFontColor;
+          @include transition(color, 0.2s, ease-in-out);
+          &:hover{
+            color: $navHoverColor
+          }
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .currentPage{
+        position: absolute;
+        left: 100px;
+        width: 220px;
+        p{
+          font-family: josefinSansSemiBold;
+          font-size: 20px;
+          margin-top: $navTextMarginTop;
+          color: $navFontColor;
+        }
+        .logo{
+          display: inline-block;
+          float: left;
+          font-size: $navFontSize;
+          font-weight: 400;
+          text-decoration: none;
+          margin: 0;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 17px;
+          height: $navBarHeight;
+          color: $navFontColor;
+          background-color: transparent;
+          svg{
+            height: $navBarHeight - 35px;
+            width: $navBarHeight - 35px;
+          }
+        }
+        .triangleRight{
+          display: inline-block;
+          float: left;
+          width: 0;
+          height: 0;
+        }
+        .first{
+          border-top: ($navBarHeight/2) solid $navCrumbPathColor;
+          border-left: 10px solid $navLogoAreaBackColor;
+          border-bottom: ($navBarHeight/2) solid $navCrumbPathColor;
+        }
+        .second{
+          border-top: ($navBarHeight/2) solid transparent;
+          border-left: 10px solid $navCrumbPathColor;
+          border-bottom: ($navBarHeight/2) solid transparent;
+        }
+        .crumbPath{
+          display: inline-block;
+          float: left;
+          text-decoration: none;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: $navTextMarginTop;
+          height: $navBarHeight;
+          color: $navFontColor;
+          background-color: $navCrumbPathColor;
+          @include transition(color, 0.2s, ease-in-out);
+          &:hover{
+            color: $navHoverColor;
+          }
+        }
+        .pageTitle{
+          display: inline-block;
+          float: left;
+          margin-top: $navTextMarginTop;
+          padding-left: 10px;
+          color: $navFontColor;
+        }
+      }
 
-        .mainNavList{
-          position: absolute;
-          right: -800px;
-          // display: inline-block;
-          ul{
-            display: inline-block;
-            margin-top: $navTextMarginTop;
-            li{
-              display:inline;
+      .mainNavList{
+        position: absolute;
+        right: 70px;
+        ul{
+          display: inline-block;
+          margin-top: $navTextMarginTop;
+          li{
+            display:inline;
+            position: relative;
+            a{
+              text-decoration: none;
               position: relative;
-              a{
-                text-decoration: none;
-                position: relative;
-                font-size: $navFontSize;
-                // font-weight: bold;
-                vertical-align: center;
-                color: $navFontColor;
-                background-color: transparent;
-                // padding: 30px;
-                @include transition(color, 0.2s, ease-in-out);
-                // -webkit-transition: 0.2s ease-in-out;
-                // -o-transition: 0.2s ease-in-out;
-                // transition: 0.2s ease-in-out;
-                &:hover{
-                  color: $navHoverColor; 
-                }
-              }
-              &:hover ul{
-                display: block;
-              }
-              &:hover > a{
-                // color: $navHoverColor;
+              font-size: $navFontSize;
+              vertical-align: center;
+              color: $navFontColor;
+              background-color: transparent;
+              @include transition(color, 0.2s, ease-in-out);
+              &:hover{
+                color: $navHoverColor; 
               }
             }
-          }   
-        }
+            &:hover ul{
+              display: block;
+            }
+          }
+        }   
+      }
       
     }
   }
 }
 
+//***************************************************************
+//NAV BAR styling - specific overrides for other portfolio and blog pages
+//***************************************************************
+// .archive,
+// .single,
+// .blog{
+//   .mobileNavTest{
+//     width: 100%;
+//     position: fixed;
+//     z-index: 100;
+//     text-align: center;
+//     font-size: $navFontSize;
+//     height: $navBarHeight;
+//     font-family: 'Open Sans';
+//     .container{
+//       display: inline-block;
+//       background-color: $navBackgroundColor;
+//       border-bottom: 1px solid $navBorderBottomColor;
+//       height: $navBarHeight;
+//       position: relative;
+//       width: 100%;
+//       margin: 0 auto;
 
-.page{
-  .mobileNavTest{
+//       .currentPage{
+//         position: absolute;
+//         left: 100px;
+//         width: 220px;
+//         p{
+//           font-family: josefinSansSemiBold;
+//           font-size: 20px;
+//           margin-top: $navTextMarginTop;
+//           color: $navFontColor;
+//         }
+//         .logo{
+//           display: inline-block;
+//           float: left;
+//           font-size: $navFontSize;
+//           font-weight: 400;
+//           text-decoration: none;
+//           margin: 0;
+//           padding-left: 10px;
+//           padding-right: 10px;
+//           padding-top: 17px;
+//           height: $navBarHeight;
+//           color: $navFontColor;
+//           background-color: transparent;
+//           svg{
+//             height: $navBarHeight - 35px;
+//             width: $navBarHeight - 35px;
+//           }
+//         }
+//         .triangleRight{
+//           display: inline-block;
+//           float: left;
+//           width: 0;
+//           height: 0;
+//         }
+//         .first{
+//           border-top: ($navBarHeight/2) solid $navCrumbPathColor;
+//           border-left: 10px solid $navLogoAreaBackColor;
+//           border-bottom: ($navBarHeight/2) solid $navCrumbPathColor;
+//         }
+//         .second{
+//           border-top: ($navBarHeight/2) solid transparent;
+//           border-left: 10px solid $navCrumbPathColor;
+//           border-bottom: ($navBarHeight/2) solid transparent;
+//         }
+//         .crumbPath{
+//           display: inline-block;
+//           float: left;
+//           text-decoration: none;
+//           padding-left: 10px;
+//           padding-right: 10px;
+//           padding-top: $navTextMarginTop;
+//           height: $navBarHeight;
+//           color: $navFontColor;
+//           background-color: $navCrumbPathColor;
+//           @include transition(color, 0.2s, ease-in-out);
+//           &:hover{
+//             color: $navHoverColor;
+//           }
+//         }
+//         .pageTitle{
+//           display: inline-block;
+//           float: left;
+//           margin-top: $navTextMarginTop;
+//           padding-left: 10px;
+//           color: $navFontColor;
+//         }
 
-    .container{
-      height: $navBarHeight;
-      .currentPage{
-        position: absolute;
-          left: 100px;
-          .logo{
-            display: inline-block;
-            float: left;
-            font-size: $navFontSize;
-            font-weight: 400;
-            text-decoration: none;
-            margin: 0;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 17px;
-            height: $navBarHeight;
-            color: $navFontColor;
-            // background-color: $navBackgroundColor;
-            background-color: transparent;
+//       }
+
+//       .mainNavList{
+//           position: absolute;
+//           right: -800px;
+//           ul{
+//             display: inline-block;
+//             margin-top: $navTextMarginTop;
+//             li{
+//               display:inline;
+//               position: relative;
+//               a{
+//                 text-decoration: none;
+//                 position: relative;
+//                 font-size: $navFontSize;
+//                 vertical-align: center;
+//                 color: $navFontColor;
+//                 background-color: transparent;
+//                 @include transition(color, 0.2s, ease-in-out);
+//                 &:hover{
+//                   color: $navHoverColor; 
+//                 }
+//               }
+//               &:hover ul{
+//                 display: block;
+//               }
+//             }
+//           }   
+//         }
+
+      
+//     }
+//   }
+// }
+
+
+
+
+//***************************************************************
+//NAV BAR styling - front-page.php
+//***************************************************************
+// .page{
+//   .mobileNavTest{
+//     width: 100%;
+//     position: fixed;
+//     z-index: 100;
+//     text-align: center;
+//     font-size: $navFontSize;
+//     height: $navBarHeight;
+//     font-family: 'Open Sans';
+//     .container{
+//       display: inline-block;
+//       background-color: $navBackgroundColor;
+//       border-bottom: 1px solid $navBorderBottomColor;
+//       height: $navBarHeight;
+//       position: relative;
+//       width: 100%;
+//       margin: 0 auto;
+//         .currentPage{
+//           position: absolute;
+//           left: 100px;
+//           width: 220px;
+//           p{
+//             font-family: josefinSansSemiBold;
+//             font-size: 20px;
+//             margin-top: $navTextMarginTop;
+//           }
+//           .logo{
+//             display: inline-block;
+//             float: left;
+//             font-size: $navFontSize;
+//             font-weight: 400;
+//             text-decoration: none;
+//             margin: 0;
+//             padding-left: 10px;
+//             padding-right: 10px;
+//             padding-top: 17px;
+//             height: $navBarHeight;
+//             color: $navFontColor;
+//             background-color: transparent;
+//             svg{
+//               height: $navBarHeight - 35px;
+//               width: $navBarHeight - 35px;
+//             }
+//           }
+//           p{
+//             color: $navFontColor;
+//           }
+//         }
+
+//         .mainNavList{
+//           position: absolute;
+//           right: 70px;
+//           ul{
+//             display: inline-block;
+//             margin-top: $navTextMarginTop;
+//             li{
+//               display:inline;
+//               position: relative;
+//               a{
+//                 text-decoration: none;
+//                 position: relative;
+//                 font-size: $navFontSize;
+//                 vertical-align: center;
+//                 color: $navFontColor;
+//                 background-color: transparent;
+//                 @include transition(color, 0.2s, ease-in-out);
+//                 &:hover{
+//                   color: $navHoverColor; 
+//                 }
+//               }
+//               &:hover ul{
+//                 display: block;
+//               }
+//             }
+//           }   
+//         }
+      
+//     }
+//   }
+// }
+
+
+// .page{
+//   .mobileNavTest{
+
+//     .container{
+//       height: $navBarHeight;
+//       .currentPage{
+//         position: absolute;
+//           left: 100px;
+//           .logo{
+//             display: inline-block;
+//             float: left;
+//             font-size: $navFontSize;
+//             font-weight: 400;
+//             text-decoration: none;
+//             margin: 0;
+//             padding-left: 10px;
+//             padding-right: 10px;
+//             padding-top: 17px;
+//             height: $navBarHeight;
+//             color: $navFontColor;
+//             // background-color: $navBackgroundColor;
+//             background-color: transparent;
             
-            svg{
-              height: $navBarHeight - 35px;
-              width: $navBarHeight - 35px;
-            }
-          }
-          p{
-            color: $navFontColor;
-          }
-      }
-      .mainNavList{
-          position: absolute;
-          right: 70px;
-      }
-    }
-  }
-}
+//             svg{
+//               height: $navBarHeight - 35px;
+//               width: $navBarHeight - 35px;
+//             }
+//           }
+//           p{
+//             color: $navFontColor;
+//           }
+//       }
+//       .mainNavList{
+//           position: absolute;
+//           right: 70px;
+//       }
+//     }
+//   }
+// }
 
 
+//***************************************************************
+//NAV BAR styling - for all other portfolio and blog pages
+//***************************************************************
 
-//all other NAV BAR styling for portfolio and blog pages
 .archive,
 .single,
 .blog{
   .mobileNavTest{
     width: 100%;
-    // background: url(images/dark-wood.jpg);
     position: fixed;
     z-index: 100;
     text-align: center;
@@ -520,37 +669,13 @@ ul li,ol li {
     height: $navBarHeight;
     font-family: sourceLight;
     font-family: 'Open Sans';
-    // font-family: monserratRegular, 'Varela Round', sans-serif;
     .container{
       display: inline-block;
-      // background: url(../images/dark-wood.jpg);
       background-color: $navBackgroundColor;
-      // border-bottom: 2px solid $navBorderBottomColor;
       border-bottom: 1px solid $navBorderBottomColor;
-      // box-shadow: 0 0 5px 1px #666;
       position: relative;
       width: 100%;
       margin: 0 auto;
-        .navLeftContainer{
-          position: absolute;
-          left: -800px;
-          height: $navBarHeight;
-          // background: url(../images/dark-wood.jpg);
-          background-color: $navBackgroundColor;
-          z-index: 100;
-          width: 800px; 
-          overflow: hidden;
-        } 
-        .navRightContainer{
-          position: absolute;
-          right: -800px;
-          height: $navBarHeight;
-          // background: url(../images/dark-wood.jpg);
-          background-color: $navBackgroundColor;
-          z-index: 200;
-          width: 800px; 
-          overflow: hidden;
-        }
         .mobileNavButton{
           position: relative;
           display: inline-block;
@@ -559,10 +684,7 @@ ul li,ol li {
           height: $navBarHeight;
           background-color: $navBackgroundColor ;
           z-index: 100;
-          // @include transition(opacity, 0.2s, ease-in-out);
-          -webkit-transition: 0.2s ease-in-out;
-          -o-transition: 0.2s ease-in-out;
-          transition: 0.2s ease-in-out;
+          @include transition(color, 0.2s, ease-in-out);
           button{
             float: left;
           }
@@ -582,12 +704,6 @@ ul li,ol li {
           &:hover{
             cursor: pointer;
           }
-          // &:hover{
-          //  opacity: 0.5;
-          //  -webkit-transition: 0.2s ease-in-out;
-          //  -o-transition: 0.2s ease-in-out;
-          //  transition: 0.2s ease-in-out;
-          // }
         }
 
         .currentPage{
@@ -605,8 +721,7 @@ ul li,ol li {
             padding-top: 17px;
             height: $navBarHeight;
             color: $navFontColor;
-            background-color: $navLogoAreaBackColor;
-            // background-color: #F6F6F6;
+            background-color: transparent;
             svg{
               height: $navBarHeight - 35px;
               width: $navBarHeight - 35px;
@@ -665,24 +780,16 @@ ul li,ol li {
                 text-decoration: none;
                 position: relative;
                 font-size: $navFontSize;
-                // font-weight: bold;
                 vertical-align: center;
                 color: $navFontColor;
                 background-color: transparent;
-                // padding: 30px;
                 @include transition(color, 0.2s, ease-in-out);
-                // -webkit-transition: 0.2s ease-in-out;
-                // -o-transition: 0.2s ease-in-out;
-                // transition: 0.2s ease-in-out;
                 &:hover{
                   color: $navHoverColor; 
                 }
               }
               &:hover ul{
                 display: block;
-              }
-              &:hover > a{
-                // color: $navHoverColor;
               }
             }
           }   
@@ -692,11 +799,6 @@ ul li,ol li {
   }
 
 }
-
-
-
-
-
 
 
 //***************************************************************
@@ -789,12 +891,6 @@ $buttonLineMargin: $buttonLineWidth/4;
 //***************************************************************
 //END STYLE FOR NEW HAMBURGER BUTTON
 //***************************************************************
-
-
-
-
-
-
 
 
 
@@ -1939,8 +2035,6 @@ $buttonLineMargin: $buttonLineWidth/4;
 //***************************************************
 //STYLE GUIDE PAGE styling - single.php
 //***************************************************
-
-
 .page.page-template-default .section{
   display: block;
   background-color: $backgroundColor;
