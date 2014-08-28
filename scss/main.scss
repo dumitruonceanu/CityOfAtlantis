@@ -77,7 +77,7 @@ img {
 //******************************************
 
 // $navBackgroundColor: #F8F8F8;
-$navBackgroundColor: rgba(248, 248, 248, 0.9);
+$navBackgroundColor: rgba(248, 248, 248, 1);
 // $navBackgroundColor: transparent;
 $navBorderBottomColor: #bbb; /* #3B3C40 */
 $navLogoAreaBackColor: #F6F6F6; /* #d6d6d6; */
@@ -246,6 +246,10 @@ ul li,ol li {
     transition: $transition-property $transition-time $method;
 }
 
+.navBackColor{
+  background-color: $navBackgroundColor;
+  border-bottom: 1px solid $navBorderBottomColor;
+}
 
 //***************************************************************
 //NAV BAR styling - front-page.php and all other portfolio/blog
@@ -264,12 +268,14 @@ ul li,ol li {
     font-family: 'Open Sans';
     .container{
       display: inline-block;
-      background-color: $navBackgroundColor;
-      border-bottom: 1px solid $navBorderBottomColor;
+      // background-color: $navBackgroundColor;
+      // background-color: rgba(248, 248, 248, 0);
+      // border-bottom: 1px solid $navBorderBottomColor;
       height: $navBarHeight;
       position: relative;
       width: 100%;
       margin: 0 auto;
+      @include transition(all, 0.3s, ease-in-out);
       .mobileNavButton{
         position: relative;
         display: inline-block;
@@ -1238,22 +1244,62 @@ $buttonLineMargin: $buttonLineWidth/4;
           padding-right: 60px;
           padding-top: 30px;
         }
-        h2{
-         text-align: center;
-         padding-left: 50px;
-         padding-right: 50px;
+        
+        .overlayButton{
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          width: 40%;
+          height: 40%;
+          border-radius: 50%;
+          background-color: rgba(205, 0, 0, 0.7);
+          // display: none;
+          opacity: 0;
+          z-index: 100;
+          @include transition(transform, 0.2s, ease-in-out);
+          &:hover{
+            // width: 45%;
+            // height: 45%;
+            // top: 27.5%;
+            // left: 27.5%;
+            -moz-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            transform: scale(1.05);
+            @include transition(transform, 0.2s, ease-in-out);
+          }
+
+          @include transition(opacity, 0.2s, ease-in-out);
+          p{
+            margin-top: 35%;
+            font-size: 20px;
+            color: #fff;
+          }
+          
         }
-        p{
-         font-family: sourceLight, sans-serif;
-         margin: 0;
-         padding-left: 10px;
-         padding-right: 10px;
-         color: #333;
+        &:hover > .overlayButton{
+          // background-color: rgba(205, 0, 0, 0.7);
+          opacity: 1;
+          // display: block;
+          @include transition(opacity, 0.2s, ease-in-out);
         }
+
 
         .captionDetails{
           -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;      
+          backface-visibility: hidden;   
+          h2{
+           text-align: center;
+           padding-left: 50px;
+           padding-right: 50px;
+          }
+          p{
+           font-family: sourceLight, sans-serif;
+           margin: 0;
+           padding-left: 10px;
+           padding-right: 10px;
+           color: #333;
+          }   
         }
 
       }

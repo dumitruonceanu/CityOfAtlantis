@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <!-- <link rel="icon" type="image/png" href="icons/favicon.ico"> -->
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/icons/favicon.ico" />
 
   <!-- GOOGLE FONTS -->
@@ -16,6 +17,9 @@
   <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<!--   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'> -->
+
 
   
   <title><?php  wp_title( '| ', true, 'right' );  ?></title>
@@ -216,6 +220,15 @@
               </svg>
             </a>
             <div class="triangleRight first"></div>
+<!--        Page IDs:
+            blog - 57 href="<?php //echo get_page_link(57); ?>"
+            portfolio - 31 href="<?php //echo get_page_link(31); ?>"
+            -->
+
+            
+
+            
+
 
             <!-- <a class="crumbPath" href="/#portfolio"> -->
             <a class="crumbPath" href=
@@ -250,6 +263,11 @@
 
         <?php endif; ?>
 
+        
+
+
+
+
         <div class="mainNavList notVisible">
           <?php if (is_front_page()): ?>
             <ul class="menu">
@@ -273,9 +291,23 @@
 
         </div>
 
+<!--         <ul class="mainNavList notVisible">
+          <li><a href="/#home">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#skills">Skills</a></li>
+          <li><a href="/#portfolio">Portfolio</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="http://dumitruonceanu.wordpress.com/" target="_blank">Blog</a></li>
+        </ul> -->
         <div class="navRightContainer"></div>
     </div>
   </div>
+
+
+
+    
+
+
 
 
   </div> <!-- /.innerWrapper -->
@@ -390,24 +422,18 @@
           //     $('.mobileNavTest .container').css('background-color', 'transparent');
           //  }
 
-         if(scroll_start > (offset.top-600) ) {
-              console.log(scroll_start);
-              console.log(offset.top);
-              $('.mobileNavTest .container').addClass('navBackColor');
+         if(scroll_start > offset.top) {
+              // console.log(scroll_start);
+              // console.log(offset.top);
+             $('.mobileNavTest .container').animate({
+                // backgroundColor: "rgba(248, 248, 248, 0.9)"
+                // background-color: "rgba(248, 248, 248, 0.9)"
 
-             // $('.mobileNavTest .container').animate({
-             //    // backgroundColor: "rgba(248, 248, 248, 0.9)"
-             //    // background-color: "rgba(248, 248, 248, 0.9)"
-
-             // }, 1000 );
-
-
-          } 
-          else {
-            $('.mobileNavTest .container').removeClass('navBackColor');
-             // $('.mobileNavTest .container').animate({
-             //    backgroundColor: "transparent"
-             // }, 1000 );
+             }, 1000 );
+          } else {
+             $('.mobileNavTest .container').animate({
+                backgroundColor: "transparent"
+             }, 1000 );
           }
 
        });

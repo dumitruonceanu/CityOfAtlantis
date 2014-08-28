@@ -204,6 +204,10 @@ get_header(); ?>
                   <?php endwhile; ?>
                 </div>
 
+                <div class="overlayButton">
+                  <p>View More</p>
+                </div>
+                
                 <div class="captionDetails">
                   <h2 class="entry-title"><?php the_field('item_name'); ?></h2>
                   <p><?php the_field('short_description'); ?></p>
