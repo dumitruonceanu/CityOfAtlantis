@@ -84,7 +84,7 @@ $navLogoAreaBackColor: #F6F6F6; /* #d6d6d6; */
 $navCrumbPathColor: #e7e7e7;
 $navFontColor: #3B3C40;
 $navLinesButtonColor: #000;
-$navBarHeight: 80px; /* originally 50px */
+$navBarHeight: 81px; /* originally 50px */
 $navFontSize: 16px;
 $navHoverColor: #CD0000;
 $navTextMarginTop: 25px;
@@ -268,14 +268,12 @@ ul li,ol li {
     font-family: 'Open Sans';
     .container{
       display: inline-block;
-      // background-color: $navBackgroundColor;
-      // background-color: rgba(248, 248, 248, 0);
-      // border-bottom: 1px solid $navBorderBottomColor;
+      background-color: $navBackgroundColor;
+      border-bottom: 1px solid $navBorderBottomColor;
       height: $navBarHeight;
       position: relative;
       width: 100%;
       margin: 0 auto;
-      @include transition(all, 0.3s, ease-in-out);
       .mobileNavButton{
         position: relative;
         display: inline-block;
@@ -283,6 +281,7 @@ ul li,ol li {
         width: 100px;
         height: $navBarHeight;
         background-color: $navBackgroundColor ;
+        border-bottom: 1px solid $navBorderBottomColor;
         z-index: 100;
         @include transition(color, 0.2s, ease-in-out);
         button{
@@ -359,6 +358,7 @@ ul li,ol li {
           height: $navBarHeight;
           color: $navFontColor;
           background-color: $navCrumbPathColor;
+          border-bottom: 1px solid $navBorderBottomColor;
           @include transition(color, 0.2s, ease-in-out);
           &:hover{
             color: $navHoverColor;
@@ -376,6 +376,7 @@ ul li,ol li {
       .mainNavList{
         position: absolute;
         right: 70px;
+
         ul{
           display: inline-block;
           margin-top: $navTextMarginTop;
@@ -662,7 +663,6 @@ ul li,ol li {
 //***************************************************************
 //NAV BAR styling - for all other portfolio and blog pages
 //***************************************************************
-
 .archive,
 .single,
 .blog{
@@ -715,6 +715,10 @@ ul li,ol li {
         .currentPage{
           position: absolute;
           left: 100px;
+          // width: 220px;
+          height: $navBarHeight;
+          width: 1000px;
+
           .logo{
             display: inline-block;
             float: left;
@@ -767,6 +771,8 @@ ul li,ol li {
           .pageTitle{
             display: inline-block;
             float: left;
+            font-family: sourceLight, sans-serif;
+            font-size: 18px;
             margin-top: $navTextMarginTop;
             padding-left: 10px;
             color: $navFontColor;

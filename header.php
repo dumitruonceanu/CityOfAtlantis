@@ -280,7 +280,7 @@
 
   </div> <!-- /.innerWrapper -->
 <!-- </div>/.header -->
-
+</body>
 <!-- SCRIPT FOR NAVBAR - move later into wp_enqueue_script -->
 <script>
   $(document).ready(function(){ 

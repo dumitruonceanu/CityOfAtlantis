@@ -333,7 +333,7 @@ ul.menu li a {
   z-index: 100;
   text-align: center;
   font-size: 16px;
-  height: 80px;
+  height: 81px;
   font-family: 'Open Sans'; }
   /* line 269, scss/main.scss */
   .archive .mobileNavTest .container,
@@ -341,13 +341,13 @@ ul.menu li a {
   .blog .mobileNavTest .container,
   .page .mobileNavTest .container {
     display: inline-block;
-    height: 80px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #bbbbbb;
+    height: 81px;
     position: relative;
     width: 100%;
-    margin: 0 auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-    /* line 279, scss/main.scss */
+    margin: 0 auto; }
+    /* line 277, scss/main.scss */
     .archive .mobileNavTest .container .mobileNavButton,
     .single .mobileNavTest .container .mobileNavButton,
     .blog .mobileNavTest .container .mobileNavButton,
@@ -356,18 +356,19 @@ ul.menu li a {
       display: inline-block;
       float: left;
       width: 100px;
-      height: 80px;
+      height: 81px;
       background-color: #f8f8f8;
+      border-bottom: 1px solid #bbbbbb;
       z-index: 100;
       -webkit-transition: color 0.2s ease-in-out;
       transition: color 0.2s ease-in-out; }
-      /* line 288, scss/main.scss */
+      /* line 287, scss/main.scss */
       .archive .mobileNavTest .container .mobileNavButton button,
       .single .mobileNavTest .container .mobileNavButton button,
       .blog .mobileNavTest .container .mobileNavButton button,
       .page .mobileNavTest .container .mobileNavButton button {
         float: left; }
-      /* line 291, scss/main.scss */
+      /* line 290, scss/main.scss */
       .archive .mobileNavTest .container .mobileNavButton p,
       .single .mobileNavTest .container .mobileNavButton p,
       .blog .mobileNavTest .container .mobileNavButton p,
@@ -381,19 +382,19 @@ ul.menu li a {
         color: #3b3c40;
         -webkit-transition: color 0.2s ease-in-out;
         transition: color 0.2s ease-in-out; }
-        /* line 300, scss/main.scss */
+        /* line 299, scss/main.scss */
         .archive .mobileNavTest .container .mobileNavButton p:hover,
         .single .mobileNavTest .container .mobileNavButton p:hover,
         .blog .mobileNavTest .container .mobileNavButton p:hover,
         .page .mobileNavTest .container .mobileNavButton p:hover {
           color: #cd0000; }
-      /* line 304, scss/main.scss */
+      /* line 303, scss/main.scss */
       .archive .mobileNavTest .container .mobileNavButton:hover,
       .single .mobileNavTest .container .mobileNavButton:hover,
       .blog .mobileNavTest .container .mobileNavButton:hover,
       .page .mobileNavTest .container .mobileNavButton:hover {
         cursor: pointer; }
-    /* line 308, scss/main.scss */
+    /* line 307, scss/main.scss */
     .archive .mobileNavTest .container .currentPage,
     .single .mobileNavTest .container .currentPage,
     .blog .mobileNavTest .container .currentPage,
@@ -401,7 +402,7 @@ ul.menu li a {
       position: absolute;
       left: 100px;
       width: 220px; }
-      /* line 312, scss/main.scss */
+      /* line 311, scss/main.scss */
       .archive .mobileNavTest .container .currentPage p,
       .single .mobileNavTest .container .currentPage p,
       .blog .mobileNavTest .container .currentPage p,
@@ -410,7 +411,7 @@ ul.menu li a {
         font-size: 20px;
         margin-top: 25px;
         color: #3b3c40; }
-      /* line 318, scss/main.scss */
+      /* line 317, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .logo,
       .single .mobileNavTest .container .currentPage .logo,
       .blog .mobileNavTest .container .currentPage .logo,
@@ -424,17 +425,17 @@ ul.menu li a {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 17px;
-        height: 80px;
+        height: 81px;
         color: #3b3c40;
         background-color: transparent; }
-        /* line 331, scss/main.scss */
+        /* line 330, scss/main.scss */
         .archive .mobileNavTest .container .currentPage .logo svg,
         .single .mobileNavTest .container .currentPage .logo svg,
         .blog .mobileNavTest .container .currentPage .logo svg,
         .page .mobileNavTest .container .currentPage .logo svg {
-          height: 45px;
-          width: 45px; }
-      /* line 336, scss/main.scss */
+          height: 46px;
+          width: 46px; }
+      /* line 335, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .triangleRight,
       .single .mobileNavTest .container .currentPage .triangleRight,
       .blog .mobileNavTest .container .currentPage .triangleRight,
@@ -443,23 +444,23 @@ ul.menu li a {
         float: left;
         width: 0;
         height: 0; }
-      /* line 342, scss/main.scss */
+      /* line 341, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .first,
       .single .mobileNavTest .container .currentPage .first,
       .blog .mobileNavTest .container .currentPage .first,
       .page .mobileNavTest .container .currentPage .first {
-        border-top: 40px solid #e7e7e7;
+        border-top: 40.5px solid #e7e7e7;
         border-left: 10px solid #f6f6f6;
-        border-bottom: 40px solid #e7e7e7; }
-      /* line 347, scss/main.scss */
+        border-bottom: 40.5px solid #e7e7e7; }
+      /* line 346, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .second,
       .single .mobileNavTest .container .currentPage .second,
       .blog .mobileNavTest .container .currentPage .second,
       .page .mobileNavTest .container .currentPage .second {
-        border-top: 40px solid transparent;
+        border-top: 40.5px solid transparent;
         border-left: 10px solid #e7e7e7;
-        border-bottom: 40px solid transparent; }
-      /* line 352, scss/main.scss */
+        border-bottom: 40.5px solid transparent; }
+      /* line 351, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .crumbPath,
       .single .mobileNavTest .container .currentPage .crumbPath,
       .blog .mobileNavTest .container .currentPage .crumbPath,
@@ -470,9 +471,10 @@ ul.menu li a {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 25px;
-        height: 80px;
+        height: 81px;
         color: #3b3c40;
         background-color: #e7e7e7;
+        border-bottom: 1px solid #bbbbbb;
         -webkit-transition: color 0.2s ease-in-out;
         transition: color 0.2s ease-in-out; }
         /* line 363, scss/main.scss */
@@ -498,21 +500,21 @@ ul.menu li a {
     .page .mobileNavTest .container .mainNavList {
       position: absolute;
       right: 70px; }
-      /* line 379, scss/main.scss */
+      /* line 380, scss/main.scss */
       .archive .mobileNavTest .container .mainNavList ul,
       .single .mobileNavTest .container .mainNavList ul,
       .blog .mobileNavTest .container .mainNavList ul,
       .page .mobileNavTest .container .mainNavList ul {
         display: inline-block;
         margin-top: 25px; }
-        /* line 382, scss/main.scss */
+        /* line 383, scss/main.scss */
         .archive .mobileNavTest .container .mainNavList ul li,
         .single .mobileNavTest .container .mainNavList ul li,
         .blog .mobileNavTest .container .mainNavList ul li,
         .page .mobileNavTest .container .mainNavList ul li {
           display: inline;
           position: relative; }
-          /* line 385, scss/main.scss */
+          /* line 386, scss/main.scss */
           .archive .mobileNavTest .container .mainNavList ul li a,
           .single .mobileNavTest .container .mainNavList ul li a,
           .blog .mobileNavTest .container .mainNavList ul li a,
@@ -525,13 +527,13 @@ ul.menu li a {
             background-color: transparent;
             -webkit-transition: color 0.2s ease-in-out;
             transition: color 0.2s ease-in-out; }
-            /* line 393, scss/main.scss */
+            /* line 394, scss/main.scss */
             .archive .mobileNavTest .container .mainNavList ul li a:hover,
             .single .mobileNavTest .container .mainNavList ul li a:hover,
             .blog .mobileNavTest .container .mainNavList ul li a:hover,
             .page .mobileNavTest .container .mainNavList ul li a:hover {
               color: #cd0000; }
-          /* line 397, scss/main.scss */
+          /* line 398, scss/main.scss */
           .archive .mobileNavTest .container .mainNavList ul li:hover ul,
           .single .mobileNavTest .container .mainNavList ul li:hover ul,
           .blog .mobileNavTest .container .mainNavList ul li:hover ul,
@@ -547,7 +549,7 @@ ul.menu li a {
   z-index: 100;
   text-align: center;
   font-size: 16px;
-  height: 80px;
+  height: 81px;
   font-family: sourceLight;
   font-family: 'Open Sans'; }
   /* line 678, scss/main.scss */
@@ -568,7 +570,7 @@ ul.menu li a {
       display: inline-block;
       float: left;
       width: 100px;
-      height: 80px;
+      height: 81px;
       background-color: #f8f8f8;
       z-index: 100;
       -webkit-transition: color 0.2s ease-in-out;
@@ -606,8 +608,10 @@ ul.menu li a {
     .single .mobileNavTest .container .currentPage,
     .blog .mobileNavTest .container .currentPage {
       position: absolute;
-      left: 100px; }
-      /* line 718, scss/main.scss */
+      left: 100px;
+      height: 81px;
+      width: 1000px; }
+      /* line 722, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .logo,
       .single .mobileNavTest .container .currentPage .logo,
       .blog .mobileNavTest .container .currentPage .logo {
@@ -620,16 +624,16 @@ ul.menu li a {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 17px;
-        height: 80px;
+        height: 81px;
         color: #3b3c40;
         background-color: transparent; }
-        /* line 731, scss/main.scss */
+        /* line 735, scss/main.scss */
         .archive .mobileNavTest .container .currentPage .logo svg,
         .single .mobileNavTest .container .currentPage .logo svg,
         .blog .mobileNavTest .container .currentPage .logo svg {
-          height: 45px;
-          width: 45px; }
-      /* line 736, scss/main.scss */
+          height: 46px;
+          width: 46px; }
+      /* line 740, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .triangleRight,
       .single .mobileNavTest .container .currentPage .triangleRight,
       .blog .mobileNavTest .container .currentPage .triangleRight {
@@ -637,21 +641,21 @@ ul.menu li a {
         float: left;
         width: 0;
         height: 0; }
-      /* line 742, scss/main.scss */
+      /* line 746, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .first,
       .single .mobileNavTest .container .currentPage .first,
       .blog .mobileNavTest .container .currentPage .first {
-        border-top: 40px solid #e7e7e7;
+        border-top: 40.5px solid #e7e7e7;
         border-left: 10px solid #f6f6f6;
-        border-bottom: 40px solid #e7e7e7; }
-      /* line 747, scss/main.scss */
+        border-bottom: 40.5px solid #e7e7e7; }
+      /* line 751, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .second,
       .single .mobileNavTest .container .currentPage .second,
       .blog .mobileNavTest .container .currentPage .second {
-        border-top: 40px solid transparent;
+        border-top: 40.5px solid transparent;
         border-left: 10px solid #e7e7e7;
-        border-bottom: 40px solid transparent; }
-      /* line 752, scss/main.scss */
+        border-bottom: 40.5px solid transparent; }
+      /* line 756, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .crumbPath,
       .single .mobileNavTest .container .currentPage .crumbPath,
       .blog .mobileNavTest .container .currentPage .crumbPath {
@@ -661,44 +665,46 @@ ul.menu li a {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 25px;
-        height: 80px;
+        height: 81px;
         color: #3b3c40;
         background-color: #e7e7e7;
         -webkit-transition: color 0.2s ease-in-out;
         transition: color 0.2s ease-in-out; }
-        /* line 763, scss/main.scss */
+        /* line 767, scss/main.scss */
         .archive .mobileNavTest .container .currentPage .crumbPath:hover,
         .single .mobileNavTest .container .currentPage .crumbPath:hover,
         .blog .mobileNavTest .container .currentPage .crumbPath:hover {
           color: #cd0000; }
-      /* line 767, scss/main.scss */
+      /* line 771, scss/main.scss */
       .archive .mobileNavTest .container .currentPage .pageTitle,
       .single .mobileNavTest .container .currentPage .pageTitle,
       .blog .mobileNavTest .container .currentPage .pageTitle {
         display: inline-block;
         float: left;
+        font-family: sourceLight, sans-serif;
+        font-size: 18px;
         margin-top: 25px;
         padding-left: 10px;
         color: #3b3c40; }
-    /* line 776, scss/main.scss */
+    /* line 782, scss/main.scss */
     .archive .mobileNavTest .container .mainNavList,
     .single .mobileNavTest .container .mainNavList,
     .blog .mobileNavTest .container .mainNavList {
       position: absolute;
       right: -800px; }
-      /* line 779, scss/main.scss */
+      /* line 785, scss/main.scss */
       .archive .mobileNavTest .container .mainNavList ul,
       .single .mobileNavTest .container .mainNavList ul,
       .blog .mobileNavTest .container .mainNavList ul {
         display: inline-block;
         margin-top: 25px; }
-        /* line 782, scss/main.scss */
+        /* line 788, scss/main.scss */
         .archive .mobileNavTest .container .mainNavList ul li,
         .single .mobileNavTest .container .mainNavList ul li,
         .blog .mobileNavTest .container .mainNavList ul li {
           display: inline;
           position: relative; }
-          /* line 785, scss/main.scss */
+          /* line 791, scss/main.scss */
           .archive .mobileNavTest .container .mainNavList ul li a,
           .single .mobileNavTest .container .mainNavList ul li a,
           .blog .mobileNavTest .container .mainNavList ul li a {
@@ -710,18 +716,18 @@ ul.menu li a {
             background-color: transparent;
             -webkit-transition: color 0.2s ease-in-out;
             transition: color 0.2s ease-in-out; }
-            /* line 793, scss/main.scss */
+            /* line 799, scss/main.scss */
             .archive .mobileNavTest .container .mainNavList ul li a:hover,
             .single .mobileNavTest .container .mainNavList ul li a:hover,
             .blog .mobileNavTest .container .mainNavList ul li a:hover {
               color: #cd0000; }
-          /* line 797, scss/main.scss */
+          /* line 803, scss/main.scss */
           .archive .mobileNavTest .container .mainNavList ul li:hover ul,
           .single .mobileNavTest .container .mainNavList ul li:hover ul,
           .blog .mobileNavTest .container .mainNavList ul li:hover ul {
             display: block; }
 
-/* line 819, scss/main.scss */
+/* line 825, scss/main.scss */
 .buttonLines {
   display: inline-block;
   margin-top: 20px;
@@ -731,10 +737,10 @@ ul.menu li a {
   -webkit-transition: 0.3s;
           transition: 0.3s;
   border-radius: 6px; }
-  /* line 828, scss/main.scss */
+  /* line 834, scss/main.scss */
   .buttonLines:focus {
     outline-style: none; }
-  /* line 831, scss/main.scss */
+  /* line 837, scss/main.scss */
   .buttonLines .lines {
     display: inline-block;
     width: 28px;
@@ -744,7 +750,7 @@ ul.menu li a {
     -webkit-transition: 0.3s;
             transition: 0.3s;
     position: relative; }
-    /* line 840, scss/main.scss */
+    /* line 846, scss/main.scss */
     .buttonLines .lines:before, .buttonLines .lines:after {
       display: inline-block;
       width: 28px;
@@ -763,20 +769,20 @@ ul.menu li a {
       -webkit-transform-origin: 3px center;
           -ms-transform-origin: 3px center;
               transform-origin: 3px center; }
-    /* line 856, scss/main.scss */
+    /* line 862, scss/main.scss */
     .buttonLines .lines:before {
       top: 7px; }
-    /* line 859, scss/main.scss */
+    /* line 865, scss/main.scss */
     .buttonLines .lines:after {
       top: -7px; }
-  /* line 863, scss/main.scss */
+  /* line 869, scss/main.scss */
   .buttonLines:hover > .lines {
     background: #cd0000; }
 
-/* line 870, scss/main.scss */
+/* line 876, scss/main.scss */
 .buttonLines.close .lines {
   background: transparent; }
-  /* line 872, scss/main.scss */
+  /* line 878, scss/main.scss */
   .buttonLines.close .lines:before, .buttonLines.close .lines:after {
     top: 0;
     -webkit-webkit-transform-origin: 50% 50%;
@@ -786,7 +792,7 @@ ul.menu li a {
     -webkit-transform-origin: 50% 50%;
         -ms-transform-origin: 50% 50%;
             transform-origin: 50% 50%; }
-  /* line 880, scss/main.scss */
+  /* line 886, scss/main.scss */
   .buttonLines.close .lines:before {
     -webkit-webkit-transform: rotate3d(0, 0, 1, 45deg);
     -moz-webkit-transform: rotate3d(0, 0, 1, 45deg);
@@ -794,7 +800,7 @@ ul.menu li a {
     -o-webkit-transform: rotate3d(0, 0, 1, 45deg);
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
             transform: rotate3d(0, 0, 1, 45deg); }
-  /* line 887, scss/main.scss */
+  /* line 893, scss/main.scss */
   .buttonLines.close .lines:after {
     -webkit-webkit-transform: rotate3d(0, 0, 1, -45deg);
     -moz-webkit-transform: rotate3d(0, 0, 1, -45deg);
@@ -803,21 +809,21 @@ ul.menu li a {
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
             transform: rotate3d(0, 0, 1, -45deg); }
 
-/* line 906, scss/main.scss */
+/* line 912, scss/main.scss */
 .sidebar {
   width: 30%;
   float: left; }
 
-/* line 910, scss/main.scss */
+/* line 916, scss/main.scss */
 .sidebar ul {
   margin: 0;
   padding: 0; }
 
-/* line 914, scss/main.scss */
+/* line 920, scss/main.scss */
 .sidebar ul li {
   list-style: none; }
 
-/* line 924, scss/main.scss */
+/* line 930, scss/main.scss */
 .footer {
   clear: both;
   height: 80px;
@@ -826,10 +832,10 @@ ul.menu li a {
   padding-top: 20px;
   text-align: center; }
 
-/* line 941, scss/main.scss */
+/* line 947, scss/main.scss */
 .home.page-template-front-page-php .section .section {
   padding-top: 0; }
-/* line 944, scss/main.scss */
+/* line 950, scss/main.scss */
 .home.page-template-front-page-php .section .landing {
   background: url(images/Toronto1.jpg);
   background-repeat: no-repeat;
@@ -838,7 +844,7 @@ ul.menu li a {
   height: 700px;
   background-position: center center;
   padding-top: 0; }
-  /* line 956, scss/main.scss */
+  /* line 962, scss/main.scss */
   .home.page-template-front-page-php .section .landing .banner {
     position: relative;
     top: 250px;
@@ -849,14 +855,14 @@ ul.menu li a {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     padding-bottom: 10px; }
-    /* line 971, scss/main.scss */
+    /* line 977, scss/main.scss */
     .home.page-template-front-page-php .section .landing .banner h1 {
       text-align: center;
       font-size: 80px;
       color: #fff;
       font-family: josefinSansSemiBold;
       text-shadow: 2px 2px 10px #666; }
-    /* line 979, scss/main.scss */
+    /* line 985, scss/main.scss */
     .home.page-template-front-page-php .section .landing .banner .button {
       text-align: center;
       border: 1px solid #333;
@@ -869,60 +875,60 @@ ul.menu li a {
       border-radius: 5px;
       -webkit-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out; }
-      /* line 993, scss/main.scss */
+      /* line 999, scss/main.scss */
       .home.page-template-front-page-php .section .landing .banner .button a {
         text-decoration: none;
         color: #333;
         font-size: 20px; }
-      /* line 999, scss/main.scss */
+      /* line 1005, scss/main.scss */
       .home.page-template-front-page-php .section .landing .banner .button:hover {
         background-color: #242424;
         border-color: #fff; }
-      /* line 1003, scss/main.scss */
+      /* line 1009, scss/main.scss */
       .home.page-template-front-page-php .section .landing .banner .button:hover > a {
         color: #fff; }
-/* line 1010, scss/main.scss */
+/* line 1016, scss/main.scss */
 .home.page-template-front-page-php .section .mainSection {
   clear: both; }
-  /* line 1012, scss/main.scss */
+  /* line 1018, scss/main.scss */
   .home.page-template-front-page-php .section .mainSection .sectionContainer {
     display: block;
     max-width: 1000px;
     margin: 0 auto; }
-    /* line 1016, scss/main.scss */
+    /* line 1022, scss/main.scss */
     .home.page-template-front-page-php .section .mainSection .sectionContainer h1 {
       text-align: center; }
-    /* line 1019, scss/main.scss */
+    /* line 1025, scss/main.scss */
     .home.page-template-front-page-php .section .mainSection .sectionContainer p {
       text-align: center; }
-    /* line 1022, scss/main.scss */
+    /* line 1028, scss/main.scss */
     .home.page-template-front-page-php .section .mainSection .sectionContainer .col-1-3 {
       float: left;
       display: inline-block;
       width: 33%; }
-      /* line 1026, scss/main.scss */
+      /* line 1032, scss/main.scss */
       .home.page-template-front-page-php .section .mainSection .sectionContainer .col-1-3 img {
         display: block; }
-    /* line 1031, scss/main.scss */
+    /* line 1037, scss/main.scss */
     .home.page-template-front-page-php .section .mainSection .sectionContainer .col-1-2 {
       float: left;
       display: inline-block;
       width: 50%; }
-    /* line 1036, scss/main.scss */
+    /* line 1042, scss/main.scss */
     .home.page-template-front-page-php .section .mainSection .sectionContainer .col-1-4 {
       float: left;
       display: inline-block;
       width: 25%; }
-/* line 1044, scss/main.scss */
+/* line 1050, scss/main.scss */
 .home.page-template-front-page-php .section .aboutSection {
   clear: both;
   background-color: #E5E5E5;
   /* #E5E5E5 #A0B2C1 */
   margin: 0; }
-  /* line 1052, scss/main.scss */
+  /* line 1058, scss/main.scss */
   .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer {
     position: relative; }
-    /* line 1056, scss/main.scss */
+    /* line 1062, scss/main.scss */
     .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft {
       position: absolute;
       top: 20px;
@@ -930,10 +936,10 @@ ul.menu li a {
       width: 27.5%;
       height: 100%;
       padding: 20px; }
-      /* line 1067, scss/main.scss */
+      /* line 1073, scss/main.scss */
       .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft img {
         margin-top: 60px; }
-    /* line 1073, scss/main.scss */
+    /* line 1079, scss/main.scss */
     .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutCenter {
       width: 45%;
       margin: 0 auto;
@@ -945,111 +951,111 @@ ul.menu li a {
       z-index: 50;
       margin-top: -30px;
       margin-bottom: -50px; }
-      /* line 1089, scss/main.scss */
+      /* line 1095, scss/main.scss */
       .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutCenter p {
         text-align: left; }
-    /* line 1094, scss/main.scss */
+    /* line 1100, scss/main.scss */
     .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutRight {
       position: absolute;
       top: 20px;
       right: 0;
       width: 27.5%;
       padding: 20px; }
-      /* line 1102, scss/main.scss */
+      /* line 1108, scss/main.scss */
       .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutRight p {
         margin-top: 100px; }
-/* line 1112, scss/main.scss */
+/* line 1118, scss/main.scss */
 .home.page-template-front-page-php .section .webSkillsSection {
   display: none;
   clear: both;
   background-color: #bbb; }
-  /* line 1118, scss/main.scss */
+  /* line 1124, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection .col-1-3 h2 {
     text-align: center; }
-  /* line 1121, scss/main.scss */
+  /* line 1127, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection .col-1-3 img {
     width: 50%;
     margin: 0 auto; }
-  /* line 1125, scss/main.scss */
+  /* line 1131, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection .col-1-3 ul {
     padding: 0;
     margin: 0 auto; }
-    /* line 1128, scss/main.scss */
+    /* line 1134, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection .col-1-3 ul li {
       list-style-type: none;
       text-align: center; }
-/* line 1136, scss/main.scss */
+/* line 1142, scss/main.scss */
 .home.page-template-front-page-php .section .webSkillsSection_test {
   clear: both;
   padding-top: 80px;
   padding-bottom: 80px; }
-  /* line 1141, scss/main.scss */
+  /* line 1147, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test h1 {
     margin-bottom: 40px; }
-  /* line 1144, scss/main.scss */
+  /* line 1150, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 {
     padding-top: 20px;
     padding-bottom: 20px;
     height: 200px;
     color: #666; }
-    /* line 1151, scss/main.scss */
+    /* line 1157, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 .webSkillIconContainer {
       width: 100%;
       height: 50px;
       margin-bottom: 10px; }
-      /* line 1155, scss/main.scss */
+      /* line 1161, scss/main.scss */
       .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 .webSkillIconContainer .webSkillIcon {
         width: 50px;
         margin: 0 auto; }
-        /* line 1160, scss/main.scss */
+        /* line 1166, scss/main.scss */
         .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 .webSkillIconContainer .webSkillIcon svg {
           width: 50px;
           height: 50px;
           fill: #444; }
-    /* line 1167, scss/main.scss */
+    /* line 1173, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 h2 {
       font-family: sourceLight, sans-serif;
       font-size: 20px;
       text-align: center; }
-    /* line 1172, scss/main.scss */
+    /* line 1178, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 p {
       font-size: 16px;
       text-align: center;
       padding-left: 20px;
       padding-right: 20px; }
-  /* line 1179, scss/main.scss */
+  /* line 1185, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_1 {
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd; }
-  /* line 1183, scss/main.scss */
+  /* line 1189, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_2 {
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd; }
-  /* line 1187, scss/main.scss */
+  /* line 1193, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_3 {
     border-bottom: 1px solid #ddd; }
-  /* line 1191, scss/main.scss */
+  /* line 1197, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_4 {
     border-right: 1px solid #ddd; }
-  /* line 1195, scss/main.scss */
+  /* line 1201, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_5 {
     border-right: 1px solid #ddd; }
-/* line 1205, scss/main.scss */
+/* line 1211, scss/main.scss */
 .home.page-template-front-page-php .section .portfolioSection {
   display: block;
   clear: both;
   float: left;
-  padding-top: 80px;
+  padding-top: 81px;
   background-color: #E5E5E5;
   width: 100%; }
-  /* line 1217, scss/main.scss */
+  /* line 1223, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection h1 {
     color: #464E4F; }
-  /* line 1222, scss/main.scss */
+  /* line 1228, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection .sectionContainer {
     margin: 0 auto;
     padding-bottom: 40px; }
-    /* line 1226, scss/main.scss */
+    /* line 1232, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 {
       position: relative;
       z-index: 1;
@@ -1061,13 +1067,13 @@ ul.menu li a {
       margin-bottom: 30px;
       padding-bottom: 20px;
       cursor: pointer; }
-      /* line 1241, scss/main.scss */
+      /* line 1247, scss/main.scss */
       .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .imageWrapper {
         position: relative;
         padding-left: 60px;
         padding-right: 60px;
         padding-top: 30px; }
-      /* line 1248, scss/main.scss */
+      /* line 1254, scss/main.scss */
       .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton {
         position: absolute;
         top: 30%;
@@ -1082,51 +1088,51 @@ ul.menu li a {
         transition: transform 0.2s ease-in-out;
         -webkit-transition: opacity 0.2s ease-in-out;
         transition: opacity 0.2s ease-in-out; }
-        /* line 1260, scss/main.scss */
+        /* line 1266, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton:hover {
           -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
               transform: scale(1.05);
           -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out; }
-        /* line 1273, scss/main.scss */
+        /* line 1279, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton p {
           margin-top: 35%;
           font-size: 20px;
           color: #fff; }
-      /* line 1280, scss/main.scss */
+      /* line 1286, scss/main.scss */
       .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2:hover > .overlayButton {
         opacity: 1;
         -webkit-transition: opacity 0.2s ease-in-out;
         transition: opacity 0.2s ease-in-out; }
-      /* line 1288, scss/main.scss */
+      /* line 1294, scss/main.scss */
       .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; }
-        /* line 1291, scss/main.scss */
+        /* line 1297, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails h2 {
           text-align: center;
           padding-left: 50px;
           padding-right: 50px; }
-        /* line 1296, scss/main.scss */
+        /* line 1302, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails p {
           font-family: sourceLight, sans-serif;
           margin: 0;
           padding-left: 10px;
           padding-right: 10px;
           color: #333; }
-    /* line 1310, scss/main.scss */
+    /* line 1316, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2:hover .captionDetails::before,
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2:hover .captionDetails::after {
       opacity: 1;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1); }
-    /* line 1318, scss/main.scss */
+    /* line 1324, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails::before,
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails::after {
       pointer-events: none; }
-    /* line 1332, scss/main.scss */
+    /* line 1338, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::before,
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::after {
       position: absolute;
@@ -1138,31 +1144,31 @@ ul.menu li a {
       opacity: 0;
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: opacity 0.35s, transform 0.35s; }
-    /* line 1345, scss/main.scss */
+    /* line 1351, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::before {
       border-top: 1px solid #000;
       border-bottom: 1px solid #000;
       -webkit-transform: scale(0, 1);
       -ms-transform: scale(0, 1);
           transform: scale(0, 1); }
-    /* line 1352, scss/main.scss */
+    /* line 1358, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::after {
       border-right: 1px solid #000;
       border-left: 1px solid #000;
       -webkit-transform: scale(1, 0);
       -ms-transform: scale(1, 0);
           transform: scale(1, 0); }
-    /* line 1360, scss/main.scss */
+    /* line 1366, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2:nth-child(odd) {
       margin-right: 0; }
-  /* line 1365, scss/main.scss */
+  /* line 1371, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection .moreButton {
     display: block;
     margin: 0 auto;
     clear: both;
     width: 200px;
     height: 50px; }
-  /* line 1373, scss/main.scss */
+  /* line 1379, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection a .goToPortfolioPage {
     width: 200px;
     height: 50px;
@@ -1175,22 +1181,22 @@ ul.menu li a {
     padding-top: 8px;
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out; }
-    /* line 1388, scss/main.scss */
+    /* line 1394, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection a .goToPortfolioPage:hover {
       background-color: #353535;
       color: #EDEDED; }
-/* line 1396, scss/main.scss */
+/* line 1402, scss/main.scss */
 .home.page-template-front-page-php .section .blogSection {
   clear: both;
   padding-top: 40px; }
-  /* line 1399, scss/main.scss */
+  /* line 1405, scss/main.scss */
   .home.page-template-front-page-php .section .blogSection .sectionContainer {
     padding-top: 40px;
     padding-bottom: 80px; }
-    /* line 1403, scss/main.scss */
+    /* line 1409, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer h1 {
       margin-bottom: 40px; }
-    /* line 1406, scss/main.scss */
+    /* line 1412, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer .moreButton {
       display: block;
       margin: 0 auto;
@@ -1198,7 +1204,7 @@ ul.menu li a {
       width: 200px;
       height: 50px;
       padding-top: 30px; }
-    /* line 1414, scss/main.scss */
+    /* line 1420, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer a .goToBlogPage {
       width: 200px;
       height: 50px;
@@ -1211,69 +1217,69 @@ ul.menu li a {
       padding-top: 8px;
       -webkit-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out; }
-      /* line 1429, scss/main.scss */
+      /* line 1435, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer a .goToBlogPage:hover {
         background-color: #353535;
         color: #EDEDED; }
-    /* line 1435, scss/main.scss */
+    /* line 1441, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 {
       padding: 10px;
       height: 450px;
       background-color: transparent;
       -webkit-transition: background-color 0.1s ease-in-out;
       transition: background-color 0.1s ease-in-out; }
-      /* line 1443, scss/main.scss */
+      /* line 1449, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground {
         width: 100%;
         height: 100%;
         background-color: #E5E5E5; }
-        /* line 1447, scss/main.scss */
+        /* line 1453, scss/main.scss */
         .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content {
           background-color: transparent; }
-          /* line 1450, scss/main.scss */
+          /* line 1456, scss/main.scss */
           .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content img {
             width: 100%;
             height: 100%; }
-          /* line 1455, scss/main.scss */
+          /* line 1461, scss/main.scss */
           .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content h2 {
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-          /* line 1461, scss/main.scss */
+          /* line 1467, scss/main.scss */
           .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content p {
             text-align: left;
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-      /* line 1472, scss/main.scss */
+      /* line 1478, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4:hover > .entryContentBackground {
         -webkit-transition: background-color 0.1s ease-in-out;
         transition: background-color 0.1s ease-in-out;
         background-color: #3a5e77;
         /* 2D2D2D */
         color: #fff; }
-      /* line 1477, scss/main.scss */
+      /* line 1483, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4:hover > .entryContentBackground .entry-content > h2 {
         color: #fff; }
-      /* line 1480, scss/main.scss */
+      /* line 1486, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4:hover > .entryContentBackground .entry-content > p {
         color: #fff; }
-/* line 1488, scss/main.scss */
+/* line 1494, scss/main.scss */
 .home.page-template-front-page-php .section .contactSection {
   clear: both;
   background-color: #A0B2C1; }
-  /* line 1491, scss/main.scss */
+  /* line 1497, scss/main.scss */
   .home.page-template-front-page-php .section .contactSection h1 {
     padding-top: 20px;
     padding-bottom: 20px; }
-  /* line 1495, scss/main.scss */
+  /* line 1501, scss/main.scss */
   .home.page-template-front-page-php .section .contactSection p {
     padding-bottom: 20px; }
 
-/* line 1517, scss/main.scss */
+/* line 1523, scss/main.scss */
 .archive .section {
   display: block;
-  padding-top: 80px;
+  padding-top: 81px;
   width: 100%;
   background-color: #D7EBED;
   overflow: hidden;
@@ -1285,7 +1291,7 @@ ul.menu li a {
   /* Common style */
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */ }
-  /* line 1536, scss/main.scss */
+  /* line 1542, scss/main.scss */
   .archive .section figure {
     position: relative;
     z-index: 1;
@@ -1297,19 +1303,19 @@ ul.menu li a {
     background: #3085a3;
     text-align: center;
     cursor: pointer; }
-    /* line 1548, scss/main.scss */
+    /* line 1554, scss/main.scss */
     .archive .section figure:hover figcaption::before, .archive .section figure:hover figcaption::after {
       opacity: 1;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1); }
-  /* line 1556, scss/main.scss */
+  /* line 1562, scss/main.scss */
   .archive .section figure img {
     position: relative;
     display: block;
     min-height: 100%;
     opacity: 0.8; }
-  /* line 1563, scss/main.scss */
+  /* line 1569, scss/main.scss */
   .archive .section figure figcaption {
     padding: 2em;
     color: #fff;
@@ -1317,11 +1323,11 @@ ul.menu li a {
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
-  /* line 1575, scss/main.scss */
+  /* line 1581, scss/main.scss */
   .archive .section figure figcaption::before,
   .archive .section figure figcaption::after {
     pointer-events: none; }
-  /* line 1580, scss/main.scss */
+  /* line 1586, scss/main.scss */
   .archive .section figure figcaption,
   .archive .section figure a {
     position: absolute;
@@ -1329,7 +1335,7 @@ ul.menu li a {
     left: 0;
     width: 100%;
     height: 100%; }
-  /* line 1620, scss/main.scss */
+  /* line 1626, scss/main.scss */
   .archive .section figcaption::before,
   .archive .section figcaption::after {
     position: absolute;
@@ -1341,14 +1347,14 @@ ul.menu li a {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s; }
-  /* line 1633, scss/main.scss */
+  /* line 1639, scss/main.scss */
   .archive .section figcaption::before {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
         transform: scale(0, 1); }
-  /* line 1640, scss/main.scss */
+  /* line 1646, scss/main.scss */
   .archive .section figcaption::after {
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
@@ -1356,16 +1362,16 @@ ul.menu li a {
     -ms-transform: scale(1, 0);
         transform: scale(1, 0); }
 
-/* line 1661, scss/main.scss */
+/* line 1667, scss/main.scss */
 .portfolioTestContainer {
   display: block;
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 40px; }
-  /* line 1667, scss/main.scss */
+  /* line 1673, scss/main.scss */
   .portfolioTestContainer h1 {
     text-align: center; }
-  /* line 1670, scss/main.scss */
+  /* line 1676, scss/main.scss */
   .portfolioTestContainer .col-1-2 {
     position: relative;
     z-index: 1;
@@ -1377,52 +1383,52 @@ ul.menu li a {
     padding-bottom: 20px;
     background-color: #E5E5E5;
     cursor: pointer; }
-    /* line 1684, scss/main.scss */
+    /* line 1690, scss/main.scss */
     .portfolioTestContainer .col-1-2 .imageWrapper {
       position: relative;
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 30px; }
-    /* line 1690, scss/main.scss */
+    /* line 1696, scss/main.scss */
     .portfolioTestContainer .col-1-2 h2 {
       text-align: center;
       padding-left: 50px;
       padding-right: 50px; }
-    /* line 1695, scss/main.scss */
+    /* line 1701, scss/main.scss */
     .portfolioTestContainer .col-1-2 p {
       font-family: sourceLight, sans-serif;
       margin: 0;
       padding-left: 10px;
       padding-right: 10px;
       color: #333; }
-    /* line 1702, scss/main.scss */
+    /* line 1708, scss/main.scss */
     .portfolioTestContainer .col-1-2:hover {
       -webkit-transition: background-color 0.7s ease-in-out;
       transition: background-color 0.7s ease-in-out;
       background-color: #f3f3f3; }
-    /* line 1708, scss/main.scss */
+    /* line 1714, scss/main.scss */
     .portfolioTestContainer .col-1-2 .captionDetails {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
-  /* line 1715, scss/main.scss */
+  /* line 1721, scss/main.scss */
   .portfolioTestContainer .col-1-2:hover .captionDetails::before,
   .portfolioTestContainer .col-1-2:hover .captionDetails::after {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
         transform: scale(1); }
-  /* line 1723, scss/main.scss */
+  /* line 1729, scss/main.scss */
   .portfolioTestContainer .col-1-2 .captionDetails::before,
   .portfolioTestContainer .col-1-2 .captionDetails::after {
     pointer-events: none; }
-  /* line 1728, scss/main.scss */
+  /* line 1734, scss/main.scss */
   .portfolioTestContainer .col-1-2 a {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-  /* line 1737, scss/main.scss */
+  /* line 1743, scss/main.scss */
   .portfolioTestContainer .captionDetails::before,
   .portfolioTestContainer .captionDetails::after {
     position: absolute;
@@ -1434,41 +1440,41 @@ ul.menu li a {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s; }
-  /* line 1750, scss/main.scss */
+  /* line 1756, scss/main.scss */
   .portfolioTestContainer .captionDetails::before {
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
         transform: scale(0, 1); }
-  /* line 1757, scss/main.scss */
+  /* line 1763, scss/main.scss */
   .portfolioTestContainer .captionDetails::after {
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
     -webkit-transform: scale(1, 0);
     -ms-transform: scale(1, 0);
         transform: scale(1, 0); }
-  /* line 1764, scss/main.scss */
+  /* line 1770, scss/main.scss */
   .portfolioTestContainer .col-1-2:nth-child(odd) {
     margin-right: 0; }
 
-/* line 1776, scss/main.scss */
+/* line 1782, scss/main.scss */
 .archive .section {
   display: block;
-  padding-top: 80px;
+  padding-top: 81px;
   width: 100%;
   background-color: #E5E5E5;
   /* #A0B2C1 #D7EBED */ }
-  /* line 1782, scss/main.scss */
+  /* line 1788, scss/main.scss */
   .archive .section .sectionContainer {
     display: block;
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 40px; }
-    /* line 1788, scss/main.scss */
+    /* line 1794, scss/main.scss */
     .archive .section .sectionContainer h1 {
       text-align: center; }
-    /* line 1791, scss/main.scss */
+    /* line 1797, scss/main.scss */
     .archive .section .sectionContainer .col-1-2 {
       display: inline-block;
       width: 45%;
@@ -1478,13 +1484,13 @@ ul.menu li a {
       border: 1px solid #A0B2C1;
       -webkit-transition: all 0.1s ease-in-out;
       transition: all 0.1s ease-in-out; }
-      /* line 1799, scss/main.scss */
+      /* line 1805, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 .imageWrapper {
         position: relative;
         padding-left: 80px;
         padding-right: 80px;
         padding-top: 30px; }
-        /* line 1807, scss/main.scss */
+        /* line 1813, scss/main.scss */
         .archive .section .sectionContainer .col-1-2 .imageWrapper .imageHover {
           position: absolute;
           width: 100%;
@@ -1493,29 +1499,29 @@ ul.menu li a {
           left: 0;
           background: transparent;
           opacity: 0; }
-      /* line 1833, scss/main.scss */
+      /* line 1839, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 h2 {
         text-align: center;
         padding-left: 50px;
         padding-right: 50px; }
-      /* line 1838, scss/main.scss */
+      /* line 1844, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 h2 a {
         color: #464E4F;
         -webkit-transition: color 0.1s ease-in-out;
         transition: color 0.1s ease-in-out; }
-        /* line 1844, scss/main.scss */
+        /* line 1850, scss/main.scss */
         .archive .section .sectionContainer .col-1-2 h2 a:hover {
           color: red;
           -webkit-transition: color 0.1s ease-in-out;
           transition: color 0.1s ease-in-out; }
-      /* line 1849, scss/main.scss */
+      /* line 1855, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 p {
         font-family: sourceLight, sans-serif;
         margin: 0;
         padding-left: 50px;
         padding-right: 50px;
         color: #899394; }
-      /* line 1858, scss/main.scss */
+      /* line 1864, scss/main.scss */
       .archive .section .sectionContainer .col-1-2:hover {
         -webkit-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out;
@@ -1525,27 +1531,27 @@ ul.menu li a {
         -webkit-box-shadow: 0 0 5px 1px #666;
                 box-shadow: 0 0 5px 1px #666;
         color: #fff; }
-    /* line 1866, scss/main.scss */
+    /* line 1872, scss/main.scss */
     .archive .section .sectionContainer .col-1-2:nth-child(odd) {
       margin-right: 0; }
 
-/* line 1877, scss/main.scss */
+/* line 1883, scss/main.scss */
 .single-portfolio .section {
   display: block;
   text-align: center;
-  padding-top: 80px; }
-  /* line 1882, scss/main.scss */
+  padding-top: 81px; }
+  /* line 1888, scss/main.scss */
   .single-portfolio .section .innerWrapper {
     max-width: 1100px;
     margin: 0 auto; }
-    /* line 1885, scss/main.scss */
+    /* line 1891, scss/main.scss */
     .single-portfolio .section .innerWrapper h2 {
       font-family: 'Sanchez', serif;
       font-size: 60px;
       color: #333;
       padding-top: 40px;
       padding-bottom: 20px; }
-    /* line 1892, scss/main.scss */
+    /* line 1898, scss/main.scss */
     .single-portfolio .section .innerWrapper p {
       width: 50%;
       margin: 0 auto;
@@ -1553,7 +1559,7 @@ ul.menu li a {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 40px; }
-    /* line 1901, scss/main.scss */
+    /* line 1907, scss/main.scss */
     .single-portfolio .section .innerWrapper a .goToLiveProject {
       width: 200px;
       height: 50px;
@@ -1566,48 +1572,48 @@ ul.menu li a {
       padding-top: 8px;
       -webkit-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out; }
-      /* line 1914, scss/main.scss */
+      /* line 1920, scss/main.scss */
       .single-portfolio .section .innerWrapper a .goToLiveProject:hover {
         background-color: #353535;
         color: #EDEDED; }
-    /* line 1919, scss/main.scss */
+    /* line 1925, scss/main.scss */
     .single-portfolio .section .innerWrapper .images {
       margin-top: 40px;
       margin-bottom: 40px; }
-      /* line 1922, scss/main.scss */
+      /* line 1928, scss/main.scss */
       .single-portfolio .section .innerWrapper .images img {
         width: 50%; }
-    /* line 1926, scss/main.scss */
+    /* line 1932, scss/main.scss */
     .single-portfolio .section .innerWrapper .tech {
       margin-bottom: 40px;
       font-size: 20px; }
-      /* line 1930, scss/main.scss */
+      /* line 1936, scss/main.scss */
       .single-portfolio .section .innerWrapper .tech p {
         text-align: center;
         margin-bottom: 10px; }
-      /* line 1934, scss/main.scss */
+      /* line 1940, scss/main.scss */
       .single-portfolio .section .innerWrapper .tech ul {
         list-style-type: none; }
-        /* line 1936, scss/main.scss */
+        /* line 1942, scss/main.scss */
         .single-portfolio .section .innerWrapper .tech ul li {
           display: inline-block; }
-          /* line 1938, scss/main.scss */
+          /* line 1944, scss/main.scss */
           .single-portfolio .section .innerWrapper .tech ul li span {
             color: #cd0000; }
 
-/* line 1956, scss/main.scss */
+/* line 1962, scss/main.scss */
 .blog .section {
-  padding-top: 80px;
+  padding-top: 81px;
   padding-bottom: 80px; }
-  /* line 1960, scss/main.scss */
+  /* line 1966, scss/main.scss */
   .blog .section .mainBlogContainer {
     max-width: 1100px;
     margin: 0 auto;
     display: block; }
-    /* line 1964, scss/main.scss */
+    /* line 1970, scss/main.scss */
     .blog .section .mainBlogContainer h1 {
       text-align: center; }
-    /* line 1968, scss/main.scss */
+    /* line 1974, scss/main.scss */
     .blog .section .mainBlogContainer .col-1-4 {
       float: left;
       display: inline-block;
@@ -1617,55 +1623,55 @@ ul.menu li a {
       background-color: transparent;
       -webkit-transition: background-color 0.1s ease-in-out;
       transition: background-color 0.1s ease-in-out; }
-      /* line 1979, scss/main.scss */
+      /* line 1985, scss/main.scss */
       .blog .section .mainBlogContainer .col-1-4 .entryContentBackground {
         width: 100%;
         height: 100%;
         background-color: #E5E5E5; }
-        /* line 1983, scss/main.scss */
+        /* line 1989, scss/main.scss */
         .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content {
           background-color: transparent; }
-          /* line 1986, scss/main.scss */
+          /* line 1992, scss/main.scss */
           .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content img {
             width: 100%;
             height: 100%; }
-          /* line 1991, scss/main.scss */
+          /* line 1997, scss/main.scss */
           .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content h2 {
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-          /* line 1997, scss/main.scss */
+          /* line 2003, scss/main.scss */
           .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content p {
             text-align: left;
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-      /* line 2007, scss/main.scss */
+      /* line 2013, scss/main.scss */
       .blog .section .mainBlogContainer .col-1-4:hover > .entryContentBackground {
         -webkit-transition: background-color 0.1s ease-in-out;
         transition: background-color 0.1s ease-in-out;
         background-color: #3a5e77;
         /* 2D2D2D */
         color: #fff; }
-      /* line 2012, scss/main.scss */
+      /* line 2018, scss/main.scss */
       .blog .section .mainBlogContainer .col-1-4:hover > .entryContentBackground .entry-content > h2 {
         color: #fff; }
-      /* line 2015, scss/main.scss */
+      /* line 2021, scss/main.scss */
       .blog .section .mainBlogContainer .col-1-4:hover > .entryContentBackground .entry-content > p {
         color: #fff; }
 
-/* line 2030, scss/main.scss */
+/* line 2036, scss/main.scss */
 .single-post .section {
   display: block;
   background-color: #F9F9F9;
   /* #EDEDED */
   text-align: left;
-  padding-top: 80px; }
-  /* line 2035, scss/main.scss */
+  padding-top: 81px; }
+  /* line 2041, scss/main.scss */
   .single-post .section .innerWrapper {
     max-width: 1100px;
     margin: 0 auto; }
-    /* line 2038, scss/main.scss */
+    /* line 2044, scss/main.scss */
     .single-post .section .innerWrapper h1 {
       margin-top: 0;
       font-family: 'Quicksand', sans-serif;
@@ -1675,7 +1681,7 @@ ul.menu li a {
       text-align: center;
       padding-top: 40px;
       padding-bottom: 20px; }
-    /* line 2049, scss/main.scss */
+    /* line 2055, scss/main.scss */
     .single-post .section .innerWrapper h2 {
       font-family: 'Sanchez', serif;
       font-size: 40px;
@@ -1683,7 +1689,7 @@ ul.menu li a {
       text-align: left;
       margin-left: 12.25%;
       width: 75%; }
-    /* line 2057, scss/main.scss */
+    /* line 2063, scss/main.scss */
     .single-post .section .innerWrapper p {
       width: 75%;
       margin: 0 auto;
@@ -1691,65 +1697,65 @@ ul.menu li a {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 40px; }
-    /* line 2066, scss/main.scss */
+    /* line 2072, scss/main.scss */
     .single-post .section .innerWrapper .entry-meta,
     .single-post .section .innerWrapper .entry-utility,
     .single-post .section .innerWrapper .navigation,
     .single-post .section .innerWrapper #comments {
       margin-left: 12.25%;
       width: 75%; }
-    /* line 2074, scss/main.scss */
+    /* line 2080, scss/main.scss */
     .single-post .section .innerWrapper .entry-content img {
       width: 100%;
       height: 100%; }
 
-/* line 2085, scss/main.scss */
+/* line 2091, scss/main.scss */
 .page.page-template-default .section {
   display: block;
   background-color: #f9f9f9;
-  padding-top: 80px; }
-  /* line 2090, scss/main.scss */
+  padding-top: 81px; }
+  /* line 2096, scss/main.scss */
   .page.page-template-default .section .innerWrapper {
     max-width: 900px;
     margin: 0 auto; }
-    /* line 2093, scss/main.scss */
+    /* line 2099, scss/main.scss */
     .page.page-template-default .section .innerWrapper h1, .page.page-template-default .section .innerWrapper h2, .page.page-template-default .section .innerWrapper h3, .page.page-template-default .section .innerWrapper h4, .page.page-template-default .section .innerWrapper h5, .page.page-template-default .section .innerWrapper h6 {
       font-family: 'Sanchez', serif; }
-    /* line 2096, scss/main.scss */
+    /* line 2102, scss/main.scss */
     .page.page-template-default .section .innerWrapper h1 {
       font-size: 60px; }
-    /* line 2099, scss/main.scss */
+    /* line 2105, scss/main.scss */
     .page.page-template-default .section .innerWrapper h2 {
       margin-bottom: 30px;
       font-size: 40px; }
-    /* line 2104, scss/main.scss */
+    /* line 2110, scss/main.scss */
     .page.page-template-default .section .innerWrapper h3 {
       font-size: 30px; }
-    /* line 2107, scss/main.scss */
+    /* line 2113, scss/main.scss */
     .page.page-template-default .section .innerWrapper p {
       line-height: 1.5; }
-    /* line 2110, scss/main.scss */
+    /* line 2116, scss/main.scss */
     .page.page-template-default .section .innerWrapper .firstSampleParagraph {
       font-family: sourceLight, sans-serif;
       font-size: 16px; }
-    /* line 2115, scss/main.scss */
+    /* line 2121, scss/main.scss */
     .page.page-template-default .section .innerWrapper .secondSampleParagraph {
       font-family: sourceLight, sans-serif;
       font-size: 18px;
       color: #3a5e77; }
-    /* line 2121, scss/main.scss */
+    /* line 2127, scss/main.scss */
     .page.page-template-default .section .innerWrapper .thirdSampleParagraph {
       font-family: 'Open Sans', sans-serif;
       font-size: 16px; }
-    /* line 2125, scss/main.scss */
+    /* line 2131, scss/main.scss */
     .page.page-template-default .section .innerWrapper .fourthSampleParagraph {
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       color: #3a5e77; }
-    /* line 2130, scss/main.scss */
+    /* line 2136, scss/main.scss */
     .page.page-template-default .section .innerWrapper .goToLiveProject {
       padding-top: 60px; }
-      /* line 2132, scss/main.scss */
+      /* line 2138, scss/main.scss */
       .page.page-template-default .section .innerWrapper .goToLiveProject .sampleLargeButton {
         width: 200px;
         height: 50px;
@@ -1763,14 +1769,14 @@ ul.menu li a {
         padding: 20px;
         -webkit-transition: background-color 0.2s ease-in-out;
         transition: background-color 0.2s ease-in-out; }
-        /* line 2148, scss/main.scss */
+        /* line 2154, scss/main.scss */
         .page.page-template-default .section .innerWrapper .goToLiveProject .sampleLargeButton:hover {
           background-color: #353535;
           color: #EDEDED; }
-    /* line 2155, scss/main.scss */
+    /* line 2161, scss/main.scss */
     .page.page-template-default .section .innerWrapper .goToLiveProject {
       padding-bottom: 60px; }
-      /* line 2157, scss/main.scss */
+      /* line 2163, scss/main.scss */
       .page.page-template-default .section .innerWrapper .goToLiveProject .sampleMediumButton {
         width: 100px;
         height: 25px;
@@ -1784,23 +1790,23 @@ ul.menu li a {
         padding: 10px;
         -webkit-transition: background-color 0.2s ease-in-out;
         transition: background-color 0.2s ease-in-out; }
-        /* line 2173, scss/main.scss */
+        /* line 2179, scss/main.scss */
         .page.page-template-default .section .innerWrapper .goToLiveProject .sampleMediumButton:hover {
           background-color: #353535;
           color: #EDEDED; }
-    /* line 2180, scss/main.scss */
+    /* line 2186, scss/main.scss */
     .page.page-template-default .section .innerWrapper .profileImageSquare {
       margin-bottom: 20px;
       margin-bottom: 20px; }
-      /* line 2183, scss/main.scss */
+      /* line 2189, scss/main.scss */
       .page.page-template-default .section .innerWrapper .profileImageSquare a img {
         border: 1px solid #000;
         margin-top: 20px; }
-    /* line 2189, scss/main.scss */
+    /* line 2195, scss/main.scss */
     .page.page-template-default .section .innerWrapper .profileImageRound {
       width: 300px;
       height: 300px; }
-      /* line 2192, scss/main.scss */
+      /* line 2198, scss/main.scss */
       .page.page-template-default .section .innerWrapper .profileImageRound a img {
         border-radius: 150px;
         border: 1px solid #000;
