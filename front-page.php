@@ -205,9 +205,18 @@ get_header(); ?>
                 </div>
 
                 <div class="overlayButton">
-                  <p>View More</p>
+                  <!-- <p>View More</p> -->
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                    <g id="Layer_1">
+                    </g>
+                    <g id="Layer_2">
+                      <path d="M50,0C22.386,0,0,22.384,0,50c0,27.613,22.387,50,50,50c27.611,0,50-22.387,50-50C100,22.384,77.611,0,50,0   z M79.75,54.75c-7,0-16,0-25,0c0,8,0,16,0,25c0,7-10,7-10,0s0-16,0-25c-14,0-25,0-25,0c-6,0-6-10,0-10c8,0,16,0,25,0   c0-14,0-25,0-25c0-6,10-6,10,0c0,8,0,16,0,25c8,0,16,0,25,0C86.75,44.75,86.75,54.75,79.75,54.75z"/>
+                    </g>
+                    </svg>
+                  </div>
                 </div>
-                
+
                 <div class="captionDetails">
                   <h2 class="entry-title"><?php the_field('item_name'); ?></h2>
                   <p><?php the_field('short_description'); ?></p>

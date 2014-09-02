@@ -1261,7 +1261,7 @@ $buttonLineMargin: $buttonLineWidth/4;
           background-color: rgba(205, 0, 0, 0.7);
           // display: none;
           opacity: 0;
-          z-index: 100;
+          // z-index: 100;
           @include transition(transform, 0.2s, ease-in-out);
           &:hover{
             // width: 45%;
@@ -1281,13 +1281,24 @@ $buttonLineMargin: $buttonLineWidth/4;
             font-size: 20px;
             color: #fff;
           }
+          .icon{
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            width: 10%;
+            height: 10%;
+            svg{
+              fill: #fff;
+            }
+          }
           
         }
         &:hover > .overlayButton{
+          // disabling overlay button for now
           // background-color: rgba(205, 0, 0, 0.7);
-          opacity: 1;
+          // opacity: 1;
           // display: block;
-          @include transition(opacity, 0.2s, ease-in-out);
+          // @include transition(opacity, 0.2s, ease-in-out);
         }
 
 
@@ -1305,7 +1316,10 @@ $buttonLineMargin: $buttonLineWidth/4;
            padding-left: 10px;
            padding-right: 10px;
            color: #333;
-          }   
+          }  
+          a{
+            // z-index: 101;
+          } 
         }
 
       }
@@ -1477,14 +1491,14 @@ $buttonLineMargin: $buttonLineWidth/4;
         @include transition(background-color, 0.1s, ease-in-out);
         &:hover > .entryContentBackground{
           @include transition(background-color, 0.1s, ease-in-out);
-          background-color: $matisseBlue; /* 2D2D2D */
-          color: #fff;
+          // background-color: $matisseBlue; /* 2D2D2D */
+          // color: #fff;
         }
         &:hover > .entryContentBackground .entry-content > h2{
-          color: #fff;
+          // color: #fff;
         }
         &:hover > .entryContentBackground .entry-content > p{
-          color: #fff;
+          // color: #fff;
         }
       }
     }
@@ -2012,14 +2026,14 @@ $buttonLineMargin: $buttonLineWidth/4;
       @include transition(background-color, 0.1s, ease-in-out);
       &:hover > .entryContentBackground{
         @include transition(background-color, 0.1s, ease-in-out);
-        background-color: $matisseBlue; /* 2D2D2D */
-        color: #fff;
+        // background-color: $matisseBlue; /* 2D2D2D */
+        // color: #fff;
       }
       &:hover > .entryContentBackground .entry-content > h2{
-        color: #fff;
+        // color: #fff;
       }
       &:hover > .entryContentBackground .entry-content > p{
-        color: #fff;
+        // color: #fff;
       }
     }
 
