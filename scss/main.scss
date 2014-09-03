@@ -260,428 +260,27 @@ ul li,ol li {
 .page{
   .mobileNavTest{
     width: 100%;
+    // max-width: 1100px;
     position: fixed;
     z-index: 100;
     text-align: center;
     font-size: $navFontSize;
     height: $navBarHeight;
     font-family: 'Open Sans';
-    .container{
+    .fullNavContainer{
       display: inline-block;
       background-color: $navBackgroundColor;
       border-bottom: 1px solid $navBorderBottomColor;
       height: $navBarHeight;
       position: relative;
       width: 100%;
+      // max-width: 1100px;
       margin: 0 auto;
-      .mobileNavButton{
+      .innerNavContainer{
         position: relative;
-        display: inline-block;
-        float: left;
-        width: 100px;
+        max-width: 1100px;
         height: $navBarHeight;
-        background-color: $navBackgroundColor ;
-        border-bottom: 1px solid $navBorderBottomColor;
-        z-index: 100;
-        @include transition(color, 0.2s, ease-in-out);
-        button{
-          float: left;
-        }
-        p{
-          float: right;
-          margin: 0;
-          padding: 0;
-          margin-top: $navTextMarginTop;
-          margin-right: 10px;
-          font-size: $navFontSize;
-          color: $navFontColor;
-          @include transition(color, 0.2s, ease-in-out);
-          &:hover{
-            color: $navHoverColor
-          }
-        }
-        &:hover{
-          cursor: pointer;
-        }
-      }
-      .currentPage{
-        position: absolute;
-        left: 100px;
-        width: 220px;
-        p{
-          font-family: josefinSansSemiBold;
-          font-size: 20px;
-          margin-top: $navTextMarginTop;
-          color: $navFontColor;
-        }
-        .logo{
-          display: inline-block;
-          float: left;
-          font-size: $navFontSize;
-          font-weight: 400;
-          text-decoration: none;
-          margin: 0;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding-top: 17px;
-          height: $navBarHeight;
-          color: $navFontColor;
-          background-color: transparent;
-          svg{
-            height: $navBarHeight - 35px;
-            width: $navBarHeight - 35px;
-          }
-        }
-        .triangleRight{
-          display: inline-block;
-          float: left;
-          width: 0;
-          height: 0;
-        }
-        .first{
-          border-top: ($navBarHeight/2) solid $navCrumbPathColor;
-          border-left: 10px solid $navLogoAreaBackColor;
-          border-bottom: ($navBarHeight/2) solid $navCrumbPathColor;
-        }
-        .second{
-          border-top: ($navBarHeight/2) solid transparent;
-          border-left: 10px solid $navCrumbPathColor;
-          border-bottom: ($navBarHeight/2) solid transparent;
-        }
-        .crumbPath{
-          display: inline-block;
-          float: left;
-          text-decoration: none;
-          padding-left: 10px;
-          padding-right: 10px;
-          padding-top: $navTextMarginTop;
-          height: $navBarHeight;
-          color: $navFontColor;
-          background-color: $navCrumbPathColor;
-          border-bottom: 1px solid $navBorderBottomColor;
-          @include transition(color, 0.2s, ease-in-out);
-          &:hover{
-            color: $navHoverColor;
-          }
-        }
-        .pageTitle{
-          display: inline-block;
-          float: left;
-          margin-top: $navTextMarginTop;
-          padding-left: 10px;
-          color: $navFontColor;
-        }
-      }
-
-      .mainNavList{
-        position: absolute;
-        right: 70px;
-
-        ul{
-          display: inline-block;
-          margin-top: $navTextMarginTop;
-          li{
-            display:inline;
-            position: relative;
-            a{
-              text-decoration: none;
-              position: relative;
-              font-size: $navFontSize;
-              vertical-align: center;
-              color: $navFontColor;
-              background-color: transparent;
-              @include transition(color, 0.2s, ease-in-out);
-              &:hover{
-                color: $navHoverColor; 
-              }
-            }
-            &:hover ul{
-              display: block;
-            }
-          }
-        }   
-      }
-      
-    }
-  }
-}
-
-//***************************************************************
-//NAV BAR styling - specific overrides for other portfolio and blog pages
-//***************************************************************
-// .archive,
-// .single,
-// .blog{
-//   .mobileNavTest{
-//     width: 100%;
-//     position: fixed;
-//     z-index: 100;
-//     text-align: center;
-//     font-size: $navFontSize;
-//     height: $navBarHeight;
-//     font-family: 'Open Sans';
-//     .container{
-//       display: inline-block;
-//       background-color: $navBackgroundColor;
-//       border-bottom: 1px solid $navBorderBottomColor;
-//       height: $navBarHeight;
-//       position: relative;
-//       width: 100%;
-//       margin: 0 auto;
-
-//       .currentPage{
-//         position: absolute;
-//         left: 100px;
-//         width: 220px;
-//         p{
-//           font-family: josefinSansSemiBold;
-//           font-size: 20px;
-//           margin-top: $navTextMarginTop;
-//           color: $navFontColor;
-//         }
-//         .logo{
-//           display: inline-block;
-//           float: left;
-//           font-size: $navFontSize;
-//           font-weight: 400;
-//           text-decoration: none;
-//           margin: 0;
-//           padding-left: 10px;
-//           padding-right: 10px;
-//           padding-top: 17px;
-//           height: $navBarHeight;
-//           color: $navFontColor;
-//           background-color: transparent;
-//           svg{
-//             height: $navBarHeight - 35px;
-//             width: $navBarHeight - 35px;
-//           }
-//         }
-//         .triangleRight{
-//           display: inline-block;
-//           float: left;
-//           width: 0;
-//           height: 0;
-//         }
-//         .first{
-//           border-top: ($navBarHeight/2) solid $navCrumbPathColor;
-//           border-left: 10px solid $navLogoAreaBackColor;
-//           border-bottom: ($navBarHeight/2) solid $navCrumbPathColor;
-//         }
-//         .second{
-//           border-top: ($navBarHeight/2) solid transparent;
-//           border-left: 10px solid $navCrumbPathColor;
-//           border-bottom: ($navBarHeight/2) solid transparent;
-//         }
-//         .crumbPath{
-//           display: inline-block;
-//           float: left;
-//           text-decoration: none;
-//           padding-left: 10px;
-//           padding-right: 10px;
-//           padding-top: $navTextMarginTop;
-//           height: $navBarHeight;
-//           color: $navFontColor;
-//           background-color: $navCrumbPathColor;
-//           @include transition(color, 0.2s, ease-in-out);
-//           &:hover{
-//             color: $navHoverColor;
-//           }
-//         }
-//         .pageTitle{
-//           display: inline-block;
-//           float: left;
-//           margin-top: $navTextMarginTop;
-//           padding-left: 10px;
-//           color: $navFontColor;
-//         }
-
-//       }
-
-//       .mainNavList{
-//           position: absolute;
-//           right: -800px;
-//           ul{
-//             display: inline-block;
-//             margin-top: $navTextMarginTop;
-//             li{
-//               display:inline;
-//               position: relative;
-//               a{
-//                 text-decoration: none;
-//                 position: relative;
-//                 font-size: $navFontSize;
-//                 vertical-align: center;
-//                 color: $navFontColor;
-//                 background-color: transparent;
-//                 @include transition(color, 0.2s, ease-in-out);
-//                 &:hover{
-//                   color: $navHoverColor; 
-//                 }
-//               }
-//               &:hover ul{
-//                 display: block;
-//               }
-//             }
-//           }   
-//         }
-
-      
-//     }
-//   }
-// }
-
-
-
-
-//***************************************************************
-//NAV BAR styling - front-page.php
-//***************************************************************
-// .page{
-//   .mobileNavTest{
-//     width: 100%;
-//     position: fixed;
-//     z-index: 100;
-//     text-align: center;
-//     font-size: $navFontSize;
-//     height: $navBarHeight;
-//     font-family: 'Open Sans';
-//     .container{
-//       display: inline-block;
-//       background-color: $navBackgroundColor;
-//       border-bottom: 1px solid $navBorderBottomColor;
-//       height: $navBarHeight;
-//       position: relative;
-//       width: 100%;
-//       margin: 0 auto;
-//         .currentPage{
-//           position: absolute;
-//           left: 100px;
-//           width: 220px;
-//           p{
-//             font-family: josefinSansSemiBold;
-//             font-size: 20px;
-//             margin-top: $navTextMarginTop;
-//           }
-//           .logo{
-//             display: inline-block;
-//             float: left;
-//             font-size: $navFontSize;
-//             font-weight: 400;
-//             text-decoration: none;
-//             margin: 0;
-//             padding-left: 10px;
-//             padding-right: 10px;
-//             padding-top: 17px;
-//             height: $navBarHeight;
-//             color: $navFontColor;
-//             background-color: transparent;
-//             svg{
-//               height: $navBarHeight - 35px;
-//               width: $navBarHeight - 35px;
-//             }
-//           }
-//           p{
-//             color: $navFontColor;
-//           }
-//         }
-
-//         .mainNavList{
-//           position: absolute;
-//           right: 70px;
-//           ul{
-//             display: inline-block;
-//             margin-top: $navTextMarginTop;
-//             li{
-//               display:inline;
-//               position: relative;
-//               a{
-//                 text-decoration: none;
-//                 position: relative;
-//                 font-size: $navFontSize;
-//                 vertical-align: center;
-//                 color: $navFontColor;
-//                 background-color: transparent;
-//                 @include transition(color, 0.2s, ease-in-out);
-//                 &:hover{
-//                   color: $navHoverColor; 
-//                 }
-//               }
-//               &:hover ul{
-//                 display: block;
-//               }
-//             }
-//           }   
-//         }
-      
-//     }
-//   }
-// }
-
-
-// .page{
-//   .mobileNavTest{
-
-//     .container{
-//       height: $navBarHeight;
-//       .currentPage{
-//         position: absolute;
-//           left: 100px;
-//           .logo{
-//             display: inline-block;
-//             float: left;
-//             font-size: $navFontSize;
-//             font-weight: 400;
-//             text-decoration: none;
-//             margin: 0;
-//             padding-left: 10px;
-//             padding-right: 10px;
-//             padding-top: 17px;
-//             height: $navBarHeight;
-//             color: $navFontColor;
-//             // background-color: $navBackgroundColor;
-//             background-color: transparent;
-            
-//             svg{
-//               height: $navBarHeight - 35px;
-//               width: $navBarHeight - 35px;
-//             }
-//           }
-//           p{
-//             color: $navFontColor;
-//           }
-//       }
-//       .mainNavList{
-//           position: absolute;
-//           right: 70px;
-//       }
-//     }
-//   }
-// }
-
-
-//***************************************************************
-//NAV BAR styling - for all other portfolio and blog pages
-//***************************************************************
-.archive,
-.single,
-.blog{
-  .mobileNavTest{
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    text-align: center;
-    font-size: $navFontSize;
-    height: $navBarHeight;
-    font-family: sourceLight;
-    font-family: 'Open Sans';
-    .container{
-      display: inline-block;
-      background-color: $navBackgroundColor;
-      border-bottom: 1px solid $navBorderBottomColor;
-      position: relative;
-      width: 100%;
-      margin: 0 auto;
+        margin: 0 auto;  
         .mobileNavButton{
           position: relative;
           display: inline-block;
@@ -689,6 +288,7 @@ ul li,ol li {
           width: 100px;
           height: $navBarHeight;
           background-color: $navBackgroundColor ;
+          border-bottom: 1px solid $navBorderBottomColor;
           z-index: 100;
           @include transition(color, 0.2s, ease-in-out);
           button{
@@ -711,14 +311,16 @@ ul li,ol li {
             cursor: pointer;
           }
         }
-
         .currentPage{
           position: absolute;
           left: 100px;
-          // width: 220px;
-          height: $navBarHeight;
-          width: 1000px;
-
+          width: 220px;
+          p{
+            font-family: josefinSansSemiBold;
+            font-size: 20px;
+            margin-top: $navTextMarginTop;
+            color: $navFontColor;
+          }
           .logo{
             display: inline-block;
             float: left;
@@ -763,6 +365,7 @@ ul li,ol li {
             height: $navBarHeight;
             color: $navFontColor;
             background-color: $navCrumbPathColor;
+            border-bottom: 1px solid $navBorderBottomColor;
             @include transition(color, 0.2s, ease-in-out);
             &:hover{
               color: $navHoverColor;
@@ -771,8 +374,6 @@ ul li,ol li {
           .pageTitle{
             display: inline-block;
             float: left;
-            font-family: sourceLight, sans-serif;
-            font-size: 18px;
             margin-top: $navTextMarginTop;
             padding-left: 10px;
             color: $navFontColor;
@@ -781,7 +382,8 @@ ul li,ol li {
 
         .mainNavList{
           position: absolute;
-          right: -800px;
+          right: 70px;
+
           ul{
             display: inline-block;
             margin-top: $navTextMarginTop;
@@ -806,6 +408,187 @@ ul li,ol li {
             }
           }   
         }
+      }
+      
+      
+    }
+  }
+}
+
+
+
+//***************************************************************
+//NAV BAR styling - for all other portfolio and blog pages
+//***************************************************************
+.archive,
+.single,
+.blog{
+  .mobileNavTest{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    font-size: $navFontSize;
+    height: $navBarHeight;
+    font-family: sourceLight;
+    font-family: 'Open Sans';
+    .fullNavContainer{
+      display: inline-block;
+      background-color: $navBackgroundColor;
+      border-bottom: 1px solid $navBorderBottomColor;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+        .innerNavContainer{
+          position: relative;
+          max-width: 1100px;
+          height: $navBarHeight;
+          margin: 0 auto;  
+          .navLeftContainer{
+            position: absolute;
+            width: 1000px; //using a large number for the width right now. Consider if there's a better way. 
+            height: $navBarHeight - 1;
+            top: 0;
+            left: -1000px;
+            background-color: $navBackgroundColor;
+            z-index: 100;
+          }
+          .navRightContainer{
+            position: absolute;
+            width: 1000px; //using a large number for the width right now. Consider if there's a better way. 
+            height: $navBarHeight - 1;
+            top: 0;
+            right: -1000px;
+            background-color: $navBackgroundColor;
+            z-index: 100;
+          }
+          .mobileNavButton{
+            position: relative;
+            display: inline-block;
+            float: left;
+            width: 100px;
+            height: $navBarHeight;
+            background-color: $navBackgroundColor ;
+            z-index: 100;
+            @include transition(color, 0.2s, ease-in-out);
+            button{
+              float: left;
+            }
+            p{
+              float: right;
+              margin: 0;
+              padding: 0;
+              margin-top: $navTextMarginTop;
+              margin-right: 10px;
+              font-size: $navFontSize;
+              color: $navFontColor;
+              @include transition(color, 0.2s, ease-in-out);
+              &:hover{
+                color: $navHoverColor
+              }
+            }
+            &:hover{
+              cursor: pointer;
+            }
+          }
+
+          .currentPage{
+            position: absolute;
+            left: 100px;
+            // width: 220px;
+            height: $navBarHeight;
+            width: 1000px;
+
+            .logo{
+              display: inline-block;
+              float: left;
+              font-size: $navFontSize;
+              font-weight: 400;
+              text-decoration: none;
+              margin: 0;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-top: 17px;
+              height: $navBarHeight;
+              color: $navFontColor;
+              background-color: transparent;
+              svg{
+                height: $navBarHeight - 35px;
+                width: $navBarHeight - 35px;
+              }
+            }
+            .triangleRight{
+              display: inline-block;
+              float: left;
+              width: 0;
+              height: 0;
+            }
+            .first{
+              border-top: ($navBarHeight/2) solid $navCrumbPathColor;
+              border-left: 10px solid $navLogoAreaBackColor;
+              border-bottom: ($navBarHeight/2) solid $navCrumbPathColor;
+            }
+            .second{
+              border-top: ($navBarHeight/2) solid transparent;
+              border-left: 10px solid $navCrumbPathColor;
+              border-bottom: ($navBarHeight/2) solid transparent;
+            }
+            .crumbPath{
+              display: inline-block;
+              float: left;
+              text-decoration: none;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-top: $navTextMarginTop;
+              height: $navBarHeight;
+              color: $navFontColor;
+              background-color: $navCrumbPathColor;
+              @include transition(color, 0.2s, ease-in-out);
+              &:hover{
+                color: $navHoverColor;
+              }
+            }
+            .pageTitle{
+              display: inline-block;
+              float: left;
+              font-family: sourceLight, sans-serif;
+              font-size: 18px;
+              margin-top: $navTextMarginTop;
+              padding-left: 10px;
+              color: $navFontColor;
+            }
+          }
+
+          .mainNavList{
+            position: absolute;
+            right: -800px;
+            ul{
+              display: inline-block;
+              margin-top: $navTextMarginTop;
+              li{
+                display:inline;
+                position: relative;
+                a{
+                  text-decoration: none;
+                  position: relative;
+                  font-size: $navFontSize;
+                  vertical-align: center;
+                  color: $navFontColor;
+                  background-color: transparent;
+                  @include transition(color, 0.2s, ease-in-out);
+                  &:hover{
+                    color: $navHoverColor; 
+                  }
+                }
+                &:hover ul{
+                  display: block;
+                }
+              }
+            }   
+          }
+
+        }
+        
       
     }
   }
@@ -867,7 +650,7 @@ $buttonLineMargin: $buttonLineWidth/4;
     }
   }
   &:hover > .lines{
-     background: $navHoverColor;
+     // background: $navHoverColor;
   }
 }
 

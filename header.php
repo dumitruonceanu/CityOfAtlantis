@@ -49,8 +49,9 @@
 	 <!-- Nav menu code goes here -->
 
   <div class="mobileNavTest"> 
-    <div class="container" id="container">
-        <!-- <div class="navLeftContainer"></div> -->
+    <div class="fullNavContainer" id="container">
+      <div class="innerNavContainer">
+        <div class="navLeftContainer"></div>
 
         <?php  
           // $post = get_page( $page->ID  );
@@ -274,6 +275,7 @@
         </div>
 
         <div class="navRightContainer"></div>
+      </div>
     </div>
   </div>
 
