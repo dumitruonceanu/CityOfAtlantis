@@ -757,12 +757,52 @@ $buttonLineMargin: $buttonLineWidth/4;
 //******************************************
 .footer {
   clear:both;
-  height: 80px;
+  height: 200px;
   color: #ddd;
   background-color: #242424;
   padding-top: 20px;
   // padding-left: 20px;
   text-align: center;
+  .socialWrapper{
+    padding-top: 40px;
+    // padding-bottom: 0;
+    width: 73%;
+    margin: 0 auto;
+    text-align: center;
+
+    .icon{
+      display: inline-block;
+      border: 1px solid #fff;
+      width: 55px;
+      height: 55px;
+      border-radius: 5px;
+      padding-left: 3px;
+      padding-top: 5px;
+      margin-right: 20px;
+      -webkit-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+      img{
+        width: 40px;
+      }
+      &:hover{
+        background-color: #666;
+      }
+    }
+    .mail{
+      padding-left: 2px;
+    }
+    .gitHub{
+      /*Tried .icon:last-child -> didn't work*/
+      margin-right: 0;
+    }
+    .copy{
+      margin-top: 40px;
+      // color: #e0b152;
+      // font-family: source-regular, Arial, Helvetica;
+      // font-size: 20px;
+    }
+  }
 }
 
 
