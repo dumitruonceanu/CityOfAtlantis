@@ -143,9 +143,10 @@
                 <span class="lines"></span>
             </button>
             <p>MENU</p>
+            
           </a>
 
-          <div class="currentPage visible">
+          <div class="navLogoContainer">
             <a class="logo" href="<?php echo get_home_url(); ?>" >
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 997.6 999.9" enable-background="new 0 0 997.6 999.9" xml:space="preserve">
@@ -216,6 +217,10 @@
                 c-6.7,6.6-13.2,13.4-19.6,20.2C587.5,539.3,585,542.3,583.4,544.2z"/>
               </svg>
             </a>
+          </div>
+
+          <div class="currentPage visible">
+            
             <div class="triangleRight first"></div>
 
             <!-- <a class="crumbPath" href="/#portfolio"> -->
@@ -336,7 +341,7 @@
             console.log("change CLOSE to MENU");
             $('.currentPage').animate({
               // console.log("animate");
-              left: "100px"
+              left: "170px"
             }, 500);
             $('.mainNavList').animate({
               // console.log("animate");

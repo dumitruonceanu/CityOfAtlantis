@@ -310,6 +310,24 @@ ul li,ol li {
           &:hover{
             cursor: pointer;
           }
+          .logo{
+            display: inline-block;
+            float: left;
+            font-size: $navFontSize;
+            font-weight: 400;
+            text-decoration: none;
+            margin: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 17px;
+            height: $navBarHeight;
+            color: $navFontColor;
+            background-color: transparent;
+            svg{
+              height: $navBarHeight - 35px;
+              width: $navBarHeight - 35px;
+            }
+          }
         }
         .currentPage{
           position: absolute;
@@ -468,7 +486,7 @@ ul li,ol li {
             float: left;
             width: 100px;
             height: $navBarHeight;
-            background-color: $navBackgroundColor ;
+            background-color: $navBackgroundColor;
             z-index: 100;
             @include transition(color, 0.2s, ease-in-out);
             button{
@@ -490,15 +508,15 @@ ul li,ol li {
             &:hover{
               cursor: pointer;
             }
+
           }
-
-          .currentPage{
-            position: absolute;
-            left: 100px;
-            // width: 220px;
-            height: $navBarHeight;
-            width: 1000px;
-
+          .navLogoContainer{
+            position: relative;
+            float: left;
+            height: $navBarHeight - 1;
+            width: 65px;
+            background-color: $navBackgroundColor;
+            z-index: 1000;
             .logo{
               display: inline-block;
               float: left;
@@ -517,6 +535,33 @@ ul li,ol li {
                 width: $navBarHeight - 35px;
               }
             }
+          }
+
+          .currentPage{
+            position: absolute;
+            left: 170px;
+            // width: 220px;
+            height: $navBarHeight;
+            width: 1000px;
+
+            // .logo{
+            //   display: inline-block;
+            //   float: left;
+            //   font-size: $navFontSize;
+            //   font-weight: 400;
+            //   text-decoration: none;
+            //   margin: 0;
+            //   padding-left: 10px;
+            //   padding-right: 10px;
+            //   padding-top: 17px;
+            //   height: $navBarHeight;
+            //   color: $navFontColor;
+            //   background-color: transparent;
+            //   svg{
+            //     height: $navBarHeight - 35px;
+            //     width: $navBarHeight - 35px;
+            //   }
+            // }
             .triangleRight{
               display: inline-block;
               float: left;
