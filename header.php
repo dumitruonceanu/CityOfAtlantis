@@ -341,7 +341,7 @@
             console.log("change CLOSE to MENU");
             $('.currentPage').animate({
               // console.log("animate");
-              left: "170px"
+              left: "10px"
             }, 500);
             $('.mainNavList').animate({
               // console.log("animate");

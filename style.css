@@ -1057,94 +1057,96 @@ ul.menu li a {
       margin-bottom: -50px; }
       /* line 963, scss/main.scss */
       .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutCenter p {
+        padding-top: 10px;
+        padding-left: 5px;
         text-align: left; }
-    /* line 968, scss/main.scss */
+    /* line 970, scss/main.scss */
     .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutRight {
       position: absolute;
       top: 20px;
       right: 0;
       width: 27.5%;
       padding: 20px; }
-      /* line 976, scss/main.scss */
+      /* line 978, scss/main.scss */
       .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutRight p {
         margin-top: 100px; }
-/* line 986, scss/main.scss */
+/* line 988, scss/main.scss */
 .home.page-template-front-page-php .section .webSkillsSection {
   display: none;
   clear: both;
   background-color: #bbb; }
-  /* line 992, scss/main.scss */
+  /* line 994, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection .col-1-3 h2 {
     text-align: center; }
-  /* line 995, scss/main.scss */
+  /* line 997, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection .col-1-3 img {
     width: 50%;
     margin: 0 auto; }
-  /* line 999, scss/main.scss */
+  /* line 1001, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection .col-1-3 ul {
     padding: 0;
     margin: 0 auto; }
-    /* line 1002, scss/main.scss */
+    /* line 1004, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection .col-1-3 ul li {
       list-style-type: none;
       text-align: center; }
-/* line 1010, scss/main.scss */
+/* line 1012, scss/main.scss */
 .home.page-template-front-page-php .section .webSkillsSection_test {
   clear: both;
   padding-top: 80px;
   padding-bottom: 80px; }
-  /* line 1015, scss/main.scss */
+  /* line 1017, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test h1 {
     margin-bottom: 40px; }
-  /* line 1018, scss/main.scss */
+  /* line 1020, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 {
     padding-top: 20px;
     padding-bottom: 20px;
     height: 200px;
     color: #666; }
-    /* line 1025, scss/main.scss */
+    /* line 1027, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 .webSkillIconContainer {
       width: 100%;
       height: 50px;
       margin-bottom: 10px; }
-      /* line 1029, scss/main.scss */
+      /* line 1031, scss/main.scss */
       .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 .webSkillIconContainer .webSkillIcon {
         width: 50px;
         margin: 0 auto; }
-        /* line 1034, scss/main.scss */
+        /* line 1036, scss/main.scss */
         .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 .webSkillIconContainer .webSkillIcon svg {
           width: 50px;
           height: 50px;
           fill: #444; }
-    /* line 1041, scss/main.scss */
+    /* line 1043, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 h2 {
       font-family: sourceLight, sans-serif;
       font-size: 20px;
       text-align: center; }
-    /* line 1046, scss/main.scss */
+    /* line 1048, scss/main.scss */
     .home.page-template-front-page-php .section .webSkillsSection_test .col-1-3 p {
       font-size: 16px;
       text-align: center;
       padding-left: 20px;
       padding-right: 20px; }
-  /* line 1053, scss/main.scss */
+  /* line 1055, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_1 {
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd; }
-  /* line 1057, scss/main.scss */
+  /* line 1059, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_2 {
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd; }
-  /* line 1061, scss/main.scss */
+  /* line 1063, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_3 {
     border-bottom: 1px solid #ddd; }
-  /* line 1065, scss/main.scss */
+  /* line 1067, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_4 {
     border-right: 1px solid #ddd; }
-  /* line 1069, scss/main.scss */
+  /* line 1071, scss/main.scss */
   .home.page-template-front-page-php .section .webSkillsSection_test .box_5 {
     border-right: 1px solid #ddd; }
-/* line 1079, scss/main.scss */
+/* line 1081, scss/main.scss */
 .home.page-template-front-page-php .section .portfolioSection {
   display: block;
   clear: both;
@@ -1152,14 +1154,14 @@ ul.menu li a {
   padding-top: 81px;
   background-color: #E5E5E5;
   width: 100%; }
-  /* line 1091, scss/main.scss */
+  /* line 1093, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection h1 {
     color: #464E4F; }
-  /* line 1096, scss/main.scss */
+  /* line 1098, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection .sectionContainer {
     margin: 0 auto;
     padding-bottom: 40px; }
-    /* line 1100, scss/main.scss */
+    /* line 1102, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 {
       position: relative;
       z-index: 1;
@@ -1171,13 +1173,13 @@ ul.menu li a {
       margin-bottom: 30px;
       padding-bottom: 20px;
       cursor: pointer; }
-      /* line 1115, scss/main.scss */
+      /* line 1117, scss/main.scss */
       .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .imageWrapper {
         position: relative;
         padding-left: 60px;
         padding-right: 60px;
         padding-top: 30px; }
-      /* line 1122, scss/main.scss */
+      /* line 1124, scss/main.scss */
       .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton {
         position: absolute;
         top: 30%;
@@ -1191,56 +1193,56 @@ ul.menu li a {
         transition: transform 0.2s ease-in-out;
         -webkit-transition: opacity 0.2s ease-in-out;
         transition: opacity 0.2s ease-in-out; }
-        /* line 1134, scss/main.scss */
+        /* line 1136, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton:hover {
           -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
               transform: scale(1.05);
           -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out; }
-        /* line 1147, scss/main.scss */
+        /* line 1149, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton p {
           margin-top: 35%;
           font-size: 20px;
           color: #fff; }
-        /* line 1152, scss/main.scss */
+        /* line 1154, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton .icon {
           position: absolute;
           top: 15%;
           left: 15%;
           width: 10%;
           height: 10%; }
-          /* line 1158, scss/main.scss */
+          /* line 1160, scss/main.scss */
           .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .overlayButton .icon svg {
             fill: #fff; }
-      /* line 1173, scss/main.scss */
+      /* line 1175, scss/main.scss */
       .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; }
-        /* line 1176, scss/main.scss */
+        /* line 1178, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails h2 {
           text-align: center;
           padding-left: 50px;
           padding-right: 50px; }
-        /* line 1181, scss/main.scss */
+        /* line 1183, scss/main.scss */
         .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails p {
           font-family: sourceLight, sans-serif;
           margin: 0;
           padding-left: 10px;
           padding-right: 10px;
           color: #333; }
-    /* line 1198, scss/main.scss */
+    /* line 1200, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2:hover .captionDetails::before,
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2:hover .captionDetails::after {
       opacity: 1;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1); }
-    /* line 1206, scss/main.scss */
+    /* line 1208, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails::before,
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2 .captionDetails::after {
       pointer-events: none; }
-    /* line 1220, scss/main.scss */
+    /* line 1222, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::before,
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::after {
       position: absolute;
@@ -1252,31 +1254,31 @@ ul.menu li a {
       opacity: 0;
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: opacity 0.35s, transform 0.35s; }
-    /* line 1233, scss/main.scss */
+    /* line 1235, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::before {
       border-top: 1px solid #000;
       border-bottom: 1px solid #000;
       -webkit-transform: scale(0, 1);
       -ms-transform: scale(0, 1);
           transform: scale(0, 1); }
-    /* line 1240, scss/main.scss */
+    /* line 1242, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .captionDetails::after {
       border-right: 1px solid #000;
       border-left: 1px solid #000;
       -webkit-transform: scale(1, 0);
       -ms-transform: scale(1, 0);
           transform: scale(1, 0); }
-    /* line 1248, scss/main.scss */
+    /* line 1250, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection .sectionContainer .col-1-2:nth-child(odd) {
       margin-right: 0; }
-  /* line 1253, scss/main.scss */
+  /* line 1255, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection .moreButton {
     display: block;
     margin: 0 auto;
     clear: both;
     width: 200px;
     height: 50px; }
-  /* line 1261, scss/main.scss */
+  /* line 1263, scss/main.scss */
   .home.page-template-front-page-php .section .portfolioSection a .goToPortfolioPage {
     width: 200px;
     height: 50px;
@@ -1289,22 +1291,22 @@ ul.menu li a {
     padding-top: 8px;
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out; }
-    /* line 1276, scss/main.scss */
+    /* line 1278, scss/main.scss */
     .home.page-template-front-page-php .section .portfolioSection a .goToPortfolioPage:hover {
       background-color: #353535;
       color: #EDEDED; }
-/* line 1284, scss/main.scss */
+/* line 1286, scss/main.scss */
 .home.page-template-front-page-php .section .blogSection {
   clear: both;
   padding-top: 40px; }
-  /* line 1287, scss/main.scss */
+  /* line 1289, scss/main.scss */
   .home.page-template-front-page-php .section .blogSection .sectionContainer {
     padding-top: 40px;
     padding-bottom: 80px; }
-    /* line 1291, scss/main.scss */
+    /* line 1293, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer h1 {
       margin-bottom: 40px; }
-    /* line 1294, scss/main.scss */
+    /* line 1296, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer .moreButton {
       display: block;
       margin: 0 auto;
@@ -1312,7 +1314,7 @@ ul.menu li a {
       width: 200px;
       height: 50px;
       padding-top: 30px; }
-    /* line 1302, scss/main.scss */
+    /* line 1304, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer a .goToBlogPage {
       width: 200px;
       height: 50px;
@@ -1325,57 +1327,57 @@ ul.menu li a {
       padding-top: 8px;
       -webkit-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out; }
-      /* line 1317, scss/main.scss */
+      /* line 1319, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer a .goToBlogPage:hover {
         background-color: #353535;
         color: #EDEDED; }
-    /* line 1323, scss/main.scss */
+    /* line 1325, scss/main.scss */
     .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 {
       padding: 10px;
       height: 450px;
       background-color: transparent;
       -webkit-transition: background-color 0.1s ease-in-out;
       transition: background-color 0.1s ease-in-out; }
-      /* line 1331, scss/main.scss */
+      /* line 1333, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground {
         width: 100%;
         height: 100%;
         background-color: #E5E5E5; }
-        /* line 1335, scss/main.scss */
+        /* line 1337, scss/main.scss */
         .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content {
           background-color: transparent; }
-          /* line 1338, scss/main.scss */
+          /* line 1340, scss/main.scss */
           .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content img {
             width: 100%;
             height: 100%; }
-          /* line 1343, scss/main.scss */
+          /* line 1345, scss/main.scss */
           .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content h2 {
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-          /* line 1349, scss/main.scss */
+          /* line 1351, scss/main.scss */
           .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4 .entryContentBackground .entry-content p {
             text-align: left;
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-      /* line 1360, scss/main.scss */
+      /* line 1362, scss/main.scss */
       .home.page-template-front-page-php .section .blogSection .sectionContainer .col-1-4:hover > .entryContentBackground {
         -webkit-transition: background-color 0.1s ease-in-out;
         transition: background-color 0.1s ease-in-out; }
-/* line 1376, scss/main.scss */
+/* line 1378, scss/main.scss */
 .home.page-template-front-page-php .section .contactSection {
   clear: both;
   background-color: #A0B2C1; }
-  /* line 1379, scss/main.scss */
+  /* line 1381, scss/main.scss */
   .home.page-template-front-page-php .section .contactSection h1 {
     padding-top: 20px;
     padding-bottom: 20px; }
-  /* line 1383, scss/main.scss */
+  /* line 1385, scss/main.scss */
   .home.page-template-front-page-php .section .contactSection p {
     padding-bottom: 20px; }
 
-/* line 1405, scss/main.scss */
+/* line 1407, scss/main.scss */
 .archive .section {
   display: block;
   padding-top: 81px;
@@ -1390,7 +1392,7 @@ ul.menu li a {
   /* Common style */
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */ }
-  /* line 1424, scss/main.scss */
+  /* line 1426, scss/main.scss */
   .archive .section figure {
     position: relative;
     z-index: 1;
@@ -1402,19 +1404,19 @@ ul.menu li a {
     background: #3085a3;
     text-align: center;
     cursor: pointer; }
-    /* line 1436, scss/main.scss */
+    /* line 1438, scss/main.scss */
     .archive .section figure:hover figcaption::before, .archive .section figure:hover figcaption::after {
       opacity: 1;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1); }
-  /* line 1444, scss/main.scss */
+  /* line 1446, scss/main.scss */
   .archive .section figure img {
     position: relative;
     display: block;
     min-height: 100%;
     opacity: 0.8; }
-  /* line 1451, scss/main.scss */
+  /* line 1453, scss/main.scss */
   .archive .section figure figcaption {
     padding: 2em;
     color: #fff;
@@ -1422,11 +1424,11 @@ ul.menu li a {
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
-  /* line 1463, scss/main.scss */
+  /* line 1465, scss/main.scss */
   .archive .section figure figcaption::before,
   .archive .section figure figcaption::after {
     pointer-events: none; }
-  /* line 1468, scss/main.scss */
+  /* line 1470, scss/main.scss */
   .archive .section figure figcaption,
   .archive .section figure a {
     position: absolute;
@@ -1434,7 +1436,7 @@ ul.menu li a {
     left: 0;
     width: 100%;
     height: 100%; }
-  /* line 1508, scss/main.scss */
+  /* line 1510, scss/main.scss */
   .archive .section figcaption::before,
   .archive .section figcaption::after {
     position: absolute;
@@ -1446,14 +1448,14 @@ ul.menu li a {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s; }
-  /* line 1521, scss/main.scss */
+  /* line 1523, scss/main.scss */
   .archive .section figcaption::before {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
         transform: scale(0, 1); }
-  /* line 1528, scss/main.scss */
+  /* line 1530, scss/main.scss */
   .archive .section figcaption::after {
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
@@ -1461,16 +1463,16 @@ ul.menu li a {
     -ms-transform: scale(1, 0);
         transform: scale(1, 0); }
 
-/* line 1549, scss/main.scss */
+/* line 1551, scss/main.scss */
 .portfolioTestContainer {
   display: block;
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 40px; }
-  /* line 1555, scss/main.scss */
+  /* line 1557, scss/main.scss */
   .portfolioTestContainer h1 {
     text-align: center; }
-  /* line 1558, scss/main.scss */
+  /* line 1560, scss/main.scss */
   .portfolioTestContainer .col-1-2 {
     position: relative;
     z-index: 1;
@@ -1482,52 +1484,52 @@ ul.menu li a {
     padding-bottom: 20px;
     background-color: #E5E5E5;
     cursor: pointer; }
-    /* line 1572, scss/main.scss */
+    /* line 1574, scss/main.scss */
     .portfolioTestContainer .col-1-2 .imageWrapper {
       position: relative;
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 30px; }
-    /* line 1578, scss/main.scss */
+    /* line 1580, scss/main.scss */
     .portfolioTestContainer .col-1-2 h2 {
       text-align: center;
       padding-left: 50px;
       padding-right: 50px; }
-    /* line 1583, scss/main.scss */
+    /* line 1585, scss/main.scss */
     .portfolioTestContainer .col-1-2 p {
       font-family: sourceLight, sans-serif;
       margin: 0;
       padding-left: 10px;
       padding-right: 10px;
       color: #333; }
-    /* line 1590, scss/main.scss */
+    /* line 1592, scss/main.scss */
     .portfolioTestContainer .col-1-2:hover {
       -webkit-transition: background-color 0.7s ease-in-out;
       transition: background-color 0.7s ease-in-out;
       background-color: #f3f3f3; }
-    /* line 1596, scss/main.scss */
+    /* line 1598, scss/main.scss */
     .portfolioTestContainer .col-1-2 .captionDetails {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
-  /* line 1603, scss/main.scss */
+  /* line 1605, scss/main.scss */
   .portfolioTestContainer .col-1-2:hover .captionDetails::before,
   .portfolioTestContainer .col-1-2:hover .captionDetails::after {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
         transform: scale(1); }
-  /* line 1611, scss/main.scss */
+  /* line 1613, scss/main.scss */
   .portfolioTestContainer .col-1-2 .captionDetails::before,
   .portfolioTestContainer .col-1-2 .captionDetails::after {
     pointer-events: none; }
-  /* line 1616, scss/main.scss */
+  /* line 1618, scss/main.scss */
   .portfolioTestContainer .col-1-2 a {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-  /* line 1625, scss/main.scss */
+  /* line 1627, scss/main.scss */
   .portfolioTestContainer .captionDetails::before,
   .portfolioTestContainer .captionDetails::after {
     position: absolute;
@@ -1539,41 +1541,41 @@ ul.menu li a {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s; }
-  /* line 1638, scss/main.scss */
+  /* line 1640, scss/main.scss */
   .portfolioTestContainer .captionDetails::before {
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
         transform: scale(0, 1); }
-  /* line 1645, scss/main.scss */
+  /* line 1647, scss/main.scss */
   .portfolioTestContainer .captionDetails::after {
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
     -webkit-transform: scale(1, 0);
     -ms-transform: scale(1, 0);
         transform: scale(1, 0); }
-  /* line 1652, scss/main.scss */
+  /* line 1654, scss/main.scss */
   .portfolioTestContainer .col-1-2:nth-child(odd) {
     margin-right: 0; }
 
-/* line 1664, scss/main.scss */
+/* line 1666, scss/main.scss */
 .archive .section {
   display: block;
   padding-top: 81px;
   width: 100%;
   background-color: #E5E5E5;
   /* #A0B2C1 #D7EBED */ }
-  /* line 1670, scss/main.scss */
+  /* line 1672, scss/main.scss */
   .archive .section .sectionContainer {
     display: block;
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 40px; }
-    /* line 1676, scss/main.scss */
+    /* line 1678, scss/main.scss */
     .archive .section .sectionContainer h1 {
       text-align: center; }
-    /* line 1679, scss/main.scss */
+    /* line 1681, scss/main.scss */
     .archive .section .sectionContainer .col-1-2 {
       display: inline-block;
       width: 45%;
@@ -1583,13 +1585,13 @@ ul.menu li a {
       border: 1px solid #A0B2C1;
       -webkit-transition: all 0.1s ease-in-out;
       transition: all 0.1s ease-in-out; }
-      /* line 1687, scss/main.scss */
+      /* line 1689, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 .imageWrapper {
         position: relative;
         padding-left: 80px;
         padding-right: 80px;
         padding-top: 30px; }
-        /* line 1695, scss/main.scss */
+        /* line 1697, scss/main.scss */
         .archive .section .sectionContainer .col-1-2 .imageWrapper .imageHover {
           position: absolute;
           width: 100%;
@@ -1598,29 +1600,29 @@ ul.menu li a {
           left: 0;
           background: transparent;
           opacity: 0; }
-      /* line 1721, scss/main.scss */
+      /* line 1723, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 h2 {
         text-align: center;
         padding-left: 50px;
         padding-right: 50px; }
-      /* line 1726, scss/main.scss */
+      /* line 1728, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 h2 a {
         color: #464E4F;
         -webkit-transition: color 0.1s ease-in-out;
         transition: color 0.1s ease-in-out; }
-        /* line 1732, scss/main.scss */
+        /* line 1734, scss/main.scss */
         .archive .section .sectionContainer .col-1-2 h2 a:hover {
           color: red;
           -webkit-transition: color 0.1s ease-in-out;
           transition: color 0.1s ease-in-out; }
-      /* line 1737, scss/main.scss */
+      /* line 1739, scss/main.scss */
       .archive .section .sectionContainer .col-1-2 p {
         font-family: sourceLight, sans-serif;
         margin: 0;
         padding-left: 50px;
         padding-right: 50px;
         color: #899394; }
-      /* line 1746, scss/main.scss */
+      /* line 1748, scss/main.scss */
       .archive .section .sectionContainer .col-1-2:hover {
         -webkit-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out;
@@ -1630,27 +1632,27 @@ ul.menu li a {
         -webkit-box-shadow: 0 0 5px 1px #666;
                 box-shadow: 0 0 5px 1px #666;
         color: #fff; }
-    /* line 1754, scss/main.scss */
+    /* line 1756, scss/main.scss */
     .archive .section .sectionContainer .col-1-2:nth-child(odd) {
       margin-right: 0; }
 
-/* line 1765, scss/main.scss */
+/* line 1767, scss/main.scss */
 .single-portfolio .section {
   display: block;
   text-align: center;
   padding-top: 81px; }
-  /* line 1770, scss/main.scss */
+  /* line 1772, scss/main.scss */
   .single-portfolio .section .innerWrapper {
     max-width: 1100px;
     margin: 0 auto; }
-    /* line 1773, scss/main.scss */
+    /* line 1775, scss/main.scss */
     .single-portfolio .section .innerWrapper h2 {
       font-family: 'Sanchez', serif;
       font-size: 60px;
       color: #333;
       padding-top: 40px;
       padding-bottom: 20px; }
-    /* line 1780, scss/main.scss */
+    /* line 1782, scss/main.scss */
     .single-portfolio .section .innerWrapper p {
       width: 50%;
       margin: 0 auto;
@@ -1658,7 +1660,7 @@ ul.menu li a {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 40px; }
-    /* line 1789, scss/main.scss */
+    /* line 1791, scss/main.scss */
     .single-portfolio .section .innerWrapper a .goToLiveProject {
       width: 200px;
       height: 50px;
@@ -1671,48 +1673,48 @@ ul.menu li a {
       padding-top: 8px;
       -webkit-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out; }
-      /* line 1802, scss/main.scss */
+      /* line 1804, scss/main.scss */
       .single-portfolio .section .innerWrapper a .goToLiveProject:hover {
         background-color: #353535;
         color: #EDEDED; }
-    /* line 1807, scss/main.scss */
+    /* line 1809, scss/main.scss */
     .single-portfolio .section .innerWrapper .images {
       margin-top: 40px;
       margin-bottom: 40px; }
-      /* line 1810, scss/main.scss */
+      /* line 1812, scss/main.scss */
       .single-portfolio .section .innerWrapper .images img {
         width: 50%; }
-    /* line 1814, scss/main.scss */
+    /* line 1816, scss/main.scss */
     .single-portfolio .section .innerWrapper .tech {
       margin-bottom: 40px;
       font-size: 20px; }
-      /* line 1818, scss/main.scss */
+      /* line 1820, scss/main.scss */
       .single-portfolio .section .innerWrapper .tech p {
         text-align: center;
         margin-bottom: 10px; }
-      /* line 1822, scss/main.scss */
+      /* line 1824, scss/main.scss */
       .single-portfolio .section .innerWrapper .tech ul {
         list-style-type: none; }
-        /* line 1824, scss/main.scss */
+        /* line 1826, scss/main.scss */
         .single-portfolio .section .innerWrapper .tech ul li {
           display: inline-block; }
-          /* line 1826, scss/main.scss */
+          /* line 1828, scss/main.scss */
           .single-portfolio .section .innerWrapper .tech ul li span {
             color: #cd0000; }
 
-/* line 1844, scss/main.scss */
+/* line 1846, scss/main.scss */
 .blog .section {
   padding-top: 81px;
   padding-bottom: 80px; }
-  /* line 1848, scss/main.scss */
+  /* line 1850, scss/main.scss */
   .blog .section .mainBlogContainer {
     max-width: 1100px;
     margin: 0 auto;
     display: block; }
-    /* line 1852, scss/main.scss */
+    /* line 1854, scss/main.scss */
     .blog .section .mainBlogContainer h1 {
       text-align: center; }
-    /* line 1856, scss/main.scss */
+    /* line 1858, scss/main.scss */
     .blog .section .mainBlogContainer .col-1-4 {
       float: left;
       display: inline-block;
@@ -1722,46 +1724,46 @@ ul.menu li a {
       background-color: transparent;
       -webkit-transition: background-color 0.1s ease-in-out;
       transition: background-color 0.1s ease-in-out; }
-      /* line 1867, scss/main.scss */
+      /* line 1869, scss/main.scss */
       .blog .section .mainBlogContainer .col-1-4 .entryContentBackground {
         width: 100%;
         height: 100%;
         background-color: #E5E5E5; }
-        /* line 1871, scss/main.scss */
+        /* line 1873, scss/main.scss */
         .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content {
           background-color: transparent; }
-          /* line 1874, scss/main.scss */
+          /* line 1876, scss/main.scss */
           .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content img {
             width: 100%;
             height: 100%; }
-          /* line 1879, scss/main.scss */
+          /* line 1881, scss/main.scss */
           .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content h2 {
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-          /* line 1885, scss/main.scss */
+          /* line 1887, scss/main.scss */
           .blog .section .mainBlogContainer .col-1-4 .entryContentBackground .entry-content p {
             text-align: left;
             padding-left: 10px;
             padding-right: 10px;
             color: #333; }
-      /* line 1895, scss/main.scss */
+      /* line 1897, scss/main.scss */
       .blog .section .mainBlogContainer .col-1-4:hover > .entryContentBackground {
         -webkit-transition: background-color 0.1s ease-in-out;
         transition: background-color 0.1s ease-in-out; }
 
-/* line 1918, scss/main.scss */
+/* line 1920, scss/main.scss */
 .single-post .section {
   display: block;
   background-color: #F9F9F9;
   /* #EDEDED */
   text-align: left;
   padding-top: 81px; }
-  /* line 1923, scss/main.scss */
+  /* line 1925, scss/main.scss */
   .single-post .section .innerWrapper {
     max-width: 1100px;
     margin: 0 auto; }
-    /* line 1926, scss/main.scss */
+    /* line 1928, scss/main.scss */
     .single-post .section .innerWrapper h1 {
       margin-top: 0;
       font-family: 'Quicksand', sans-serif;
@@ -1771,7 +1773,7 @@ ul.menu li a {
       text-align: center;
       padding-top: 40px;
       padding-bottom: 20px; }
-    /* line 1937, scss/main.scss */
+    /* line 1939, scss/main.scss */
     .single-post .section .innerWrapper h2 {
       font-family: 'Sanchez', serif;
       font-size: 40px;
@@ -1779,7 +1781,7 @@ ul.menu li a {
       text-align: left;
       margin-left: 12.25%;
       width: 75%; }
-    /* line 1945, scss/main.scss */
+    /* line 1947, scss/main.scss */
     .single-post .section .innerWrapper p {
       width: 75%;
       margin: 0 auto;
@@ -1787,65 +1789,65 @@ ul.menu li a {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 40px; }
-    /* line 1954, scss/main.scss */
+    /* line 1956, scss/main.scss */
     .single-post .section .innerWrapper .entry-meta,
     .single-post .section .innerWrapper .entry-utility,
     .single-post .section .innerWrapper .navigation,
     .single-post .section .innerWrapper #comments {
       margin-left: 12.25%;
       width: 75%; }
-    /* line 1962, scss/main.scss */
+    /* line 1964, scss/main.scss */
     .single-post .section .innerWrapper .entry-content img {
       width: 100%;
       height: 100%; }
 
-/* line 1973, scss/main.scss */
+/* line 1975, scss/main.scss */
 .page.page-template-default .section {
   display: block;
   background-color: #f9f9f9;
   padding-top: 81px; }
-  /* line 1978, scss/main.scss */
+  /* line 1980, scss/main.scss */
   .page.page-template-default .section .innerWrapper {
     max-width: 900px;
     margin: 0 auto; }
-    /* line 1981, scss/main.scss */
+    /* line 1983, scss/main.scss */
     .page.page-template-default .section .innerWrapper h1, .page.page-template-default .section .innerWrapper h2, .page.page-template-default .section .innerWrapper h3, .page.page-template-default .section .innerWrapper h4, .page.page-template-default .section .innerWrapper h5, .page.page-template-default .section .innerWrapper h6 {
       font-family: 'Sanchez', serif; }
-    /* line 1984, scss/main.scss */
+    /* line 1986, scss/main.scss */
     .page.page-template-default .section .innerWrapper h1 {
       font-size: 60px; }
-    /* line 1987, scss/main.scss */
+    /* line 1989, scss/main.scss */
     .page.page-template-default .section .innerWrapper h2 {
       margin-bottom: 30px;
       font-size: 40px; }
-    /* line 1992, scss/main.scss */
+    /* line 1994, scss/main.scss */
     .page.page-template-default .section .innerWrapper h3 {
       font-size: 30px; }
-    /* line 1995, scss/main.scss */
+    /* line 1997, scss/main.scss */
     .page.page-template-default .section .innerWrapper p {
       line-height: 1.5; }
-    /* line 1998, scss/main.scss */
+    /* line 2000, scss/main.scss */
     .page.page-template-default .section .innerWrapper .firstSampleParagraph {
       font-family: sourceLight, sans-serif;
       font-size: 16px; }
-    /* line 2003, scss/main.scss */
+    /* line 2005, scss/main.scss */
     .page.page-template-default .section .innerWrapper .secondSampleParagraph {
       font-family: sourceLight, sans-serif;
       font-size: 18px;
       color: #3a5e77; }
-    /* line 2009, scss/main.scss */
+    /* line 2011, scss/main.scss */
     .page.page-template-default .section .innerWrapper .thirdSampleParagraph {
       font-family: 'Open Sans', sans-serif;
       font-size: 16px; }
-    /* line 2013, scss/main.scss */
+    /* line 2015, scss/main.scss */
     .page.page-template-default .section .innerWrapper .fourthSampleParagraph {
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       color: #3a5e77; }
-    /* line 2018, scss/main.scss */
+    /* line 2020, scss/main.scss */
     .page.page-template-default .section .innerWrapper .goToLiveProject {
       padding-top: 60px; }
-      /* line 2020, scss/main.scss */
+      /* line 2022, scss/main.scss */
       .page.page-template-default .section .innerWrapper .goToLiveProject .sampleLargeButton {
         width: 200px;
         height: 50px;
@@ -1859,14 +1861,14 @@ ul.menu li a {
         padding: 20px;
         -webkit-transition: background-color 0.2s ease-in-out;
         transition: background-color 0.2s ease-in-out; }
-        /* line 2036, scss/main.scss */
+        /* line 2038, scss/main.scss */
         .page.page-template-default .section .innerWrapper .goToLiveProject .sampleLargeButton:hover {
           background-color: #353535;
           color: #EDEDED; }
-    /* line 2043, scss/main.scss */
+    /* line 2045, scss/main.scss */
     .page.page-template-default .section .innerWrapper .goToLiveProject {
       padding-bottom: 60px; }
-      /* line 2045, scss/main.scss */
+      /* line 2047, scss/main.scss */
       .page.page-template-default .section .innerWrapper .goToLiveProject .sampleMediumButton {
         width: 100px;
         height: 25px;
@@ -1880,23 +1882,23 @@ ul.menu li a {
         padding: 10px;
         -webkit-transition: background-color 0.2s ease-in-out;
         transition: background-color 0.2s ease-in-out; }
-        /* line 2061, scss/main.scss */
+        /* line 2063, scss/main.scss */
         .page.page-template-default .section .innerWrapper .goToLiveProject .sampleMediumButton:hover {
           background-color: #353535;
           color: #EDEDED; }
-    /* line 2068, scss/main.scss */
+    /* line 2070, scss/main.scss */
     .page.page-template-default .section .innerWrapper .profileImageSquare {
       margin-bottom: 20px;
       margin-bottom: 20px; }
-      /* line 2071, scss/main.scss */
+      /* line 2073, scss/main.scss */
       .page.page-template-default .section .innerWrapper .profileImageSquare a img {
         border: 1px solid #000;
         margin-top: 20px; }
-    /* line 2077, scss/main.scss */
+    /* line 2079, scss/main.scss */
     .page.page-template-default .section .innerWrapper .profileImageRound {
       width: 300px;
       height: 300px; }
-      /* line 2080, scss/main.scss */
+      /* line 2082, scss/main.scss */
       .page.page-template-default .section .innerWrapper .profileImageRound a img {
         border-radius: 150px;
         border: 1px solid #000;

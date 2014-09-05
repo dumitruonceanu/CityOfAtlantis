@@ -63,7 +63,7 @@ get_header(); ?>
 
   <section class="mainSection webSkillsSection_test" id="web_skills_test_top">
     <div class="sectionContainer clearfix">
-      <h1>The Toolkit I'll Use To Built Your Website</h1>
+      <h1>The Toolkit I'll Use To Build Your Website</h1>
 
       <div class="col-1-3 box_1">
         <div class="webSkillIconContainer">

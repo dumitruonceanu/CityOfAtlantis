@@ -4,11 +4,11 @@
 /*  ***************************************************************
   NAVBAR - MAIN PAGE
   ****************************************************************/
-  .page .mobileNavTest .container .currentPage{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .currentPage{
     left: 20px;
 
   }
-  .page .mobileNavTest .container .mainNavList{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList{
     right: 20px;
   }
 
@@ -78,10 +78,10 @@
 /*  ***************************************************************
   NAVBAR - MAIN PAGE
   ****************************************************************/
-  .page .mobileNavTest .container .mainNavList .menu{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList .menu{
     display: block;
   }
-  .page .mobileNavTest .container .mainNavList .menu{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList .menu{
     /*display: block;*/
   }
 
@@ -136,7 +136,7 @@
 /*  ***************************************************************
   NAVBAR - MAIN PAGE
   ****************************************************************/
-  .page .mobileNavTest .container .currentPage p{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .currentPage p{
     display: none;
   }
 
