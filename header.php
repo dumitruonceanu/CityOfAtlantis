@@ -261,20 +261,30 @@
             <ul class="menu">
               <li><a href="#about_top">About</a></li>
               <li><a href="#web_skills_test_top">Skills</a></li>
-              <li><a href="#contact_top">Contact</a></li>
+            </ul>
+
+            <ul class="menu">
               <li><a href="#portfolio_top">Portfolio</a></li>
               <li><a href="#blog_top">Blog</a></li>
             </ul>
 
-            <?php //wp_nav_menu( array( 'container' => false, 'menu' => 'menu3' ) ); ?>
-          <?php else : ?>
             <ul class="menu">
-              <li><a href=<?php echo get_home_url() ."#about_top"; ?>  >About</a></li>
-              <li><a href=<?php echo get_home_url() ."#web_skills_test_top"; ?> >Skills</a></li>
-              <li><a href=<?php echo get_home_url() ."#contact_top"; ?> >Contact</a></li>
+              <li><a href="#contact_top">Contact</a></li>
             </ul>
 
-            <?php wp_nav_menu( array( 'container' => false, 'menu' => 'menu2' ) ); ?>
+            <?php //wp_nav_menu( array( 'container' => false, 'menu' => 'menu3' ) ); ?>
+          <?php else : ?>
+            <ul class="menu menuContainer1">
+              <li><a href=<?php echo get_home_url() ."#about_top"; ?>  >About</a></li>
+              <li><a href=<?php echo get_home_url() ."#web_skills_test_top"; ?> >Skills</a></li>
+              
+            </ul>
+
+            <?php wp_nav_menu( array( 'container' => false, 'menu' => 'menu2', 'menu_class' => 'menu menuContainer2' ) ); ?>
+
+            <ul class="menu menuContainer3">
+              <li><a href=<?php echo get_home_url() ."#contact_top"; ?> >Contact</a></li>
+            </ul>
           <?php endif; ?>
 
         </div>

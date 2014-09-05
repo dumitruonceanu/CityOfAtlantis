@@ -79,7 +79,7 @@
   NAVBAR - MAIN PAGE
   ****************************************************************/
   .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList .menu{
-    display: block;
+    /*display: block;*/
   }
   .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList .menu{
     /*display: block;*/
@@ -104,7 +104,7 @@
   }
 
 /*  ***************************************************************
-  ABOUT SECTIONi - MAIN PAGE
+  ABOUT SECTION - MAIN PAGE
   ****************************************************************/
   .home.page-template-front-page-php .section .aboutSection .sectionContainer .sectionInnerContainer .aboutLeft{
     /*display: block;*/
@@ -231,14 +231,22 @@
 /*  ***************************************************************
   NAVBAR - MAIN PAGE
   ****************************************************************/
-  .page .mobileNavTest .container .mainNavList .menu{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList .menu{
     /*display: block;*/
   }
-  .page .mobileNavTest .container .mainNavList .menu{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList .menu{
     /*display: block;*/
   }
 
-  .page .mobileNavTest .container .mainNavList ul li{
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList ul li{
+  }
+
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .currentPage{
+    left: 10px;
+
+  }
+  .page .mobileNavTest .fullNavContainer .innerNavContainer .mainNavList{
+    right: 10px;
   }
 
 /*  ***************************************************************
